@@ -2,13 +2,13 @@
 title: "Control of amplitude homogeneity in coherent Ising machines with artificial Zeeman terms"
 collection: publications
 permalink: /publication/gac
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+excerpt: 'A coherent Ising machine (CIM) is an open-dissipative Ising solver using optical pulses generated from a degenerate optical parametric oscillator as analog magnetizations. When solving real-world optimization problems with CIM, this solver has two difficulties: mutual coupling induced amplitude inhomogeneity and absence of natural way to implement Zeeman terms. For the approximate Gaussian formulation of CIMs with amplitude control feedback, we add artificial Zeemam terms using the target amplitude information. Here we show, for 16-spin CIM with Zeeman terms, the amplitude control increases the performance, particularly when Zeeman terms are competing against mutual coupling coefficients.'
 date: 2022-06-15
 venue: 'Nature Communications Physics'
 paperurl: 'https://doi.org/10.1038/s42005-022-00927-x'
 citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
-This paper is about the number 3. The number 4 is left for future work.
+A coherent Ising machine (CIM) is an open-dissipative Ising solver using optical pulses generated from a degenerate optical parametric oscillator as analog magnetizations. When solving real-world optimization problems with CIM, this solver has two difficulties: mutual coupling induced amplitude inhomogeneity and absence of natural way to implement Zeeman terms. For the approximate Gaussian formulation of CIMs with amplitude control feedback, we add artificial Zeemam terms using the target amplitude information. Here we show, for 16-spin CIM with Zeeman terms, the amplitude control increases the performance, particularly when Zeeman terms are competing against mutual coupling coefficients.
 
 [Download paper here](https://doi.org/10.1038/s42005-022-00927-x)
 
