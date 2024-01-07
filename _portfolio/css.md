@@ -1,6 +1,6 @@
 ---
 title: "Coherent Compressed Sensor"
-excerpt: "L0-Regularsied Compressed Sensing with Coherent Ising Machines <br/><img src='/images/gacs_Figure_6.png'>"
+excerpt: "L0-Regularsied Compressed Sensing with Coherent Ising Machines <br> <img src='/images/gacs_Figure_6.png'>"
 collection: portfolio
 ---
 

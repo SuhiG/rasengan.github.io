@@ -1,6 +1,6 @@
 ---
 title: "Coherent Ising Machines with Artificial Zeemans"
-excerpt: "Exploring an effective implementation scheme for artificial Zeeman terms in an Ising Hamiltonian for CIM simulations <br/><img src='/images/gac.webp'>"
+excerpt: "Exploring an effective implementation scheme for artificial Zeeman terms in an Ising Hamiltonian for CIM simulations <br> <img src='/images/gac.webp'>"
 collection: portfolio
 ---
 
