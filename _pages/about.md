@@ -12,6 +12,14 @@ redirect_from:
 
 **“Impossible only means that you haven’t found the solution yet.”** – *Anonymous*!SECTION
 
+======
+
+News
+
+[08-12-2023] Accepted for Atsumi International Foundation scholarship
+[17-11-2023] Poster accepted for Quantum Information Processing (QIP) 2024 conference.
+
+
 <!-- Hey guys! 
 
 
