@@ -14,8 +14,9 @@ redirect_from:
 
 ======
 
-News
+**News**
 
+[27-12-2023] Talk accepted for 第2回量子アニーリング及び関連技術に関する研究会 <br>
 [08-12-2023] Accepted for Atsumi International Foundation scholarship <br>
 [17-11-2023] Poster accepted for Quantum Information Processing (QIP) 2024 conference <br>
 [17-11-2023] Paper published in the Journal of Applied Physics <br>
