@@ -12,4 +12,4 @@ citation: 'Gunathilaka, M.D.S.H., Inui Y, Kako S, Yamamoto Y, Aonishi T. Mean-fi
 
 [Download paper here](https://doi.org/10.1063/5.0176248)
 
-Recommended citation: Gunathilaka, M.D.S.H., Inui Y, Kako S, Yamamoto Y, Aonishi T. Mean-field coherent Ising machines with artificial Zeeman terms. Journal of Applied Physics. 2023;134(23):234901..
+<!-- Recommended citation: Gunathilaka, M.D.S.H., Inui Y, Kako S, Yamamoto Y, Aonishi T. Mean-field coherent Ising machines with artificial Zeeman terms. Journal of Applied Physics. 2023;134(23):234901. -->
