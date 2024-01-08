@@ -21,17 +21,17 @@ My current research interest are,
 <br>
 **News**
 
-[<span style="color:red">[27-12-2023] text</span>] Talk accepted for [第2回量子アニーリング及び関連技術に関する研究会](https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html) <br>
-[<span style="color:red">[08-12-2023] text</span>] Accepted for [Atsumi International Foundation](https://www.aisf.or.jp/jp/) scholarship <br> 
-[<span style="color:red">[17-11-2023] text</span>] Poster accepted for [AQuantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en) conference <br>
-[<span style="color:red">[17-11-2023] text</span>] [Paper](https://doi.org/10.1063/5.0176248) published in the [Journal of Applied Physics](https://pubs.aip.org/aip/jap) <br>
-[<span style="color:red">[26-09-2023] text</span>] [Paper](https://doi.org/10.1038/s41598-023-43364-8) published in the journal, [Nature Scientific Reports](https://www.nature.com/srep/) <br>
-[<span style="color:red">[30-08-2023] text</span>] Mid-term evaluation for doctoral degree program - Day 2 <br>
-[<span style="color:red">[24-08-2023] text</span>] Mid-term evaluation for doctoral degree program - Day 1 <br>
-[<span style="color:red">[08-08-2023] text</span>] Poster presentation at the University of Tokyo for [StatPhys28](https://statphys28.org/index.html) <br>
-[<span style="color:red">[22-06-2023] text</span>] Talk and field visit at the NTT Basic Research Laboratories, Atsugi, Kanagawa <br>
-[<span style="color:red">[07-06-2023] text</span>] TokyoTech Student Ambassador Kick-off meeting <br>
-[<span style="color:red">[24-10-2022] text</span>] Poster presentation at the Stanford University for CNC22 <br>
-[<span style="color:red">[23-10-2023] text</span>] Field visit to the NTT Physics and Informatics Laboratories, Sunnyvale, Califronia <br>
-[<span style="color:red">[15-06-2022] text</span>] Paper published in the journal, Nature Communications Physics <br>
+<span style="color:red">[27-12-2023]</span> Talk accepted for [第2回量子アニーリング及び関連技術に関する研究会](https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html) <br>
+<span style="color:red">[08-12-2023]</span> Accepted for [Atsumi International Foundation](https://www.aisf.or.jp/jp/) scholarship <br> 
+<span style="color:red">[17-11-2023]</span> Poster accepted for [AQuantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en) conference <br>
+<span style="color:red">[17-11-2023]</span> [Paper](https://doi.org/10.1063/5.0176248) published in the [Journal of Applied Physics](https://pubs.aip.org/aip/jap) <br>
+<span style="color:red">[26-09-2023]</span> [Paper](https://doi.org/10.1038/s41598-023-43364-8) published in the journal, [Nature Scientific Reports](https://www.nature.com/srep/) <br>
+<span style="color:red">[30-08-2023]</span> Mid-term evaluation for doctoral degree program - Day 2 <br>
+<span style="color:red">[24-08-2023]</span> Mid-term evaluation for doctoral degree program - Day 1 <br>
+<span style="color:red">[08-08-2023]</span> Poster presentation at the University of Tokyo for [StatPhys28](https://statphys28.org/index.html) <br>
+<span style="color:red">[22-06-2023]</span> Talk and field visit at the NTT Basic Research Laboratories, Atsugi, Kanagawa <br>
+<span style="color:red">[07-06-2023]</span> TokyoTech Student Ambassador Kick-off meeting <br>
+<span style="color:red">[24-10-2022]</span> Poster presentation at the Stanford University for CNC22 <br>
+<span style="color:red">[23-10-2023]</span> Field visit to the NTT Physics and Informatics Laboratories, Sunnyvale, Califronia <br>
+<span style="color:red">[15-06-2022]</span> Paper published in the journal, Nature Communications Physics <br>
 
