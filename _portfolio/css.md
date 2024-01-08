@@ -94,7 +94,7 @@ $$
 $$
         \begin{equation}
         \label{WSDE0}
-                \frac{d}{dt}c_r = \left[-1 + p - {\left(c_r^2 + s_r^2\right)} \right]c_r + \widetilde{K}\left(\dfrac{dc_{r}}{dt}\right)_{inj,r} +\\ {g}\sqrt{\left(c_r^2 + s_r^2\right) + \frac{1}{2}} W_{r,1},
+                \frac{d}{dt}c_r = \left[-1 + p - {\left(c_r^2 + s_r^2\right)} \right]c_r + \widetilde{K}\left(\dfrac{dc_{r}}{dt}\right)_{inj,r} + {g^2}\sqrt{\left(c_r^2 + s_r^2\right) + \frac{1}{2}} W_{r,1},
         \end{equation}
 $$
  </div>
@@ -103,7 +103,7 @@ $$
 $$
         \begin{equation}
         \label{WSDE1}
-                \frac{d}{dt}s_r = \left[-1 - p - {\left(c_r^2 + s_r^2\right)}\right]s_r + {g}\sqrt{\left(c_r^2 + s_r^2\right) + \frac{1}{2}} W_{r,2} .
+                \frac{d}{dt}s_r = \left[-1 - p - {\left(c_r^2 + s_r^2\right)}\right]s_r + {g^2}\sqrt{\left(c_r^2 + s_r^2\right) + \frac{1}{2}} W_{r,2} .
         \end{equation}
 $$
 </div>
@@ -115,7 +115,7 @@ $$
 $$
         \begin{equation}
         \label{GACSlocalfieldmain}
-            \left(\dfrac{d\mu_{r}}{dt}\right)_{inj,r} = je_r\left( R_r h_r - \dfrac{\eta^2}{\mathcolorbox{green}{2}}\sqrt{\dfrac{\tau}{g^2}}\right),
+            \left(\dfrac{d\mu_{r}}{dt}\right)_{inj,r} = je_r\left( R_r h_r - \dfrac{\eta^2}{{2}}\sqrt{\dfrac{\tau}{g^2}}\right),
         \end{equation}
 $$
  </div>
@@ -158,7 +158,6 @@ $$
  
  <div style="text-align: center"> 
 $$
-        \end{equation}
         \begin{equation}
         \label{GACsCIM2}
                 \dfrac{d}{dt}V_{r} = -2 \left(1 -p + j\right)V_{r} - 6g^2\mu_{r}^2V_{r} + 1 + j + 2g^2\mu_{r}^2 - 2j\left(V_{r} -\frac{1}{2}\right)^2 .
@@ -167,12 +166,11 @@ $$
  </div>
  
 
-> **Closed-Loop CCS (Positive-_P_)**
+> **Closed-Loop CCS (Positive-$$\textit{P}$$)**
 
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \label{GACSlocalfieldmain}
             \left(\dfrac{d\mu_{r}}{dt}\right)_{inj,r} = je_r\left( R_rh_r - \dfrac{\eta^2}{\mathcolorbox{green}{2}}\sqrt{\dfrac{\tau}{g^2}}\right),
         \end{equation}
 $$
@@ -181,7 +179,6 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \label{GaussianEC5}
                 {\dfrac{d}{dt}e_{r} = -\beta\left(g^2\tilde{\mu}_{r}^2 - \tau\right)e_{r}},
         \end{equation}
 $$
@@ -190,7 +187,6 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \label{GACsCIM3}
                 \tilde{\mu}_{r} = \mu_{r} + \sqrt{\frac{1}{4j}}W_{R,r},
         \end{equation}
 $$
@@ -199,7 +195,6 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \label{localfieldGACS}
             h_r = -{\sum_{r' = 1 (\neq r)}^{N}\sum_{k = 1}^{M}} A_{r}^{k}A_{r'}^{k}R_{r'}\dfrac{1}{2}\left(\tilde{\mu}_{r'} + \sqrt{\dfrac{\tau}{g^2}} \right) {+} \sum_{k = 1}^{M} \sqrt{\dfrac{\tau}{g^2}}{A_{r}^{k}y^{k}},
         \end{equation}
 $$
@@ -208,7 +203,6 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \label{ppGACsCIM1}
                 \dfrac{d}{dt}\mu_{r} = - \left(1 -p + j\right)\mu_{r} - {g^2\mu_{r}\left(\mu_{r}^{2} + 2n_r + m_r\right)} + \sqrt{j}\left(m_r + n_r\right)W_{R,r}\\ + {{K}}\left(\frac{d\mu_{r}}{dt}\right)_{inj,r},
         \end{equation}
 $$
@@ -217,7 +211,6 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \label{ppGACsCIM2}
                 {\dfrac{d}{dt}n_{r} = -2 \left(1 + j\right)n_r + 2pm_r - 2g^{2}\mu_{r}^2\left(2n_r + m_r\right)} {- j\left(m_r + n_r\right)^{2}},
         \end{equation}
 $$
@@ -226,7 +219,6 @@ $$
 <div style="text-align: center"> 
 $$ 
         \begin{equation}
-        \label{ppGACsCIM3}
                 {\dfrac{d}{dt}m_{r} = -2 \left(1 + j\right)m_r + 2p n_r - 2g^{2}\mu_{r}^{2}\left(2m_r + n_r\right) + } p\\ -  g^{2}\left(\mu_{r}^{2} + m_r\right) - j\left(m_r + n_r\right)^{2} .
         \end{equation}
 $$
