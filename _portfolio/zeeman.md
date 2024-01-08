@@ -60,7 +60,7 @@ $$
  </div>
 
 <div style="text-align: justify"> 
-Here, $I_{inj,r}$ is the injection field for the OPO pulse $r$. $x_r$ states the normalized in-phase amplitude of the OPO pulse $r$ while   $J_{rr'}$ and $h_{r}$ are the coupling weight and the Zeeman term described above. $\zeta$ is the adjustment parameter for the strength of the Zeeman term. Here $j$ represents the feedback strength. [paper 1](https://doi.org/10.3390/e18100365) [paper 2](https://doi.org/10.1103/PhysRevApplied.13.054059) </div> 
+Here, $I_{inj,r}$ is the injection field for the OPO pulse $r$. $x_r$ states the normalized in-phase amplitude of the OPO pulse $r$ while   $J_{rr'}$ and $h_{r}$ are the coupling weight and the Zeeman term described above. $\zeta$ is the adjustment parameter for the strength of the Zeeman term. Here $j$ represents the feedback strength.  </div>  [paper 1](https://doi.org/10.3390/e18100365) [paper 2](https://doi.org/10.1103/PhysRevApplied.13.054059) <br>
 
 > **Auxiliary Spin**
 
@@ -77,17 +77,16 @@ $$
  </div>
 
 <div style="text-align: justify"> 
-where $x_{N+1}$ is an auxiliary amplitude to match the size of the Zeeman term to the interaction term and to transform the Zeeman term to an additional interaction term. As indicated in eq. (\ref{auxamp}), the injection field is reformulated only by the interaction term given in $J_{rr'} \in \mathbb{R}^{(N+1) \times (N+1)}$ and $x \in \mathbb{R}^{(N+1)}$. The extended coupling matrix can be constructed by giving additional column and row vectors as $J_{r N+1} = \zeta h_{r}$ and $J_{N+1 r’} = \zeta h_{r’}$, and taking $J_{N+1,N+1}=0$. Currently, CIMs only support two-body interactions, which makes this method effective. [paper 1](https://arxiv.org/abs/arXiv:2105.10535)  </div>  <br>
+where $x_{N+1}$ is an auxiliary amplitude to match the size of the Zeeman term to the interaction term and to transform the Zeeman term to an additional interaction term. As indicated in eq. (\ref{auxamp}), the injection field is reformulated only by the interaction term given in $J_{rr'} \in \mathbb{R}^{(N+1) \times (N+1)}$ and $x \in \mathbb{R}^{(N+1)}$. The extended coupling matrix can be constructed by giving additional column and row vectors as $J_{r N+1} = \zeta h_{r}$ and $J_{N+1 r’} = \zeta h_{r’}$, and taking $J_{N+1,N+1}=0$. Currently, CIMs only support two-body interactions, which makes this method effective. </div> [paper 1](https://arxiv.org/abs/arXiv:2105.10535)  <br>
 
 **Chaotic Amplitude Control [Method proposed in this project]**
 
 <div style="text-align: justify"> 
-The realisation of Zeeman term using the [Chaotic Amplitude method](https://doi.org/10.1103/PhysRevLett.122.040607) was first proposed in this [paper](https://doi.org/10.1038/s42005-022-00927-x) by Inui $\textit{et al}$. CAC is a technique that was proposed by Leleu $\textit{et al.,}$ to overcome the problem of amplitude inhomogeneity in CIM. With CAC, the amplitudes of OPO pulses are forced to equalize to a set target value while forcefully correcting inhomogeneities resulting in a chaotic behavior which may result in escaping from local minima in the energy landscape. By scaling the Zeeman terms with target amplitude to match the interaction term, Inui \textit{et al.,} proposed an efficient approach for implementing Zeeman terms in CIM as follows.   </div> 
+The realisation of Zeeman term using the Chaotic Amplitude method was first proposed by Inui $\textit{et al}$. CAC is a technique that was proposed by Leleu $\textit{et al.,}$ to overcome the problem of amplitude inhomogeneity in CIM. With CAC, the amplitudes of OPO pulses are forced to equalize to a set target value while forcefully correcting inhomogeneities resulting in a chaotic behavior which may result in escaping from local minima in the energy landscape. By scaling the Zeeman terms with target amplitude to match the interaction term, Inui \textit{et al.,} proposed an efficient approach for implementing Zeeman terms in CIM as follows. </div> [Chaotic Amplitude method](https://doi.org/10.1103/PhysRevLett.122.040607) [Inui](https://doi.org/10.1038/s42005-022-00927-x) <br>
 
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \centering
         \label{mfeq3}
                 \dfrac{d}{dt}e_{r} = -\beta\left({x}_{r}^2 - \tau\right)e_{r} ,
         \end{equation}
@@ -97,7 +96,6 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-        \centering
         \label{mfeq4}
                 I_{inj,r} = je_{r}\left[\sum_{r' = 1}^N J_{rr'}{x}_{r'}  +  \zeta h_{r}\sqrt{\tau}\right] .
         \end{equation}
