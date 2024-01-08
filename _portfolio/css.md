@@ -13,7 +13,8 @@ collection: portfolio
 
 **Project Outline**
 
-Intial approach for the Coherent Compressed Sensor was introduced by Prof. Toru Aonishi at the University of Tokyo ([Patent](https://patents.google.com/patent/WO2022178173A1/en?q=(L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES)&oq=L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES+)). <br>
+<div style="text-align: justify"> 
+Intial approach for the Coherent Compressed Sensor was introduced by Prof. Toru Aonishi at the University of Tokyo ([Patent](https://patents.google.com/patent/WO2022178173A1/en?q=(L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES)&oq=L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES+)). </div> <br>
 
 Considering the below equation, <br>
 <div style="text-align: center"> 
@@ -25,9 +26,12 @@ $$
 $$
  </div>
  
-an observed signal $y \in \mathbb{R}^M$, an observation matrix $A \in \mathbb{R}^{M\times N}$, and a source signal $x \in \mathbb{R}^N$ can be stated. In CS, the ratio of the number of non-zero entries in $x$ to $N$ is defined as the sparseness $a$, and the ratio of $M$ to $N$ is defined as the compression ratio $\alpha$. If we consider where $p=1$, the problem becomes a $l_1$-norm CS problem which is convex and has many efficeint algorithms avaialble (FISTA, ISTA, etc.). However $p=0$ is non-convex and it is a combinatorial optimisation problem. 
+<div style="text-align: justify"> 
+an observed signal $y \in \mathbb{R}^M$, an observation matrix $A \in \mathbb{R}^{M\times N}$, and a source signal $x \in \mathbb{R}^N$ can be stated. In CS, the ratio of the number of non-zero entries in $x$ to $N$ is defined as the sparseness $a$, and the ratio of $M$ to $N$ is defined as the compression ratio $\alpha$. If we consider where $p=1$, the problem becomes a $l_1$-norm CS problem which is convex and has many efficeint algorithms avaialble (FISTA, ISTA, etc.). However $p=0$ is non-convex and it is a combinatorial optimisation problem.  </div> <br>
 
-Numerous attempts have been made to overcome the issue in $l_0$-norm CS optimisations. $l_0$-norm CS can be formulated as a two-fold optimisation.
+<div style="text-align: justify"> 
+Numerous attempts have been made to overcome the issue in $l_0$-norm CS optimisations. $l_0$-norm CS can be formulated as a two-fold optimisation. </div> <br>
+
 <div style="text-align: center"> 
 $$
         \begin{equation}
@@ -37,10 +41,12 @@ $$
 $$
  </div>
 
+<div style="text-align: justify"> 
 Here $R \in \mathbb{R}^N$ and $\sigma \in \left(0,1\right)^N$ correspond to the source signal and support vector, respectively. 
-Especially, each entry in the support vector taking either 0 or 1 represents whether each entry in the source signal is zero or non-zero. The condition $\|\sigma\|_{0} \le \Omega$ is a sparsity-inducing prior for constraining the number of non-zero entries to be $\Omega$. Therefore, the optimisation with respect to $\sigma$ can be regarded as a quadratic-constrained binary optimisation problem to find a ground state of a two-state Potts Hamiltonian.
+Especially, each entry in the support vector taking either 0 or 1 represents whether each entry in the source signal is zero or non-zero. The condition $\|\sigma\|_{0} \le \Omega$ is a sparsity-inducing prior for constraining the number of non-zero entries to be $\Omega$. Therefore, the optimisation with respect to $\sigma$ can be regarded as a quadratic-constrained binary optimisation problem to find a ground state of a two-state Potts Hamiltonian.  </div> <br>
 
-The $l_0$-norm CS implemented with the open-loop quantum-classical hybrid system by Aonishi $\textit{et al}.$, is given as a regularisation form as follows 
+<div style="text-align: justify"> 
+The $l_0$-norm CS implemented with the open-loop quantum-classical hybrid system by Aonishi $\textit{et al}.$, is given as a regularisation form as follows.  </div> <br>
 
 <div style="text-align: center"> 
 $$
@@ -62,12 +68,13 @@ $$
 $$
  </div>
 
-where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ and an element $\sigma_r$ in $\sigma$. In the quantum-classical hybrid approach to conducting $l_0$-regularised CS, $\sigma$ is optimised by the CIM while $R$ is optimised by a Classical Digital Processor (CDP).
+<div style="text-align: justify"> 
+where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ and an element $\sigma_r$ in $\sigma$. In the quantum-classical hybrid approach to conducting $l_0$-regularised CS, $\sigma$ is optimised by the CIM while $R$ is optimised by a Classical Digital Processor (CDP). </div> <br>
 
 <!-- <p>
     <img src="https://github.com/SuhiG/rasengan.github.io/blob/master/images/olccsarch.jpg" width="220" height="240" /> <br>
 </p>  -->
-[Quantum-Classical Hybrid architecture](https://github.com/SuhiG/rasengan.github.io/blob/master/images/olccsarch.jpg) <br>
+[Quantum-Classical Hybrid architecture](/images/olccsarch.jpg) <br>
 
 **CCS versions** <br>
 
@@ -77,7 +84,7 @@ where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ 
 $$
         \begin{equation}
         \label{localfieldmain}
-            \left(\dfrac{dc_{r}}{dt}\right)_{inj,r} = \left(|h_r| - \eta\right).
+            \left(\dfrac{dc_{r}}{dt}\right)_{inj,r} = \left(|h_r| - \eta\right),
         \end{equation}
 $$
  </div>
