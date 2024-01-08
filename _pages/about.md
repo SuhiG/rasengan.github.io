@@ -23,7 +23,7 @@ My current research interest are,
 
 <span style="color:red">[27-12-2023]</span> Talk accepted for [第2回量子アニーリング及び関連技術に関する研究会](https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html) <br>
 <span style="color:red">[08-12-2023]</span> Accepted for [Atsumi International Foundation](https://www.aisf.or.jp/jp/) scholarship <br> 
-<span style="color:red">[17-11-2023]</span> Poster accepted for [AQuantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en) conference <br>
+<span style="color:red">[17-11-2023]</span> Poster accepted for [Quantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en) conference <br>
 <span style="color:red">[17-11-2023]</span> [Paper](https://doi.org/10.1063/5.0176248) published in the [Journal of Applied Physics](https://pubs.aip.org/aip/jap) <br>
 <span style="color:red">[26-09-2023]</span> [Paper](https://doi.org/10.1038/s41598-023-43364-8) published in the journal, [Nature Scientific Reports](https://www.nature.com/srep/) <br>
 <span style="color:red">[30-08-2023]</span> Mid-term evaluation for doctoral degree program - Day 2 <br>
