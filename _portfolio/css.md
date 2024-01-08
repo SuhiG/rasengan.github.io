@@ -9,9 +9,9 @@ collection: portfolio
   type="text/javascript">
 </script>
 
-<div style="text-align: justify"> It has been demonstrated that Coherent Ising Machines (CIM) are capable of solving combinatorial optimisation problems (COP). It has not, however, been used in practical applications. The goal of this project is to analyze CIM's capability to solve a famous COP called L0-Regularised Compressed Sensing (L0RBCS). In compressed sensing (CS), highly downsampled measurements are used to reconstruct a high-dimensional signal. This technique is very useful in a wide range of fields, including astronomy, radar technology, and Magnetic Resonance Imaging (MRI). Our objective here is to simulate large-scale CS problem instances (which include both random and real-world problem instances) using CIM and propose an algorithm that can outperform the most commonly used LASSO algorithm. </div>
+<div style="text-align: justify"> It has been demonstrated that Coherent Ising Machines (CIM) are capable of solving combinatorial optimisation problems (COP). It has not, however, been used in practical applications. The goal of this project is to analyze CIM's capability to solve a famous COP called L0-Regularised Compressed Sensing (L0RBCS). In compressed sensing (CS), highly downsampled measurements are used to reconstruct a high-dimensional signal. This technique is very useful in a wide range of fields, including astronomy, radar technology, and Magnetic Resonance Imaging (MRI). Our objective here is to simulate large-scale CS problem instances (which include both random and real-world problem instances) using CIM and propose an algorithm that can outperform the most commonly used LASSO algorithm. </div><br>
 
-**Project Outline**
+**Method Outline**
 
 <div style="text-align: justify"> 
 Intial approach for the Coherent Compressed Sensor was introduced by Prof. Toru Aonishi at the University of Tokyo </div> ([Patent](https://patents.google.com/patent/WO2022178173A1/en?q=(L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES)&oq=L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES+)). 
@@ -76,7 +76,7 @@ where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ 
 </p>  -->
 <!-- [Quantum-Classical Hybrid architecture](https://content.cld.iop.org/journals/2058-9565/7/3/035013/revision2/qstac6f19f1_hr.jpg?Expires=1705317909&Signature=rto-DnVSk9VZHiPo0ZFiojqay-sagScRkQdGYwo9NOxN3cPrx2DKiRfOjT-7yvkTcDo9YKVVtvAjwbYTOncfaViZZ4XzODg905boCVWPLrqmwQp3jJ31f1UiwUsibKlzLZpnMwwM7ibKcpF5hM79Pjd63Jg36MhKP~GygUCCyyJUWRd1L0~QKq5F6uB2eN029BCwUsBv5dXGUCkHid6c~2rjNP~f6ldghJago1k2qeSxHcx7Qu4vSZtjPuD21cXpSmvs0x3LrT6mGhezD1N0T4G2NZ9A43QYZaBfcvSaWKonX7cqYJdmDx9qd6pDdDcGfDigCWDhpWrGydFOP-XAxQ__&Key-Pair-Id=KL1D8TIY3N7T8) <br> -->
 
-[uantum-Classical Hybrid architecture](https://content.cld.iop.org/journals/2058-9565/7/3/035013/revision2/qstac6f19f1_hr.jpg?Expires=1705317909&Signature=rto-DnVSk9VZHiPo0ZFiojqay-sagScRkQdGYwo9NOxN3cPrx2DKiRfOjT-7yvkTcDo9YKVVtvAjwbYTOncfaViZZ4XzODg905boCVWPLrqmwQp3jJ31f1UiwUsibKlzLZpnMwwM7ibKcpF5hM79Pjd63Jg36MhKP~GygUCCyyJUWRd1L0~QKq5F6uB2eN029BCwUsBv5dXGUCkHid6c~2rjNP~f6ldghJago1k2qeSxHcx7Qu4vSZtjPuD21cXpSmvs0x3LrT6mGhezD1N0T4G2NZ9A43QYZaBfcvSaWKonX7cqYJdmDx9qd6pDdDcGfDigCWDhpWrGydFOP-XAxQ__&Key-Pair-Id=KL1D8TIY3N7T8){:target="_blank"}
+[Quantum-Classical Hybrid architecture](https://content.cld.iop.org/journals/2058-9565/7/3/035013/revision2/qstac6f19f1_hr.jpg?Expires=1705317909&Signature=rto-DnVSk9VZHiPo0ZFiojqay-sagScRkQdGYwo9NOxN3cPrx2DKiRfOjT-7yvkTcDo9YKVVtvAjwbYTOncfaViZZ4XzODg905boCVWPLrqmwQp3jJ31f1UiwUsibKlzLZpnMwwM7ibKcpF5hM79Pjd63Jg36MhKP~GygUCCyyJUWRd1L0~QKq5F6uB2eN029BCwUsBv5dXGUCkHid6c~2rjNP~f6ldghJago1k2qeSxHcx7Qu4vSZtjPuD21cXpSmvs0x3LrT6mGhezD1N0T4G2NZ9A43QYZaBfcvSaWKonX7cqYJdmDx9qd6pDdDcGfDigCWDhpWrGydFOP-XAxQ__&Key-Pair-Id=KL1D8TIY3N7T8){:target="_blank"}
 
 **CCS versions** <br>
 
