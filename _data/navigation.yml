@@ -10,17 +10,17 @@ main:
   - title: "Talks & Presentations"
     url: /talks/    
 
-  # - title: "Teaching"
+  # - title: "Blog Posts"
   #   url: /teaching/    
         
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
-  - title: "CV"
-    url: https://suhig.github.io/
+  - title: "Blog Posts"
+    url: /year-archive/
     
   # - title: "Guide"
   #   url: /markdown/
 
   - title: "TokyoTech blog"
     url: https://discover.titech.ac.jp/ambassador/sudeera-gunathilaka/
+    
+  - title: "CV"
+    url: https://suhig.github.io/

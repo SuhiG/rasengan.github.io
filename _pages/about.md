@@ -9,7 +9,7 @@ redirect_from:
 ---
 **“Impossible only means that you haven’t found the solution yet.”** – *Anonymous*
 
-I am a 3rd year doctoral candidate at the tokyo institute of Technology. 
+I am a 3rd year doctoral candidate at the Tokyo Institute of Technology. 
 My current research interest are,
 - Coherent Computing
 - Qauntum Computing
