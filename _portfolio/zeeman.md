@@ -79,10 +79,10 @@ $$
 <div style="text-align: justify"> 
 where $x_{N+1}$ is an auxiliary amplitude to match the size of the Zeeman term to the interaction term and to transform the Zeeman term to an additional interaction term. As indicated in eq. (\ref{auxamp}), the injection field is reformulated only by the interaction term given in $J_{rr'} \in \mathbb{R}^{(N+1) \times (N+1)}$ and $x \in \mathbb{R}^{(N+1)}$. The extended coupling matrix can be constructed by giving additional column and row vectors as $J_{r N+1} = \zeta h_{r}$ and $J_{N+1 r’} = \zeta h_{r’}$, and taking $J_{N+1,N+1}=0$. Currently, CIMs only support two-body interactions, which makes this method effective. </div> [paper 1](https://arxiv.org/abs/arXiv:2105.10535)  <br>
 
-**Chaotic Amplitude Control [Method proposed in this project]**
+**Chaotic Amplitude Control <span style="color:red">[Method proposed in this project]</span>**
 
 <div style="text-align: justify"> 
-The realisation of Zeeman term using the Chaotic Amplitude method was first proposed by Inui $\textit{et al}$. CAC is a technique that was proposed by Leleu $\textit{et al.,}$ to overcome the problem of amplitude inhomogeneity in CIM. With CAC, the amplitudes of OPO pulses are forced to equalize to a set target value while forcefully correcting inhomogeneities resulting in a chaotic behavior which may result in escaping from local minima in the energy landscape. By scaling the Zeeman terms with target amplitude to match the interaction term, Inui \textit{et al.,} proposed an efficient approach for implementing Zeeman terms in CIM as follows. </div> [Chaotic Amplitude method](https://doi.org/10.1103/PhysRevLett.122.040607) [Inui](https://doi.org/10.1038/s42005-022-00927-x) <br>
+The realisation of Zeeman term using the Chaotic Amplitude method was first proposed by Inui $\textit{et al}$. CAC is a technique that was proposed by Leleu $\textit{et al.,}$ to overcome the problem of amplitude inhomogeneity in CIM. With CAC, the amplitudes of OPO pulses are forced to equalize to a set target value while forcefully correcting inhomogeneities resulting in a chaotic behavior which may result in escaping from local minima in the energy landscape. By scaling the Zeeman terms with target amplitude to match the interaction term, Inui $\textit{et al.,}$ proposed an efficient approach for implementing Zeeman terms in CIM as follows. </div> [Chaotic Amplitude method](https://doi.org/10.1103/PhysRevLett.122.040607) [Inui](https://doi.org/10.1038/s42005-022-00927-x) <br>
 
 <div style="text-align: center"> 
 $$
@@ -104,6 +104,8 @@ $$
 
 <div style="text-align: justify"> 
 Here the target amplitude is indicated as $\tau$. ${x}$ is the in-phase amplitude of the OPO pulse, and $e_r$ is the auxiliary variable for the error feedback in the CAC feedback loop. Using two CIM models expressed as the Wigner stochastic differential equation (W-SDE) and the Positive-$P$ stochastic differential equation (P-P-SDE), a high success probability of finding the ground state of a Sherrington-Kirkpatrick (SK) Hamiltonian with a random external field has been found as a result of implementing the Zeeman term with CAC.  </div>   <br>
+
+[Result 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42005-022-00927-x/MediaObjects/42005_2022_927_Fig5_HTML.png?as=webp){:target="_blank"} [Result 2](https://aipp.silverchair-cdn.com/aipp/content_public/journal/jap/134/23/10.1063_5.0176248/1/234901_1_5.0176248.figures.online.f4.jpeg?Expires=1707740524&Signature=cyHzNpfyRXOtCwYDre6KsPkPtAH9QDGHmCPNBjkWW7NJSh6E35qQ5N~AuaQvTAWYspHFgCSOKQou46pXallX34pj7pF3eTmgFh~~-kx11Ii1eYJMKJr~j~a-DG62BzUDofZtpo-LQh9U6t0Bp3m0e1TrEdKKvXzuD-O5YzMCvZd0gA9-GER6DyNNC3K2SXzqEIFWjHOLMzzG-oleW0rIdl6AqMSCClEoaAKGLZDFb-ExWZFiiLylJfAF~SXLz-uzX3K90edWS5aMLF8sWJXRpzkAgtUtpmxXX~O97TVlSBpXfRXe7tCguXQ0k09nXcQJqAXxbw5fm8kl90RrN-nlvA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){:target="_blank"}  <br>
 
 **Related Publications** <br>
 
