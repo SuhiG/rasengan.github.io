@@ -64,9 +64,10 @@ $$
 
 where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ and an element $\sigma_r$ in $\sigma$. In the quantum-classical hybrid approach to conducting $l_0$-regularised CS, $\sigma$ is optimised by the CIM while $R$ is optimised by a Classical Digital Processor (CDP).
 
-<p>
+<!-- <p>
     <img src="https://github.com/SuhiG/rasengan.github.io/blob/master/images/olccsarch.jpg" width="220" height="240" /> <br>
-</p> 
+</p>  -->
+[Quantum-Classical Hybrid architecture](https://github.com/SuhiG/rasengan.github.io/blob/master/images/olccsarch.jpg) <br>
 
 **CCS versions** <br>
 
@@ -171,7 +172,7 @@ $$
 <div style="text-align: center"> 
 $$
         \begin{equation}
-            \left(\dfrac{d\mu_{r}}{dt}\right)_{inj,r} = je_r\left( R_rh_r - \dfrac{\eta^2}{\mathcolorbox{green}{2}}\sqrt{\dfrac{\tau}{g^2}}\right),
+            \left(\dfrac{d\mu_{r}}{dt}\right)_{inj,r} = je_r\left( R_rh_r - \dfrac{\eta^2}{{2}}\sqrt{\dfrac{\tau}{g^2}}\right),
         \end{equation}
 $$
  </div>
