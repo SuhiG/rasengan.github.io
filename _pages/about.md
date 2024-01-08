@@ -26,5 +26,12 @@ My current research interest are,
 [17-11-2023] Poster accepted for Quantum Information Processing (QIP) 2024 conference <br>
 [17-11-2023] Paper published in the Journal of Applied Physics <br>
 [26-09-2023] Paper published in the journal, Nature Scientific Reports <br>
+[30-08-2023] Mid-term evaluation for doctoral degree program - Day 2 <br>
+[24-08-2023] Mid-term evaluation for doctoral degree program - Day 1 <br>
+[08-08-2023] Poster presentation at the University of Tokyo for StatPhys28 <br>
+[22-06-2023] Talk and field visit at the NTT Basic Research Laboratories, Atsugi, Kanagawa <br>
+[07-06-2023] TokyoTech Student Ambassador Kick-off meeting <br>
+[24-10-2022] Poster presentation at the Stanford University for CNC22 <br>
+[23-10-2023] Field visit to the NTT Physics and Informatics Laboratories, Sunnyvale, Califronia <br>
 [15-06-2022] Paper published in the journal, Nature Communications Physics <br>
 
