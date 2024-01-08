@@ -44,10 +44,10 @@ The l_0$-norm CS implemented with the open-loop quantum-classical hybrid system 
 
 <div style="text-align: center"> 
 $$
-\begin{equation}
-\label{doublel0}
-    (R, \sigma) = \operatorname*{argmin}_{\sigma \in \{0,1\}^{N}}\operatorname*{argmin}_{R\in\mathbb{R}^{N}} \left(\frac{1}{2} \| y - A(\sigma \circ R)\|_{2}^{2} + {\lambda} \|\sigma\|_{0}\right) .
-\end{equation}
+        \begin{equation}
+        \label{doublel0}
+            (R, \sigma) = \operatorname*{argmin}_{\sigma \in \{0,1\}^{N}}\operatorname*{argmin}_{R\in\mathbb{R}^{N}} \left(\frac{1}{2} \| y - A(\sigma \circ R)\|_{2}^{2} + {\lambda} \|\sigma\|_{0}\right) .
+        \end{equation}
 $$
  </div>
 
@@ -55,16 +55,16 @@ The element-wise representation of the above equation gives the following Hamilt
 
 <div style="text-align: center"> 
 $$
-\begin{equation}
-\label{l0Hamiltonian}
-    \mathbcal{H} = \sum_{r<r'}^{N}\sum_{k = 1}^{M} A_{r}^{k}A_{r'}^{k}R_{r}R_{r'}\sigma_{r}\sigma_{r'} - \sum_{r=1}^{N}\sum_{k =1}^{M} y^{k}A_{r}^{k}R_{r}\sigma_{r} + {\lambda} \sum_{r = 1}^{N} \sigma_r , 
-\end{equation}
+        \begin{equation}
+        \label{l0Hamiltonian}
+            {H} = \sum_{r<r'}^{N}\sum_{k = 1}^{M} A_{r}^{k}A_{r'}^{k}R_{r}R_{r'}\sigma_{r}\sigma_{r'} - \sum_{r=1}^{N}\sum_{k =1}^{M} y^{k}A_{r}^{k}R_{r}\sigma_{r} + {\lambda} \sum_{r = 1}^{N} \sigma_r , 
+        \end{equation}
 $$
  </div>
 
 where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ and an element $\sigma_r$ in $\sigma$. In the quantum-classical hybrid approach to conducting $l_0$-regularised CS, $\sigma$ is optimised by the CIM while $R$ is optimised by a Classical Digital Processor (CDP).
 
-![MHybrid System outline](/img/olccsarch.jpg)
+(/img/olccsarch.jpg)
 
  
 **Related Publications** <br>
