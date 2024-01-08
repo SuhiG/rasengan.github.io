@@ -14,7 +14,7 @@ collection: portfolio
 **Method Outline**
 
 <div style="text-align: justify"> 
-Intial approach for the Coherent Compressed Sensor was introduced by Prof. Toru Aonishi at the University of Tokyo </div> ([Patent](https://patents.google.com/patent/WO2022178173A1/en?q=(L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES)&oq=L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES+)). 
+Intial approach for the Coherent Compressed Sensor was introduced by Prof. Toru Aonishi at the University of Tokyo </div> ([Patent](https://patents.google.com/patent/WO2022178173A1/en?q=(L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES)&oq=L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES+)){:target="_blank"}. 
 
 Considering the below equation, <br>
 <div style="text-align: center"> 
@@ -80,7 +80,7 @@ where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ 
 
 **CCS versions** <br>
 
-> **Open-Loop CCS [paper](https://iopscience.iop.org/article/10.1088/2058-9565/ac6f19)**
+> **Open-Loop CCS [paper](https://iopscience.iop.org/article/10.1088/2058-9565/ac6f19){:target="_blank"}**
 
 <div style="text-align: left"> 
 $$
@@ -119,7 +119,7 @@ $$
 </div>
  
 
-> **Closed-Loop CCS (truncated-Wigner) [paper](https://doi.org/10.1038/s41598-023-43364-8)**
+> **Closed-Loop CCS (truncated-Wigner) [paper](https://doi.org/10.1038/s41598-023-43364-8){:target="_blank"}**
 
 <div style="text-align: left"> 
 $$
@@ -176,7 +176,7 @@ $$
  </div>
  
 
-> **Closed-Loop CCS (Positive-$$\textit{P}$$) [paper](https://doi.org/10.1038/s41598-023-43364-8)**
+> **Closed-Loop CCS (Positive-$$\textit{P}$$) [paper](https://doi.org/10.1038/s41598-023-43364-8){:target="_blank"}**
 
 <div style="text-align: left"> 
 $$
@@ -239,7 +239,7 @@ $$
 
 **Related Publications** <br>
 
-[OL-CIM-CDP](https://iopscience.iop.org/article/10.1088/2058-9565/ac6f19) [CAC-CIM-CDP](https://doi.org/10.1038/s41598-023-43364-8)<br>
-[Related code here](/404.html)
+[OL-CIM-CDP](https://iopscience.iop.org/article/10.1088/2058-9565/ac6f19){:target="_blank"}  [CAC-CIM-CDP](https://doi.org/10.1038/s41598-023-43364-8){:target="_blank"} <br>
+[Related code here](/404.html){:target="_blank"} 
 
 <!-- <img src="/images/gacs_Figure_6.png" alt="gacs" style="height: 500px; width:300px;"/> -->
