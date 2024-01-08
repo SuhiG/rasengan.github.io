@@ -16,13 +16,17 @@ collection: portfolio
 Intial approach for the Coherent Compressed Sensor was introduced by Prof. Toru Aonishi at the University of Tokyo ([Patent](https://patents.google.com/patent/WO2022178173A1/en?q=(L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES)&oq=L0+REGULARIZATION-BASED+COMPRESSED+SENSING+SYSTEM+AND+METHOD+WITH+COHERENT+ISING+MACHINES+)). <br>
 
 Considering the below equation, <br>
+<div style="text-align: center"> 
 $$
-\begin{equation}
-\label{l0init2}
-    \hat{x} = \operatorname*{argmin}_{x \in \mathbb{R}^N}\|x\|_{p} \ \ subject \ to \ y = Ax .
-\end{equation}
+        \begin{equation}
+        \label{l0init2}
+            \hat{x} = \operatorname*{argmin}_{x \in \mathbb{R}^N}\|x\|_{p} \ \ subject \ to \ y = Ax ,
+        \end{equation}
 $$
-
+ </div> <br>
+ 
+an observed signal $y \in \mathbb{R}^M$, an observation matrix $A \in \mathbb{R}^{M\times N}$, and a source signal $x \in \mathbb{R}^N$ can be stated.
+ 
 **Related Publications** <br>
 
 [CAC-CIM-CDP](https://doi.org/10.1038/s41598-023-43364-8) <br>
