@@ -74,7 +74,7 @@ where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ 
 <!-- <p>
     <img src="https://github.com/SuhiG/rasengan.github.io/blob/master/images/olccsarch.jpg" width="220" height="240" /> <br>
 </p>  -->
-[Quantum-Classical Hybrid architecture](/images/olccsarch.jpg) <br>
+[Quantum-Classical Hybrid architecture](https://content.cld.iop.org/journals/2058-9565/7/3/035013/revision2/qstac6f19f1_hr.jpg?Expires=1705317909&Signature=rto-DnVSk9VZHiPo0ZFiojqay-sagScRkQdGYwo9NOxN3cPrx2DKiRfOjT-7yvkTcDo9YKVVtvAjwbYTOncfaViZZ4XzODg905boCVWPLrqmwQp3jJ31f1UiwUsibKlzLZpnMwwM7ibKcpF5hM79Pjd63Jg36MhKP~GygUCCyyJUWRd1L0~QKq5F6uB2eN029BCwUsBv5dXGUCkHid6c~2rjNP~f6ldghJago1k2qeSxHcx7Qu4vSZtjPuD21cXpSmvs0x3LrT6mGhezD1N0T4G2NZ9A43QYZaBfcvSaWKonX7cqYJdmDx9qd6pDdDcGfDigCWDhpWrGydFOP-XAxQ__&Key-Pair-Id=KL1D8TIY3N7T8) <br>
 
 **CCS versions** <br>
 
