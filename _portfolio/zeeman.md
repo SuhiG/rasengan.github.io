@@ -77,7 +77,7 @@ $$
  </div>
 
 <div style="text-align: justify"> 
-where $x_{N+1}$ is an auxiliary amplitude to match the size of the Zeeman term to the interaction term and to transform the Zeeman term to an additional interaction term. As indicated in eq. (\ref{auxamp}), the injection field is reformulated only by the interaction term given in $J_{rr'} \in \mathbb{R}^{(N+1) \times (N+1)}$ and $x \in \mathbb{R}^{(N+1)}$. The extended coupling matrix can be constructed by giving additional column and row vectors as $J_{r N+1} = \zeta h_{r}$ and $J_{N+1 r’} = \zeta h_{r’}$, and taking $J_{N+1,N+1}=0$. Currently, CIMs only support two-body interactions, which makes this method effective. </div> [paper 1](https://arxiv.org/abs/arXiv:2105.10535){:target="_blank"}  <br>
+where $x_{N+1}$ is an auxiliary amplitude to match the size of the Zeeman term to the interaction term and to transform the Zeeman term to an additional interaction term. As indicated in eq. (\ref{auxamp}), the injection field is reformulated only by the interaction term given in $J_{rr'} \in \mathbb{R}^{(N+1) \times (N+1)}$ and $x \in \mathbb{R}^{(N+1)}$. The extended coupling matrix can be constructed by giving additional column and row vectors as $J_{r N+1} = \zeta h_{r}$ and $J_{N+1 r’} = \zeta h_{r’}$, and taking $J_{N+1,N+1}=0$. Currently, CIMs only support two-body interactions, which makes this method effective. </div> [paper 1](https://arxiv.org/abs/2105.10535){:target="_blank"}  <br>
 
 **Chaotic Amplitude Control <span style="color:red">[Method proposed in this project]</span>**
 
