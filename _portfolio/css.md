@@ -23,9 +23,49 @@ $$
             \hat{x} = \operatorname*{argmin}_{x \in \mathbb{R}^N}\|x\|_{p} \ \ subject \ to \ y = Ax ,
         \end{equation}
 $$
- </div> <br>
+ </div>
  
-an observed signal $y \in \mathbb{R}^M$, an observation matrix $A \in \mathbb{R}^{M\times N}$, and a source signal $x \in \mathbb{R}^N$ can be stated.
+an observed signal $y \in \mathbb{R}^M$, an observation matrix $A \in \mathbb{R}^{M\times N}$, and a source signal $x \in \mathbb{R}^N$ can be stated. In CS, the ratio of the number of non-zero entries in $x$ to $N$ is defined as the sparseness $a$, and the ratio of $M$ to $N$ is defined as the compression ratio $\alpha$. If we consider where $p=1$, the problem becomes a $l_1$-norm CS problem which is convex and has many efficeint algorithms avaialble (FISTA, ISTA, etc.). However $p=0$ is non-convex and it is a combinatorial optimisation problem. 
+
+Numerous attempts have been made to overcome the issue in $l_0$-norm CS optimisations. $l_0$-norm CS can be formulated as a two-fold optimisation.
+<div style="text-align: center"> 
+$$
+\begin{equation}
+\label{l0}
+    (\hat{R}, \hat{\sigma}) = \operatorname*{argmin}_{\sigma \in \{0,1\}^{N}}\operatorname*{argmin}_{R\in\mathbb{R}^{N}} \left(\| y - A(\sigma \circ R)\|_{2}^{2}\right) \ \ subject \ to \   \|\sigma\|_{0} \le \Omega .
+\end{equation}
+$$
+ </div>
+
+Here $R \in \mathbb{R}^N$ and $\sigma \in \left\{{0,1}\right\}^N$ correspond to the source signal and support vector, respectively. 
+Especially, each entry in the support vector taking either 0 or 1 represents whether each entry in the source signal is zero or non-zero. The condition $\|\sigma\|_{0} \le \Omega$ is a sparsity-inducing prior for constraining the number of non-zero entries to be $\Omega$. Therefore, the optimisation with respect to $\sigma$ can be regarded as a quadratic-constrained binary optimisation problem to find a ground state of a two-state Potts Hamiltonian.
+
+The l_0$-norm CS implemented with the open-loop quantum-classical hybrid system by Aonishi \textit{et al}., is given as a regularisation form as follows 
+
+<div style="text-align: center"> 
+$$
+\begin{equation}
+\label{doublel0}
+    (R, \sigma) = \operatorname*{argmin}_{\sigma \in \{0,1\}^{N}}\operatorname*{argmin}_{R\in\mathbb{R}^{N}} \left(\frac{1}{2} \| y - A(\sigma \circ R)\|_{2}^{2} + {\lambda} \|\sigma\|_{0}\right) .
+\end{equation}
+$$
+ </div>
+
+The element-wise representation of the above equation gives the following Hamiltonian.
+
+<div style="text-align: center"> 
+$$
+\begin{equation}
+\label{l0Hamiltonian}
+    \mathbcal{H} = \sum_{r<r'}^{N}\sum_{k = 1}^{M} A_{r}^{k}A_{r'}^{k}R_{r}R_{r'}\sigma_{r}\sigma_{r'} - \sum_{r=1}^{N}\sum_{k =1}^{M} y^{k}A_{r}^{k}R_{r}\sigma_{r} + {\lambda} \sum_{r = 1}^{N} \sigma_r , 
+\end{equation}
+$$
+ </div>
+
+where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ and an element $\sigma_r$ in $\sigma$. In the quantum-classical hybrid approach to conducting $l_0$-regularised CS, $\sigma$ is optimised by the CIM while $R$ is optimised by a Classical Digital Processor (CDP).
+
+![MHybrid System outline](/img/olccsarch.jpg)
+
  
 **Related Publications** <br>
 
