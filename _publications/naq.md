@@ -3,7 +3,7 @@ title: "Acceleration Technique of Two-Phase Quasi-Newton Method with Momentum fo
 collection: publications
 permalink: /publication/mfz
 excerpt: 'This paper describes a novel acceleration technique of the Two-Phase Quasi-Newton method using momentum terms for optimization problems. The performance of the proposed algorithm is evaluated on an unconstrained optimization problem in neural network training. The results show that the proposed algorithm has a much faster convergence than the conventional Two-Phase Quasi-Newton method.'
-date: 2023-12-21
+date: 2020-03-22
 venue: 'eKNOW 2020, The Twelfth International Conference on Information, Process, and Knowledge Management'
 paperurl: 'http://www.thinkmind.org/index.php?view=article&articleid=eknow_2020_2_60_60037'
 citation: 'M. D. S. H. Gunathilaka, Mahboubi S and Ninomiya H, “Acceleration Technique of Two-Phase Quasi-Newton Method with Momentum for Optimization Problems” [2020] Thinkmind.org'
