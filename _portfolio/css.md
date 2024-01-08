@@ -64,9 +64,9 @@ $$
 
 where an element $A^k$ in $A$, an element $y^k$ in $y$, an element $R_r$ in $R$ and an element $\sigma_r$ in $\sigma$. In the quantum-classical hybrid approach to conducting $l_0$-regularised CS, $\sigma$ is optimised by the CIM while $R$ is optimised by a Classical Digital Processor (CDP).
 
-![hybrid system outline](/images/olccsarch.jpg)
+<img title="a title" alt="Alt text" src="/images/olccsarch.jpg">
 
- 
+
 **Related Publications** <br>
 
 [CAC-CIM-CDP](https://doi.org/10.1038/s41598-023-43364-8) <br>
