@@ -37,7 +37,7 @@ $$
 $$
  </div>
 
-Here $R \in \mathbb{R}^N$ and $\sigma \in \left{0,1\right}^N$ correspond to the source signal and support vector, respectively. 
+Here $R \in \mathbb{R}^N$ and $\sigma \in \left(0,1\right)^N$ correspond to the source signal and support vector, respectively. 
 Especially, each entry in the support vector taking either 0 or 1 represents whether each entry in the source signal is zero or non-zero. The condition $\|\sigma\|_{0} \le \Omega$ is a sparsity-inducing prior for constraining the number of non-zero entries to be $\Omega$. Therefore, the optimisation with respect to $\sigma$ can be regarded as a quadratic-constrained binary optimisation problem to find a ground state of a two-state Potts Hamiltonian.
 
 The $l_0$-norm CS implemented with the open-loop quantum-classical hybrid system by Aonishi $\textit{et al}.$, is given as a regularisation form as follows 
