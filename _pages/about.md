@@ -21,7 +21,7 @@ My current research interest are,
 <br>
 **News**
 
-<span style="color:red">[16-01-2024]</span> Two talks (2nd author) has been accepted for 2024 Spring meeting of the [Physical socielty of Japan (JPSJ)](https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html){:target="_blank"}  <br>
+<span style="color:red">[16-01-2024]</span> [Two talks](https://onsite.gakkai-web.net/jps/jps_search/2024sp/data2/html/program11.html) (2nd author) has been accepted for 2024 Spring meeting of the [Physical socielty of Japan (JPSJ)](https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html){:target="_blank"}  <br>
 <span style="color:red">[27-12-2023]</span> Talk accepted for [第2回量子アニーリング及び関連技術に関する研究会](https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html){:target="_blank"}  <br>
 <span style="color:red">[08-12-2023]</span> Accepted for [Atsumi International Foundation](https://www.aisf.or.jp/jp/){:target="_blank"} scholarship <br> 
 <span style="color:red">[17-11-2023]</span> Poster accepted for [Quantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en){:target="_blank"} conference <br>
