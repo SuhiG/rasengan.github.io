@@ -240,6 +240,6 @@ $$
 **Related Publications** <br>
 
 [OL-CIM-CDP](https://iopscience.iop.org/article/10.1088/2058-9565/ac6f19){:target="_blank"}  [CAC-CIM-CDP](https://doi.org/10.1038/s41598-023-43364-8){:target="_blank"} <br>
-[Related code here](/404.html){:target="_blank"} 
+[Related code here](https://github.com/NTTRI-PHI-Algorithms/OL-CCS){:target="_blank"} 
 
 <!-- <img src="/images/gacs_Figure_6.png" alt="gacs" style="height: 500px; width:300px;"/> -->
