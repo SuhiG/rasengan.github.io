@@ -2,6 +2,7 @@
 title: "Control of amplitude homogeneity in coherent Ising machines with artificial Zeeman terms"
 collection: publications
 permalink: /publications/gac
+excerpt: ''
 date: 2022-06-15
 venue: 'Nature Communications Physics'
 paperurl: 'https://doi.org/10.1038/s42005-022-00927-x'
