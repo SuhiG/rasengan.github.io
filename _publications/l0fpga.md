@@ -5,7 +5,7 @@ permalink: /publications/l0fpga
 excerpt: ''
 date: 2024-06-08
 venue: 'arXiv (under review)'
-paperurl: 'https://doi.org/10.48550/arXiv.2406.05377'
+paperurl: ''
 citation: ''
 
 ---
