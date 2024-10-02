@@ -18,12 +18,11 @@ My current research interest are,
 - Combinatorial Optimisation
 
 <div style="text-align: justify"> Recent years have seen a constant increase in the use of unconventional computing architectures for information processing. A major reason for this is the rise of quantum computers, which claimed to be capable of solving some problems that classical computers have difficulty solving. It is necessary to note, however, that these quantum computers have hardware challenges due to physical limitations (e.g. systems using superconductors and operating near 0K temperatures). Alternatively, photon-based systems are more suitable in this case due to their capability to operate at room temperature. However, these photonic systems are much harder to scale up. Quantum systems can be used to solve combinatorial optimization problems such as L0-regularised compressed sensing, drug discovery, etc., but they all come with their own set of additional difficulties. I am currently exploring how to solve classically-hard real-world problems by numerically simulating these quantum systems (in my case, quantum annealers and coherent Ising machines). </div> 
-<br>　Preliminary examination
-
+<br>
 
 **News**
 
-<span style="color:red">[11-08-2024]</span> Talk at the [Asia Future Conference (AFC) 2024] (https://www.aisf.or.jp/AFC/2024/category/news-ja/){:target="_blank"} conference (Best presentation award) <span style="color:green">(Bangkok, Thailand) </span> <br>
+<span style="color:red">[11-08-2024]</span> Talk at the [Asia Future Conference (AFC) 2024](https://www.aisf.or.jp/AFC/2024/category/news-ja/){:target="_blank"} conference (Best presentation award) <span style="color:green">(Bangkok, Thailand) </span> <br>
 <span style="color:red">[08-07-2024]</span> Preliminary defense for doctoral degree program - Day 2 <br>
 <span style="color:red">[03-07-2024]</span> Preliminary defense for doctoral degree program - Day 1 <br>
 <span style="color:red">[21-04-2024]</span> One talk and a poster has been accepted for [Adiabatic Quantum Computing (AQC) 2024](https://iop.eventsair.com/aqc2024/){:target="_blank"} conference <span style="color:green">(Glasgow, UK) </span> <br>
