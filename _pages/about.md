@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome!"
+title: "About me"
 # excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -20,6 +20,7 @@ My current research interest are,
 
 **News**
 
+<span style="color:red">[18-10-2024]</span> Talk at the [International Network on Quantum Annealing 2024 (INQA 2024)](https://www.ucl.ac.uk/quantum/innovation/inqa/inqa-conference/inqa-conference-2024){:target="_blank"} conference <span style="color:green">(Tokyo, Japan) </span> <br>
 <span style="color:red">[11-08-2024]</span> Talk at the [Asia Future Conference (AFC) 2024](https://www.aisf.or.jp/AFC/2024/category/news-ja/){:target="_blank"} conference (Best presentation award) <span style="color:green">(Bangkok, Thailand) </span> <br>
 <span style="color:red">[08-07-2024]</span> Preliminary defense for doctoral degree program - Day 2 <br>
 <span style="color:red">[03-07-2024]</span> Preliminary defense for doctoral degree program - Day 1 <br>
