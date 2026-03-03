@@ -15,8 +15,6 @@ redirect_from:
   </figure>
 
   <div class="about-hero-content">
-    <img class="about-hero-avatar" src="{{ '/images/profile.png' | relative_url }}" alt="Portrait photo of Sudeera">
-
     <h1>ආයුබෝවන්! (Ā-yu-bō-van) <span aria-hidden="true">👋</span></h1>
     <p class="about-hero-tagline">LLMs, Quantum, and Supercomputers.</p>
 
