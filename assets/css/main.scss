@@ -419,8 +419,15 @@ body.has-live-ticker .masthead {
 .publication-panel {
   padding: 0.75rem 0.85rem;
   border-radius: 12px;
-  border: 1px solid rgba(135, 153, 196, 0.28);
-  background: linear-gradient(170deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(150, 169, 213, 0.22);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.015) 100%);
+  transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.publication-panel:hover {
+  border-color: rgba(164, 183, 229, 0.42);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.07) 100%);
+  box-shadow: 0 10px 26px rgba(2, 8, 22, 0.28);
 }
 
 .publication-panel-year {
