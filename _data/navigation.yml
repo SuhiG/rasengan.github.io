@@ -15,6 +15,8 @@ main:
 
   - title: "TokyoTech blog"
     url: https://discover.titech.ac.jp/ambassador/sudeera-gunathilaka/
+    new_tab: true
     
   - title: "CV"
     url: /CV_MDSHG.pdf
+    new_tab: true
