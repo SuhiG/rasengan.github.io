@@ -42,139 +42,34 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-
-/* Front-page glass styling */
-
-.page-glass-theme {
-  padding: 1.1rem 1rem 1.35rem;
-  border-radius: 16px;
-  border: 1px solid rgba(158, 184, 216, 0.45);
-  background:
-    radial-gradient(circle at 0% 0%, rgba(198, 223, 255, 0.34) 0%, rgba(198, 223, 255, 0) 42%),
-    radial-gradient(circle at 100% 0%, rgba(181, 214, 255, 0.28) 0%, rgba(181, 214, 255, 0) 38%),
-    linear-gradient(145deg, rgba(245, 251, 255, 0.82) 0%, rgba(231, 241, 253, 0.72) 100%);
-  box-shadow:
-    0 16px 40px rgba(15, 31, 54, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px) saturate(115%);
-  -webkit-backdrop-filter: blur(12px) saturate(115%);
-}
-
-.frontpage-glass {
-  padding: 1.1rem 1.3rem;
-  margin: 0.4rem 0 1.3rem;
-  border: 1px solid rgba(136, 170, 209, 0.55);
-  border-radius: 12px;
-  background: linear-gradient(165deg, rgba(253, 255, 255, 0.76) 0%, rgba(232, 243, 255, 0.58) 100%);
-  box-shadow:
-    0 14px 30px rgba(26, 43, 60, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(14px) saturate(120%);
-  -webkit-backdrop-filter: blur(14px) saturate(120%);
-}
-
-.frontpage-glass p:last-child {
-  margin-bottom: 0;
-}
-
-.frontpage-glass ul {
-  margin-bottom: 0.5rem;
-}
-
-/* Custom News Panel (About page) */
-.news-panel {
-  height: 24rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 1rem 1.2rem;
-  margin: 0.6rem 0 1.2rem;
-  border: 1px solid rgba(136, 170, 209, 0.5);
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba(251, 254, 255, 0.78) 0%, rgba(235, 245, 255, 0.62) 100%);
-  box-shadow:
-    0 14px 30px rgba(26, 43, 60, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.68);
-  backdrop-filter: blur(14px) saturate(120%);
-  -webkit-backdrop-filter: blur(14px) saturate(120%);
-  scrollbar-width: thin;
-  scrollbar-color: #8ea6c8 #edf3fb;
-}
-
-.news-panel::-webkit-scrollbar {
-  width: 10px;
-}
-
-.news-panel::-webkit-scrollbar-track {
-  background: #edf3fb;
-  border-radius: 10px;
-}
-
-.news-panel::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #9db3d3 0%, #6d87ad 100%);
-  border-radius: 10px;
-  border: 2px solid #edf3fb;
-}
-
-.news-list {
-  margin: 0;
-  padding-left: 1.1rem;
-}
-
-.news-list li {
-  margin: 0 0 0.65rem;
-  line-height: 1.55;
-  color: #1f2a37;
-}
-
-.news-list li:last-child {
-  margin-bottom: 0;
-}
-
-.news-list strong {
-  color: #0d2a52;
-  letter-spacing: 0.01em;
-}
-
-.news-list a {
-  color: #114a9f;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.12em;
-}
-
-.news-list a:hover {
-  color: #0a3574;
-}
-
-/* Coderon-inspired theme */
-
 :root {
-  --coderon-bg: #0b1020;
-  --coderon-bg-soft: #121935;
-  --coderon-surface: rgba(255, 255, 255, 0.05);
+  --coderon-bg: #090f1f;
+  --coderon-bg-soft: #101a34;
+  --coderon-surface: rgba(255, 255, 255, 0.04);
   --coderon-surface-border: rgba(255, 255, 255, 0.12);
-  --coderon-text: #e5e7eb;
-  --coderon-muted: #b7c0d1;
+  --coderon-text: #d9e1f1;
+  --coderon-muted: #9eaacd;
   --coderon-heading: #ffffff;
-  --coderon-accent: #7c7bff;
-  --coderon-accent-2: #4cc9f0;
+  --coderon-accent: #8b8bff;
+  --coderon-accent-2: #54d0ff;
 }
 
 body {
-  font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--coderon-text);
   background:
-    radial-gradient(65rem 40rem at 8% -12%, rgba(124, 123, 255, 0.26) 0%, rgba(124, 123, 255, 0) 55%),
-    radial-gradient(55rem 35rem at 92% -10%, rgba(76, 201, 240, 0.18) 0%, rgba(76, 201, 240, 0) 55%),
-    linear-gradient(180deg, #0b1020 0%, #0a1124 45%, #0e1734 100%);
+    radial-gradient(50rem 32rem at 10% -10%, rgba(139, 139, 255, 0.24), rgba(139, 139, 255, 0) 65%),
+    radial-gradient(52rem 35rem at 95% -12%, rgba(84, 208, 255, 0.18), rgba(84, 208, 255, 0) 64%),
+    linear-gradient(180deg, #090f1f 0%, #0c1430 45%, #0f1b3c 100%);
   background-attachment: fixed;
 }
 
 a {
-  color: #a5b4fc;
+  color: #b8c3ff;
 }
 
 a:hover {
-  color: #c4b5fd;
+  color: #d2d9ff;
 }
 
 h1,
@@ -182,105 +77,168 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.page__title,
+.archive__item-title a,
+.author__name,
+.site-title {
   color: var(--coderon-heading);
-  letter-spacing: 0.01em;
 }
 
 .masthead {
   border-bottom: 1px solid var(--coderon-surface-border);
-  background: rgba(11, 16, 32, 0.86);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(9, 15, 31, 0.8);
+  backdrop-filter: blur(10px);
 }
 
-.greedy-nav {
+.greedy-nav,
+.greedy-nav .hidden-links {
   background: transparent;
 }
 
 .greedy-nav a,
-.site-title,
 .masthead__menu-item a {
-  color: #dbe3f3;
+  color: #d8e0f5;
   font-weight: 500;
 }
 
 .greedy-nav a:hover,
-.site-title:hover,
-.masthead__menu-item a:hover {
-  color: #ffffff;
+.masthead__menu-item a:hover,
+.site-title:hover {
+  color: #fff;
 }
 
-.initial-content,
+#main {
+  max-width: 1240px;
+}
+
 .page,
 .archive,
-.sidebar {
-  color: var(--coderon-text);
+.sidebar,
+.page__related,
+.archive__item,
+.list__item,
+.author__content,
+.author__urls-wrapper {
+  background: var(--coderon-surface);
+  border: 1px solid var(--coderon-surface-border);
+  border-radius: 16px;
+  backdrop-filter: blur(7px);
 }
 
 .page,
 .archive {
-  background: var(--coderon-surface);
-  border: 1px solid var(--coderon-surface-border);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-.archive__item,
-.list__item,
-.page__related .archive__item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
-  padding: 1rem 1.1rem;
-}
-
-.archive__item-title a,
-.page__title,
-.author__name {
-  color: #fff;
-}
-
-.author__avatar img,
-.author__content,
-.author__urls-wrapper {
-  border-color: var(--coderon-surface-border);
-}
-
-.author__content,
-.author__urls-wrapper,
 .sidebar {
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 12px;
+  padding: 1rem;
 }
 
-code,
-pre,
-tt {
-  font-family: "JetBrains Mono", Monaco, Consolas, monospace;
+.page__content,
+.page__meta,
+.archive__item-excerpt,
+.author__bio,
+.author__urls a,
+.page__footer {
+  color: var(--coderon-text);
 }
 
 .btn,
 button,
 input[type="submit"],
 input[type="button"] {
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--coderon-accent) 0%, var(--coderon-accent-2) 100%);
-  color: #fff;
   border: 0;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--coderon-accent) 0%, var(--coderon-accent-2) 100%);
 }
 
-.page__footer {
-  color: var(--coderon-muted);
-  background: transparent;
-}
-
-.notice,
 .page__hero--overlay,
-.search-content {
-  background: rgba(255, 255, 255, 0.06);
+.notice,
+.search-content,
+.archive__item,
+.list__item {
+  border-color: var(--coderon-surface-border);
+}
+
+code,
+pre,
+tt {
+  font-family: "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+/* Home architecture inspired by coderon-jekyll */
+
+.coderon-hero,
+.coderon-section {
+  background: var(--coderon-surface);
   border: 1px solid var(--coderon-surface-border);
-  border-radius: 14px;
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.coderon-eyebrow {
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.72rem;
+  color: var(--coderon-accent-2);
+}
+
+.coderon-lead {
+  font-size: 1.1rem;
+  max-width: 60ch;
+  color: #e8ecf8;
+}
+
+.coderon-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.coderon-text-link {
+  font-weight: 600;
+  color: #dbe4ff;
+}
+
+.coderon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.coderon-card {
+  background: var(--coderon-surface);
+  border: 1px solid var(--coderon-surface-border);
+  border-radius: 16px;
+  padding: 1.2rem;
+}
+
+.coderon-card h2,
+.coderon-section h2 {
+  margin-top: 0;
+}
+
+.coderon-timeline {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.coderon-timeline > div {
+  padding: 0.8rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--coderon-surface-border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 900px) {
+  .coderon-grid {
+    grid-template-columns: 1fr;
+  }
 }
