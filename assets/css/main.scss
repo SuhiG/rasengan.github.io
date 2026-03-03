@@ -42,17 +42,33 @@
 
 
 /* Front-page glass styling */
+
+.page-glass-theme {
+  padding: 1.1rem 1rem 1.35rem;
+  border-radius: 16px;
+  border: 1px solid rgba(158, 184, 216, 0.45);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(198, 223, 255, 0.34) 0%, rgba(198, 223, 255, 0) 42%),
+    radial-gradient(circle at 100% 0%, rgba(181, 214, 255, 0.28) 0%, rgba(181, 214, 255, 0) 38%),
+    linear-gradient(145deg, rgba(245, 251, 255, 0.82) 0%, rgba(231, 241, 253, 0.72) 100%);
+  box-shadow:
+    0 16px 40px rgba(15, 31, 54, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px) saturate(115%);
+  -webkit-backdrop-filter: blur(12px) saturate(115%);
+}
+
 .frontpage-glass {
   padding: 1.1rem 1.3rem;
   margin: 0.4rem 0 1.3rem;
-  border: 1px solid rgba(162, 186, 216, 0.55);
+  border: 1px solid rgba(136, 170, 209, 0.55);
   border-radius: 12px;
-  background: linear-gradient(165deg, rgba(251, 253, 255, 0.9) 0%, rgba(241, 247, 255, 0.85) 100%);
+  background: linear-gradient(165deg, rgba(253, 255, 255, 0.76) 0%, rgba(232, 243, 255, 0.58) 100%);
   box-shadow:
     0 14px 30px rgba(26, 43, 60, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
 }
 
 .frontpage-glass p:last-child {
@@ -70,10 +86,14 @@
   overflow-x: hidden;
   padding: 1rem 1.2rem;
   margin: 0.6rem 0 1.2rem;
-  border: 1px solid #d8e2f0;
+  border: 1px solid rgba(136, 170, 209, 0.5);
   border-radius: 10px;
-  background: linear-gradient(180deg, #fbfdff 0%, #f4f8fd 100%);
-  box-shadow: 0 10px 24px rgba(26, 43, 60, 0.08);
+  background: linear-gradient(180deg, rgba(251, 254, 255, 0.78) 0%, rgba(235, 245, 255, 0.62) 100%);
+  box-shadow:
+    0 14px 30px rgba(26, 43, 60, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
   scrollbar-width: thin;
   scrollbar-color: #8ea6c8 #edf3fb;
 }
