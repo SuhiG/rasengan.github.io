@@ -21,13 +21,7 @@ redirect_from:
     <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
 
     <p>
-      I’m a doctoral candidate at the Institute of Science Tokyo, affiliated with NTT Physics and Informatics Laboratories.
-      I explore how intelligent algorithms, quantum-inspired systems, and high-performance computing can solve hard optimization and scientific computing challenges.
-    </p>
-
-    <p>
-      My current work focuses on AI for discovery, quantum and coherent Ising approaches, and scalable GPU-first simulation pipelines.
-      This site is my knowledge hangar where I share papers, experiments, tools, and lessons from research in flight.
+      Research scientist at AIST’s G-QuAT with a Ph.D. in AI from Institute of Science Tokyo, I develop optimization, simulation, and machine learning methods across quantum-inspired and high-performance computing systems. My work spans CIM, image reconstruction, and real-world applications, grounded in strong software engineering, publications, scholarships, and global impact in academia.
     </p>
 
     <a class="about-hero-cta" href="{{ '/contact/' | relative_url }}">Let’s Work Together</a>
