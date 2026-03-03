@@ -11,7 +11,7 @@ redirect_from:
 
 <div class="about-hero-card" role="region" aria-label="About section introduction">
   <figure class="about-hero-media">
-    <img src="{{ '/IMG_1870.jpeg' | relative_url }}" alt="Sudeera's creative workspace">
+    <img src="{{ '/IMG_1870.jpeg' | absolute_url }}" alt="Sudeera's creative workspace">
   </figure>
 
   <div class="about-hero-content">
