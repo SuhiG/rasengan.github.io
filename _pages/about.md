@@ -6,32 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div class="about-hero-card" role="region" aria-label="About section introduction">
-  <figure class="about-hero-media">
-    <img src="/images/CR5_9271_Sudeera_size2.jpg" alt="Creative desk with monitor, microphone, and ambient lighting">
-    <figcaption>My creative cockpit where ideas take flight ✈️</figcaption>
-  </figure>
-
-  <div class="about-hero-content">
-    <img class="about-hero-avatar" src="/images/profile.png" alt="Portrait photo of Sudeera">
-
-    <h1>Hi! I'm Sudeera <span aria-hidden="true">👋</span></h1>
-    <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
-
-    <p>
-      I’m a doctoral candidate at the Institute of Science Tokyo, affiliated with NTT Physics and Informatics Laboratories.
-      I explore how intelligent algorithms, quantum-inspired systems, and high-performance computing can solve hard optimization and scientific computing challenges.
-    </p>
-
-    <p>
-      My current work focuses on AI for discovery, quantum and coherent Ising approaches, and scalable GPU-first simulation pipelines.
-      This site is my knowledge hangar where I share papers, experiments, tools, and lessons from research in flight.
-    </p>
-
-    <a class="about-hero-cta" href="/contact/">Let’s Work Together</a>
-  </div>
-</div>
-
 ## News
 
 <div class="news-panel" role="region" aria-label="Recent academic news">
@@ -59,4 +33,30 @@ redirect_from:
     <li><strong>2022-10-24:</strong> Poster presentation at Stanford University for CNC22.</li>
     <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
   </ul>
+</div>
+
+<div class="about-hero-card" role="region" aria-label="About section introduction">
+  <figure class="about-hero-media">
+    <img src="/images/CR5_9271_Sudeera_size2.jpg" alt="Creative desk with monitor, microphone, and ambient lighting">
+    <figcaption>My creative cockpit where ideas take flight ✈️</figcaption>
+  </figure>
+
+  <div class="about-hero-content">
+    <img class="about-hero-avatar" src="/images/profile.png" alt="Portrait photo of Sudeera">
+
+    <h1>Hi! I'm Sudeera <span aria-hidden="true">👋</span></h1>
+    <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
+
+    <p>
+      I’m a doctoral candidate at the Institute of Science Tokyo, affiliated with NTT Physics and Informatics Laboratories.
+      I explore how intelligent algorithms, quantum-inspired systems, and high-performance computing can solve hard optimization and scientific computing challenges.
+    </p>
+
+    <p>
+      My current work focuses on AI for discovery, quantum and coherent Ising approaches, and scalable GPU-first simulation pipelines.
+      This site is my knowledge hangar where I share papers, experiments, tools, and lessons from research in flight.
+    </p>
+
+    <a class="about-hero-cta" href="/contact/">Let’s Work Together</a>
+  </div>
 </div>
