@@ -7,13 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<div class="news-ticker" role="region" aria-label="Live news ticker">
-  <span class="news-ticker-label">Live News</span>
-  <div class="news-ticker-track" aria-live="polite">
-    <div class="news-ticker-content" id="news-ticker-content">Loading latest news…</div>
-  </div>
-</div>
-
 <div class="about-hero-card" role="region" aria-label="About section introduction">
   <figure class="about-hero-media">
     <img src="/images/CR5_9271_Sudeera_size2.jpg" alt="Creative desk with monitor, microphone, and ambient lighting">
@@ -41,6 +34,13 @@ redirect_from:
 </div>
 
 ## News
+
+<div class="news-ticker" role="region" aria-label="Live news ticker">
+  <span class="news-ticker-label">Live News</span>
+  <div class="news-ticker-track" aria-live="polite">
+    <div class="news-ticker-content" id="news-ticker-content">Loading latest news…</div>
+  </div>
+</div>
 
 <div class="news-panel" role="region" aria-label="Recent academic news">
   <ul class="news-list">
