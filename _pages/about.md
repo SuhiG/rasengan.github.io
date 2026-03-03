@@ -184,6 +184,45 @@ redirect_from:
       tickerObserver.observe(tickerShell);
     }
 
+    const revealTargets = document.querySelectorAll(
+      ".about-hero-card, .about-hero-stat-card, .about-hero-action-btn, .news-list li, .publication-panel"
+    );
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (revealTargets.length > 0 && !prefersReducedMotion) {
+      revealTargets.forEach(function (element) {
+        element.classList.add("is-reveal");
+      });
+
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver(
+          function (items) {
+            items.forEach(function (entry) {
+              if (!entry.isIntersecting) {
+                return;
+              }
+
+              entry.target.classList.add("is-reveal-visible");
+              revealObserver.unobserve(entry.target);
+            });
+          },
+          {
+            threshold: 0.15,
+            rootMargin: "0px 0px -8% 0px"
+          }
+        );
+
+        revealTargets.forEach(function (element) {
+          revealObserver.observe(element);
+        });
+      } else {
+        revealTargets.forEach(function (element) {
+          element.classList.add("is-reveal-visible");
+        });
+      }
+    }
+
     window.addEventListener("resize", syncTickerHeight);
   });
 </script>
