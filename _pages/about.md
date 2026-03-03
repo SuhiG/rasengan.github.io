@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="about-hero-card" role="region" aria-label="About section introduction">
   <figure class="about-hero-media">
-    <img src="/IMG_1870.jpeg" alt="Creative desk with monitor, microphone, and ambient lighting">
+    <img src="/IMG_1870.jpeg">
     <figcaption>My creative cockpit where ideas take flight ✈️</figcaption>
   </figure>
 
