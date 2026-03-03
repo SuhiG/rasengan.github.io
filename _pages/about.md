@@ -24,7 +24,26 @@ redirect_from:
       Research scientist at AIST’s G-QuAT with a Ph.D. in AI from Institute of Science Tokyo, I develop optimization, simulation, and machine learning methods across quantum and high-performance computing systems. My work spans LLMs, CIMs, image reconstruction, and real-world applications.
     </p>
 
-    <a class="about-hero-cta" href="{{ '/contact/' | relative_url }}">Let’s Work Together</a>
+    {% assign scholar_link = site.author.googlescholar | default: 'https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en' %}
+    {% assign linkedin_handle = site.author.linkedin | default: '' %}
+    {% assign linkedin_link = linkedin_handle %}
+    {% unless linkedin_link contains 'http' %}
+      {% assign linkedin_link = 'https://www.linkedin.com/in/' | append: linkedin_handle %}
+    {% endunless %}
+    {% if linkedin_handle == '' %}
+      {% assign linkedin_link = 'https://www.linkedin.com/' %}
+    {% endif %}
+
+    <div class="about-hero-actions" aria-label="Profile links">
+      <a class="about-hero-action-btn" href="{{ scholar_link }}" target="_blank" rel="noopener">
+        <span class="about-hero-action-thumb" aria-hidden="true"><i class="ai ai-google-scholar-square"></i></span>
+        <span>Google Scholar</span>
+      </a>
+      <a class="about-hero-action-btn about-hero-action-btn--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+        <span class="about-hero-action-thumb" aria-hidden="true"><i class="fab fa-linkedin"></i></span>
+        <span>LinkedIn</span>
+      </a>
+    </div>
   </div>
 </div>
 
