@@ -42,7 +42,8 @@ redirect_from:
     </div>
 
     {% assign scholar_stats = site.data.google_scholar_stats %}
-    <div class="about-hero-stats" role="group" aria-label="Google Scholar citation metrics">
+    {% assign papers_published_count = site.data.google_scholar_publications | size %}
+    <div class="about-hero-stats" role="group" aria-label="Google Scholar metrics">
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">Citations</p>
         <p class="about-hero-stat-value">{{ scholar_stats.citations | default: '--' }}</p>
@@ -54,6 +55,10 @@ redirect_from:
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">i10-index</p>
         <p class="about-hero-stat-value">{{ scholar_stats.i10_index | default: '--' }}</p>
+      </article>
+      <article class="about-hero-stat-card">
+        <p class="about-hero-stat-label">Papers Published</p>
+        <p class="about-hero-stat-value">{{ papers_published_count | default: '--' }}</p>
       </article>
     </div>
   </div>
