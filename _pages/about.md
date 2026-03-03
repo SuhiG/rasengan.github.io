@@ -21,7 +21,7 @@ redirect_from:
     <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
 
     <p>
-      Research scientist at AIST’s G-QuAT with a Ph.D. in AI from Institute of Science Tokyo, I develop optimization, simulation, and machine learning methods across quantum-inspired and high-performance computing systems. My work spans CIM, image reconstruction, and real-world applications, grounded in strong software engineering, publications, scholarships, and global impact in academia.
+      Research scientist at AIST’s G-QuAT with a Ph.D. in AI from Institute of Science Tokyo, I develop optimization, simulation, and machine learning methods across quantum and high-performance computing systems. My work spans LLMs, CIMs, image reconstruction, and real-world applications.
     </p>
 
     <a class="about-hero-cta" href="{{ '/contact/' | relative_url }}">Let’s Work Together</a>
