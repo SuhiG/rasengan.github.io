@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<div class="page-glass-theme" markdown="1">
 **Research Focus:** Artificial Intelligence, Quantum Computing, and High-Performance Computing
 
 <div class="frontpage-glass" markdown="1">
@@ -50,4 +51,6 @@ My work investigates how these emerging paradigms can be evaluated and deployed 
     <li><strong>2022-10-24:</strong> Poster presentation at Stanford University for CNC22.</li>
     <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
   </ul>
+</div>
+
 </div>
