@@ -46,7 +46,7 @@
 
 /* Live news ticker */
 :root {
-  --news-ticker-height: 3.6rem;
+  --news-ticker-height: 58px;
 }
 
 .news-ticker {
@@ -61,6 +61,7 @@
   box-shadow: 0 8px 24px rgba(5, 16, 33, 0.26);
   overflow: hidden;
   min-height: var(--news-ticker-height);
+  box-sizing: border-box;
 }
 
 .news-ticker--fixed-top {
@@ -82,6 +83,7 @@
 
 body.has-live-ticker .masthead {
   margin-top: var(--news-ticker-height);
+  transition: margin-top 120ms ease-out;
 }
 
 .news-ticker-label {
@@ -159,14 +161,6 @@ body.has-live-ticker .masthead {
   .news-ticker-label {
     font-size: 0.68rem;
     padding: 0.35rem 0.45rem;
-  }
-
-  .news-ticker-spacer {
-    height: 3.35rem;
-  }
-
-  :root {
-    --news-ticker-height: 3.35rem;
   }
 }
 
