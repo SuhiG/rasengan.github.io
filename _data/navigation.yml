@@ -4,12 +4,6 @@ main:
   - title: "Projects"
     url: /portfolio/
 
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Talks & Presentations"
-    url: /talks/    
-
   # - title: "Blog Posts"
   #   url: /teaching/    
         
