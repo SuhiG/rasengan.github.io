@@ -6,22 +6,30 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div class="page-glass-theme" markdown="1">
-**Research Focus:** Artificial Intelligence, Quantum Computing, and High-Performance Computing
+<div class="about-hero-card" role="region" aria-label="About section introduction">
+  <figure class="about-hero-media">
+    <img src="/images/CR5_9271_Sudeera_size2.jpg" alt="Creative desk with monitor, microphone, and ambient lighting">
+    <figcaption>My creative cockpit where ideas take flight ✈️</figcaption>
+  </figure>
 
-<div class="frontpage-glass" markdown="1">
+  <div class="about-hero-content">
+    <img class="about-hero-avatar" src="/images/profile.png" alt="Portrait photo of Sudeera">
 
-I am a doctoral candidate at the Institute of Science Tokyo (formerly Tokyo Institute of Technology), affiliated with NTT Physics and Informatics Laboratories. My research integrates algorithm design, physics-inspired computation, and scalable scientific computing to address computationally hard problems.
+    <h1>Hi! I'm Sudeera <span aria-hidden="true">👋</span></h1>
+    <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
 
-My current research areas include:
-- **AI for scientific discovery:** optimization, model-driven inference, and data-efficient approaches for complex systems.
-- **Quantum and quantum-inspired computing:** coherent and annealing-based methods for combinatorial optimization.
-- **High-performance computing (HPC):** GPU-accelerated simulation pipelines and performance-aware implementations for large-scale numerical experiments.
+    <p>
+      I’m a doctoral candidate at the Institute of Science Tokyo, affiliated with NTT Physics and Informatics Laboratories.
+      I explore how intelligent algorithms, quantum-inspired systems, and high-performance computing can solve hard optimization and scientific computing challenges.
+    </p>
 
-In recent years, unconventional computing platforms have become increasingly relevant for information processing and scientific optimization. While gate-model quantum hardware is advancing rapidly, practical deployment is still constrained by device-level limitations. In parallel, photonic and quantum-inspired architectures offer attractive alternatives, especially for optimization workloads that demand speed, parallelism, and energy efficiency.
+    <p>
+      My current work focuses on AI for discovery, quantum and coherent Ising approaches, and scalable GPU-first simulation pipelines.
+      This site is my knowledge hangar where I share papers, experiments, tools, and lessons from research in flight.
+    </p>
 
-My work investigates how these emerging paradigms can be evaluated and deployed through rigorous numerical simulation and benchmarking. In particular, I study quantum annealers and coherent Ising machines, with an emphasis on translating theoretical advantages into reliable performance on real-world problem instances.
-
+    <a class="about-hero-cta" href="/contact/">Let’s Work Together</a>
+  </div>
 </div>
 
 ## News
@@ -51,6 +59,4 @@ My work investigates how these emerging paradigms can be evaluated and deployed 
     <li><strong>2022-10-24:</strong> Poster presentation at Stanford University for CNC22.</li>
     <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
   </ul>
-</div>
-
 </div>
