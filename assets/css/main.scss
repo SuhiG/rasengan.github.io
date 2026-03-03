@@ -745,6 +745,145 @@ body.has-live-ticker::after {
   isolation: isolate;
 }
 
+
+.about-hero-card {
+  --hero-glow-x: 72%;
+  --hero-glow-y: 28%;
+}
+
+.about-hero-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at var(--hero-glow-x) var(--hero-glow-y), rgba(126, 223, 255, 0.24) 0%, rgba(126, 223, 255, 0) 42%),
+    repeating-linear-gradient(115deg, rgba(140, 152, 255, 0.11) 0 2px, rgba(140, 152, 255, 0) 2px 13px);
+  opacity: 0.72;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.quantum-visual {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  width: clamp(78px, 9vw, 116px);
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: 0.92;
+}
+
+.quantum-node,
+.quantum-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+}
+
+.quantum-node {
+  width: 14px;
+  height: 14px;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 35% 35%, #fff 0%, #83d5ff 34%, #7c7bff 100%);
+  box-shadow: 0 0 18px rgba(92, 180, 255, 0.75);
+}
+
+.quantum-node--orbit-a,
+.quantum-node--orbit-b {
+  width: 9px;
+  height: 9px;
+}
+
+.quantum-node--orbit-a {
+  animation: quantum-spin 5.8s linear infinite;
+}
+
+.quantum-node--orbit-b {
+  animation: quantum-spin 7.2s linear infinite reverse;
+}
+
+.quantum-node--orbit-a::before,
+.quantum-node--orbit-b::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(140deg, #8be8ff 0%, #7c7bff 100%);
+  box-shadow: 0 0 12px rgba(123, 169, 255, 0.7);
+}
+
+.quantum-node--orbit-a::before {
+  transform: translate(-37px, -2px);
+}
+
+.quantum-node--orbit-b::before {
+  transform: translate(29px, -24px);
+}
+
+.quantum-ring {
+  border: 1px solid rgba(134, 196, 255, 0.4);
+}
+
+.quantum-ring--one {
+  transform: scale(0.56);
+}
+
+.quantum-ring--two {
+  transform: scale(0.8) rotate(56deg);
+}
+
+.quantum-ring--three {
+  transform: scale(0.95) rotate(-57deg);
+}
+
+.publication-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--panel-spotlight, 32px 26px), rgba(148, 236, 255, 0.24) 0%, rgba(148, 236, 255, 0) 52%);
+  opacity: 0;
+  transition: opacity 0.24s ease;
+  pointer-events: none;
+}
+
+.publication-panel:hover::before {
+  opacity: 1;
+}
+
+.news-panel {
+  position: relative;
+}
+
+.news-panel::after {
+  content: "";
+  position: sticky;
+  left: 0;
+  bottom: -1rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  background: linear-gradient(180deg, rgba(229, 240, 252, 0) 0%, rgba(227, 239, 253, 0.92) 90%);
+  pointer-events: none;
+}
+
+@keyframes quantum-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .about-hero-card::after {
   content: "";
   position: absolute;
@@ -830,6 +969,10 @@ body.has-live-ticker::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .quantum-node--orbit-a,
+  .quantum-node--orbit-b {
+    animation: none;
+  }
   body.has-live-ticker::before,
   body.has-live-ticker::after,
   .news-list li::before {

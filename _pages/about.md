@@ -15,6 +15,15 @@ redirect_from:
   </figure>
 
   <div class="about-hero-content">
+    <div class="quantum-visual" aria-hidden="true">
+      <span class="quantum-node quantum-node--core"></span>
+      <span class="quantum-node quantum-node--orbit-a"></span>
+      <span class="quantum-node quantum-node--orbit-b"></span>
+      <span class="quantum-ring quantum-ring--one"></span>
+      <span class="quantum-ring quantum-ring--two"></span>
+      <span class="quantum-ring quantum-ring--three"></span>
+    </div>
+
     <h1>ආයුබෝවන්!<span aria-hidden="true">👋</span></h1>
     <p class="about-hero-tagline">LLMs, Quantum, and Supercomputers.</p>
 
@@ -187,6 +196,8 @@ redirect_from:
     const revealTargets = document.querySelectorAll(
       ".about-hero-card, .about-hero-stat-card, .about-hero-action-btn, .news-list li, .publication-panel"
     );
+    const spotlightHost = document.querySelector(".about-hero-card");
+    const publicationPanels = document.querySelectorAll(".publication-panel");
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -221,6 +232,28 @@ redirect_from:
           element.classList.add("is-reveal-visible");
         });
       }
+    }
+
+    if (spotlightHost && !prefersReducedMotion) {
+      spotlightHost.addEventListener("pointermove", function (event) {
+        const bounds = spotlightHost.getBoundingClientRect();
+        const x = ((event.clientX - bounds.left) / bounds.width) * 100;
+        const y = ((event.clientY - bounds.top) / bounds.height) * 100;
+
+        spotlightHost.style.setProperty("--hero-glow-x", x + "%");
+        spotlightHost.style.setProperty("--hero-glow-y", y + "%");
+      });
+    }
+
+    if (publicationPanels.length > 0 && !prefersReducedMotion) {
+      publicationPanels.forEach(function (panel) {
+        panel.addEventListener("pointermove", function (event) {
+          const bounds = panel.getBoundingClientRect();
+          const x = event.clientX - bounds.left;
+          const y = event.clientY - bounds.top;
+          panel.style.setProperty("--panel-spotlight", x + "px " + y + "px");
+        });
+      });
     }
 
     window.addEventListener("resize", syncTickerHeight);
