@@ -31,6 +31,23 @@ redirect_from:
     {% if linkedin_handle == '' %}
       {% assign linkedin_link = 'https://www.linkedin.com/' %}
     {% endif %}
+    {% assign twitter_handle = site.author.twitter | default: '' %}
+    {% assign twitter_link = twitter_handle %}
+    {% unless twitter_link contains 'http' %}
+      {% assign twitter_link = 'https://x.com/' | append: twitter_handle %}
+    {% endunless %}
+    {% if twitter_handle == '' %}
+      {% assign twitter_link = 'https://x.com/' %}
+    {% endif %}
+    {% assign github_handle = site.author.github | default: '' %}
+    {% assign github_link = github_handle %}
+    {% unless github_link contains 'http' %}
+      {% assign github_link = 'https://github.com/' | append: github_handle %}
+    {% endunless %}
+    {% if github_handle == '' %}
+      {% assign github_link = 'https://github.com/' %}
+    {% endif %}
+    {% assign gquat_link = site.author.gquat | default: 'https://unit.aist.go.jp/g-quat/index_en.html' %}
 
     <div class="about-hero-actions" aria-label="Profile links">
       <a class="about-hero-action-btn" href="{{ scholar_link }}" target="_blank" rel="noopener">
@@ -38,6 +55,15 @@ redirect_from:
       </a>
       <a class="about-hero-action-btn about-hero-action-btn--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
         <span>LinkedIn</span>
+      </a>
+      <a class="about-hero-action-btn about-hero-action-btn--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+        <span>Twitter</span>
+      </a>
+      <a class="about-hero-action-btn about-hero-action-btn--github" href="{{ github_link }}" target="_blank" rel="noopener">
+        <span>GitHub</span>
+      </a>
+      <a class="about-hero-action-btn about-hero-action-btn--gquat" href="{{ gquat_link }}" target="_blank" rel="noopener">
+        <span>G-QuAT</span>
       </a>
     </div>
 

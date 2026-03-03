@@ -303,6 +303,30 @@ body.has-live-ticker .masthead {
   box-shadow: 0 8px 22px rgba(10, 102, 194, 0.4);
 }
 
+.about-hero-action-btn--twitter:hover {
+  box-shadow: 0 8px 22px rgba(29, 155, 240, 0.42);
+}
+
+.about-hero-action-btn--github:hover {
+  box-shadow: 0 8px 22px rgba(20, 27, 36, 0.48);
+}
+
+.about-hero-action-btn--gquat:hover {
+  box-shadow: 0 8px 22px rgba(22, 106, 183, 0.45);
+}
+
+
+.about-hero-action-btn--twitter {
+  background: linear-gradient(90deg, #1d9bf0 0%, #1a6fc2 100%);
+}
+
+.about-hero-action-btn--github {
+  background: linear-gradient(90deg, #24292f 0%, #0f1419 100%);
+}
+
+.about-hero-action-btn--gquat {
+  background: linear-gradient(90deg, #0b7b86 0%, #2f5ad7 100%);
+}
 
 .about-hero-stats {
   margin-top: 0.9rem;
