@@ -10,12 +10,12 @@ redirect_from:
 
 <div class="about-hero-card" role="region" aria-label="About section introduction">
   <figure class="about-hero-media">
-    <img src="/IMG_1870.jpeg">
+    <img src="{{ '/IMG_1870.jpeg' | relative_url }}" alt="Sudeera's creative workspace">
     <figcaption>My creative cockpit where ideas take flight ✈️</figcaption>
   </figure>
 
   <div class="about-hero-content">
-    <img class="about-hero-avatar" src="/images/profile.png" alt="Portrait photo of Sudeera">
+    <img class="about-hero-avatar" src="{{ '/images/profile.png' | relative_url }}" alt="Portrait photo of Sudeera">
 
     <h1>Hi! I'm Sudeera <span aria-hidden="true">👋</span></h1>
     <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
@@ -30,7 +30,7 @@ redirect_from:
       This site is my knowledge hangar where I share papers, experiments, tools, and lessons from research in flight.
     </p>
 
-    <a class="about-hero-cta" href="/contact/">Let’s Work Together</a>
+    <a class="about-hero-cta" href="{{ '/contact/' | relative_url }}">Let’s Work Together</a>
   </div>
 </div>
 
