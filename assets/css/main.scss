@@ -52,10 +52,11 @@
   padding: 1.55rem;
   margin: 0 auto 1.5rem;
   width: 100%;
-  max-width: 1320px;
+  max-width: 1200px;
   box-sizing: border-box;
-  min-height: clamp(520px, 72vh, 860px);
+  min-height: clamp(480px, 66vh, 760px);
   align-items: stretch;
+  overflow: hidden;
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.13);
   background: linear-gradient(140deg, rgba(15, 27, 51, 0.92) 0%, rgba(19, 34, 65, 0.87) 100%);
@@ -71,7 +72,7 @@
 .about-hero-media img {
   width: 100%;
   height: auto;
-  min-height: clamp(420px, 60vh, 720px);
+  min-height: clamp(360px, 52vh, 620px);
   flex: 1;
   object-fit: cover;
   border-radius: 16px;
@@ -104,16 +105,22 @@
 
 .about-hero-content h1 {
   margin: 0;
-  font-size: clamp(2rem, 4.2vw, 4rem);
+  font-size: clamp(2rem, 3.2vw, 3.4rem);
   line-height: 1.06;
   color: #f8fbff;
 }
 
 .about-hero-tagline {
   margin: 1rem 0 1.4rem;
-  font-size: clamp(1.1rem, 2.1vw, 1.95rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.7rem);
   font-weight: 600;
   color: #c8d3e8;
+}
+
+@media (min-width: 1500px) {
+  .about-hero-card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
 }
 
 .about-hero-content p {
