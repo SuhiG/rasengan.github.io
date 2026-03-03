@@ -82,8 +82,7 @@
 }
 
 body.has-live-ticker .masthead {
-  margin-top: var(--news-ticker-height);
-  transition: margin-top 120ms ease-out;
+  margin-top: 0;
 }
 
 .news-ticker-label {
