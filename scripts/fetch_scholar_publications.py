@@ -41,7 +41,7 @@ def _strip_tags(value: str) -> str:
 
 
 def _extract_rows(page_html: str) -> List[str]:
-    return re.findall(r'<tr class="gsc_a_tr">(.*?)</tr>', page_html, flags=re.DOTALL)
+    return re.findall(r"<tr[^>]*class=['\"][^'\"]*\bgsc_a_tr\b[^'\"]*['\"][^>]*>(.*?)</tr>", page_html, flags=re.DOTALL)
 
 
 def _extract_publications_from_page(page_html: str) -> List[Publication]:
@@ -49,9 +49,13 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
     rows = _extract_rows(page_html)
 
     for row_html in rows:
-        title_match = re.search(r'<a class="gsc_a_at" href="([^"]+)">(.*?)</a>', row_html, flags=re.DOTALL)
-        meta_matches = re.findall(r'<div class="gs_gray">(.*?)</div>', row_html, flags=re.DOTALL)
-        year_match = re.search(r'<td class="gsc_a_y">.*?<span[^>]*>(\d{4})</span>', row_html, flags=re.DOTALL)
+        title_match = re.search(
+            r"<a(?=[^>]*\bclass=['\"][^'\"]*\bgsc_a_at\b[^'\"]*['\"])(?=[^>]*\bhref=['\"]([^'\"]+)['\"])[^>]*>(.*?)</a>",
+            row_html,
+            flags=re.DOTALL,
+        )
+        meta_matches = re.findall(r"<div[^>]*class=['\"][^'\"]*\bgs_gray\b[^'\"]*['\"][^>]*>(.*?)</div>", row_html, flags=re.DOTALL)
+        year_match = re.search(r"<td[^>]*class=['\"][^'\"]*\bgsc_a_y\b[^'\"]*['\"][^>]*>.*?(\d{4})", row_html, flags=re.DOTALL)
 
         if not title_match:
             continue
@@ -77,12 +81,12 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
 
 
 def _extract_stats(page_html: str) -> ScholarStats:
-    rows = re.findall(r'<tr>(.*?)</tr>', page_html, flags=re.DOTALL)
+    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", page_html, flags=re.DOTALL)
     stats_map: dict[str, int] = {}
 
     for row_html in rows:
-        label_match = re.search(r'<a[^>]*class="gsc_rsb_f"[^>]*>(.*?)</a>', row_html, flags=re.DOTALL)
-        value_match = re.search(r'<td[^>]*class="gsc_rsb_std"[^>]*>(.*?)</td>', row_html, flags=re.DOTALL)
+        label_match = re.search(r"<a[^>]*class=['\"][^'\"]*\bgsc_rsb_f\b[^'\"]*['\"][^>]*>(.*?)</a>", row_html, flags=re.DOTALL)
+        value_match = re.search(r"<td[^>]*class=['\"][^'\"]*\bgsc_rsb_std\b[^'\"]*['\"][^>]*>(.*?)</td>", row_html, flags=re.DOTALL)
 
         if not label_match or not value_match:
             continue
@@ -94,6 +98,14 @@ def _extract_stats(page_html: str) -> ScholarStats:
             continue
 
         stats_map[label] = int(value_text)
+
+    if "citations" not in stats_map or "hindex" not in stats_map or "i10index" not in stats_map:
+        # Fallback for alternate markup where classes are changed/obfuscated.
+        stat_values = [int(value.replace(",", "")) for value in re.findall(r"id=['\"]gsc_rsb_st\d+['\"][^>]*>(\d[\d,]*)<", page_html)[:3]]
+        if len(stat_values) == 3:
+            stats_map.setdefault("citations", stat_values[0])
+            stats_map.setdefault("hindex", stat_values[1])
+            stats_map.setdefault("i10index", stat_values[2])
 
     try:
         return ScholarStats(
