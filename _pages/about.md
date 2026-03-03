@@ -63,6 +63,22 @@ redirect_from:
   </ul>
 </div>
 
+<aside class="publication-rail" role="complementary" aria-label="Publication panels">
+  <h2>Publications</h2>
+  <div class="publication-rail-track">
+    {% assign publication_posts = site.publications | sort: "date" | reverse %}
+    {% for post in publication_posts %}
+      <article class="publication-panel">
+        <p class="publication-panel-year">{{ post.date | date: "%Y" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | strip }}</a></h3>
+        {% if post.venue %}
+          <p class="publication-panel-venue">{{ post.venue }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</aside>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const ticker = document.getElementById("news-ticker-content");
