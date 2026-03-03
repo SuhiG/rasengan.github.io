@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Sudeera's Homepage"
+title                    : "Sudeera Gunathilaka"
 title_separator          : "-"
 name                     : &name "Sudeera Gunathilaka"
-description              : &description "personal description"
+description              : &description "Doctoral researcher in AI, quantum-inspired computing, and high-performance computing"
 url                      : https://suhig.github.io/rasengan.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SuhiG/rasengan.github.io"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Sudeera Gunathilaka"
   avatar           : "CR5_9271_Sudeera_size2.jpg"
-  bio              : "wannabe scientist"
+  bio              : "Doctoral researcher in AI, quantum-inspired computing, and HPC"
   location         : "Tokyo, Japan"
-  employer         : "IST (Tokyo Tech) & NTT PHI"
+  employer         : "Institute of Science Tokyo & NTT Physics and Informatics Laboratories"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
   email            :
@@ -309,4 +309,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-

@@ -1,46 +1,45 @@
 ---
 permalink: /
-title: "About me!"
-# excerpt: "About me"
+title: "About"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-**“Impossible only means that you haven’t found the solution yet.”** – *Anonymous*
+**Research Focus:** Artificial Intelligence, Quantum Computing, and High-Performance Computing
 
-I am a 3rd year doctoral candidate at the Institute of Science, Tokyo (prev. Tokyo Institute of Technology). 
-My current research interest are,
-- Unconventional computing architectures (Coherent Computing, Qauntum Computing, etc.)
-- Combinatorial Optimisation (Compressed Sensing, Ising Ground states, etc.)
-- High-Performance Computing (GPU computing, Supercomputers, etc.)
+I am a doctoral candidate at the Institute of Science Tokyo (formerly Tokyo Institute of Technology), affiliated with NTT Physics and Informatics Laboratories. My research integrates algorithm design, physics-inspired computation, and scalable scientific computing to address computationally hard problems.
 
-<div style="text-align: justify"> Recent years have seen a constant increase in the use of unconventional computing architectures for information processing. A major reason for this is the rise of quantum computers, which claimed to be capable of solving some problems that classical computers have difficulty solving. It is necessary to note, however, that these quantum computers have hardware challenges due to physical limitations (e.g. systems using superconductors and operating near 0K temperatures). Alternatively, photon-based systems are more suitable in this case due to their capability to operate at room temperature. However, these photonic systems are much harder to scale up. Quantum systems can be used to solve combinatorial optimization problems such as L0-regularised compressed sensing, drug discovery, etc., but they all come with their own set of additional difficulties. I am currently exploring how to solve classically-hard real-world problems by numerically simulating these quantum and quantum-inspired systems (in my case, quantum annealers and coherent Ising machines). </div> 
-<br>
+My current research areas include:
+- **AI for scientific discovery:** optimization, model-driven inference, and data-efficient approaches for complex systems.
+- **Quantum and quantum-inspired computing:** coherent and annealing-based methods for combinatorial optimization.
+- **High-performance computing (HPC):** GPU-accelerated simulation pipelines and performance-aware implementations for large-scale numerical experiments.
 
-**News**
+In recent years, unconventional computing platforms have become increasingly relevant for information processing and scientific optimization. While gate-model quantum hardware is advancing rapidly, practical deployment is still constrained by device-level limitations. In parallel, photonic and quantum-inspired architectures offer attractive alternatives, especially for optimization workloads that demand speed, parallelism, and energy efficiency.
 
-<span style="color:red">[18-10-2024]</span> Talk at the [International Network on Quantum Annealing 2024 (INQA 2024)](https://www.ucl.ac.uk/quantum/innovation/inqa/inqa-conference/inqa-conference-2024){:target="_blank"} conference <span style="color:green">(Tokyo, Japan) </span> <br>
-<span style="color:red">[01-10-2024]</span> Due to a merger, [Tokyo Institute of Technology](https://www.titech.ac.jp/english){:target="_blank"} changed its name to the [Institute of Science, Tokyo](https://www.isct.ac.jp/ja){:target="_blank"} <br>
-<span style="color:red">[11-08-2024]</span> Talk at the [Asia Future Conference (AFC) 2024](https://www.aisf.or.jp/AFC/2024/category/news-ja/){:target="_blank"} conference (Best presentation award) <span style="color:green">(Bangkok, Thailand) </span> <br>
-<span style="color:red">[08-07-2024]</span> Preliminary defense for doctoral degree program - Day 2 <br>
-<span style="color:red">[03-07-2024]</span> Preliminary defense for doctoral degree program - Day 1 <br>
-<span style="color:red">[21-04-2024]</span> One talk and a poster has been accepted for [Adiabatic Quantum Computing (AQC) 2024](https://iop.eventsair.com/aqc2024/){:target="_blank"} conference <span style="color:green">(Glasgow, UK) </span> <br>
-<span style="color:red">[12-04-2024]</span> Talk at the 2024 NTT Retreat meeting <span style="color:green">(San Francisco, USA)</span> <br>
-<span style="color:red">[18-03-2024]</span> Talk at the 2024 Spring meeting of the [Physical socielty of Japan (JPSJ)](https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html){:target="_blank"}<br>
-<span style="color:red">[09-02-2024]</span> Invited talk @ NTT-RIKEN workshop on photonics, neural networks, and solving combinatorial optimization problems using specialized hardware systems <br>
-<span style="color:red">[16-01-2024]</span> [Two talks](https://onsite.gakkai-web.net/jps/jps_search/2024sp/data2/html/program11.html){:target="_blank"} (2nd author) has been accepted for 2024 Spring meeting of the [Physical socielty of Japan (JPSJ)](https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html){:target="_blank"}  <br>
-<span style="color:red">[27-12-2023]</span> Talk accepted for [第2回量子アニーリング及び関連技術に関する研究会](https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html){:target="_blank"}  <br>
-<span style="color:red">[08-12-2023]</span> Accepted for [Atsumi International Foundation](https://www.aisf.or.jp/jp/){:target="_blank"} scholarship <br> 
-<span style="color:red">[17-11-2023]</span> Poster accepted for [Quantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en){:target="_blank"} conference <span style="color:green">(Taipei, Taiwan)</span> <br>
-<span style="color:red">[17-11-2023]</span> [Paper](https://doi.org/10.1063/5.0176248){:target="_blank"} published in the [Journal of Applied Physics](https://pubs.aip.org/aip/jap){:target="_blank"} <br>
-<span style="color:red">[26-09-2023]</span> [Paper](https://doi.org/10.1038/s41598-023-43364-8){:target="_blank"} published in the journal, [Nature Scientific Reports](https://www.nature.com/srep/){:target="_blank"}  <br>
-<span style="color:red">[30-08-2023]</span> Mid-term evaluation for doctoral degree program - Day 2 <br>
-<span style="color:red">[24-08-2023]</span> Mid-term evaluation for doctoral degree program - Day 1 <br>
-<span style="color:red">[08-08-2023]</span> Poster presentation at the University of Tokyo for [StatPhys28](https://statphys28.org/index.html){:target="_blank"}  <br>
-<span style="color:red">[22-06-2023]</span> Talk and field visit at the NTT Basic Research Laboratories, Atsugi, Kanagawa <br>
-<span style="color:red">[07-06-2023]</span> TokyoTech Student Ambassador Kick-off meeting <br>
-<span style="color:red">[24-10-2022]</span> Poster presentation at the Stanford University for CNC22 <br>
-<span style="color:red">[23-10-2023]</span> Field visit to the NTT Physics and Informatics Laboratories, Sunnyvale, Califronia <br>
-<span style="color:red">[15-06-2022]</span> Paper published in the journal, Nature Communications Physics <br>
+My work investigates how these emerging paradigms can be evaluated and deployed through rigorous numerical simulation and benchmarking. In particular, I study quantum annealers and coherent Ising machines, with an emphasis on translating theoretical advantages into reliable performance on real-world problem instances.
 
+## News
+
+- **2024-10-18:** Presented at [International Network on Quantum Annealing 2024 (INQA 2024)](https://www.ucl.ac.uk/quantum/innovation/inqa/inqa-conference/inqa-conference-2024){:target="_blank"} (Tokyo, Japan).
+- **2024-10-01:** Tokyo Institute of Technology became the [Institute of Science Tokyo](https://www.isct.ac.jp/ja){:target="_blank"}.
+- **2024-08-11:** Presented at [Asia Future Conference (AFC) 2024](https://www.aisf.or.jp/AFC/2024/category/news-ja/){:target="_blank"}; received Best Presentation Award (Bangkok, Thailand).
+- **2024-07-08:** Preliminary doctoral defense (Day 2).
+- **2024-07-03:** Preliminary doctoral defense (Day 1).
+- **2024-04-21:** One talk and one poster accepted at [Adiabatic Quantum Computing (AQC) 2024](https://iop.eventsair.com/aqc2024/){:target="_blank"} (Glasgow, UK).
+- **2024-04-12:** Presented at the 2024 NTT Retreat meeting (San Francisco, USA).
+- **2024-03-18:** Presented at the 2024 Spring Meeting of the [Physical Society of Japan](https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html){:target="_blank"}.
+- **2024-02-09:** Invited talk at the NTT-RIKEN workshop on photonics, neural networks, and specialized hardware for combinatorial optimization.
+- **2024-01-16:** Two contributed talks (2nd author) accepted at the 2024 Spring Meeting of the [Physical Society of Japan](https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html){:target="_blank"}.
+- **2023-12-27:** Talk accepted for [第2回量子アニーリング及び関連技術に関する研究会](https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html){:target="_blank"}.
+- **2023-12-08:** Awarded scholarship from the [Atsumi International Foundation](https://www.aisf.or.jp/jp/){:target="_blank"}.
+- **2023-11-17:** Poster accepted for [Quantum Information Processing (QIP) 2024](https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en){:target="_blank"} (Taipei, Taiwan).
+- **2023-11-17:** Paper published in [Journal of Applied Physics](https://doi.org/10.1063/5.0176248){:target="_blank"}.
+- **2023-09-26:** Paper published in [Scientific Reports](https://doi.org/10.1038/s41598-023-43364-8){:target="_blank"}.
+- **2023-08-30:** Mid-term doctoral evaluation (Day 2).
+- **2023-08-24:** Mid-term doctoral evaluation (Day 1).
+- **2023-08-08:** Poster presentation at [StatPhys28](https://statphys28.org/index.html){:target="_blank"}, University of Tokyo.
+- **2023-06-22:** Talk and field visit at NTT Basic Research Laboratories, Atsugi, Kanagawa.
+- **2023-06-07:** Tokyo Tech Student Ambassador kick-off meeting.
+- **2022-10-24:** Poster presentation at Stanford University for CNC22.
+- **2022-06-15:** Paper published in Nature Communications Physics.
