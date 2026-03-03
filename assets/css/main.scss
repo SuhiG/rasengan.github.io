@@ -58,6 +58,23 @@
   overflow: hidden;
 }
 
+.news-ticker--fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.news-ticker-spacer {
+  height: 3.6rem;
+}
+
 .news-ticker-label {
   flex: 0 0 auto;
   font-size: 0.78rem;
@@ -133,6 +150,10 @@
   .news-ticker-label {
     font-size: 0.68rem;
     padding: 0.35rem 0.45rem;
+  }
+
+  .news-ticker-spacer {
+    height: 3.35rem;
   }
 }
 
