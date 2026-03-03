@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap");
+
 /*
  *    Minimal Mistakes Jekyll Theme
  *
@@ -141,4 +143,144 @@
 
 .news-list a:hover {
   color: #0a3574;
+}
+
+/* Coderon-inspired theme */
+
+:root {
+  --coderon-bg: #0b1020;
+  --coderon-bg-soft: #121935;
+  --coderon-surface: rgba(255, 255, 255, 0.05);
+  --coderon-surface-border: rgba(255, 255, 255, 0.12);
+  --coderon-text: #e5e7eb;
+  --coderon-muted: #b7c0d1;
+  --coderon-heading: #ffffff;
+  --coderon-accent: #7c7bff;
+  --coderon-accent-2: #4cc9f0;
+}
+
+body {
+  font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+  color: var(--coderon-text);
+  background:
+    radial-gradient(65rem 40rem at 8% -12%, rgba(124, 123, 255, 0.26) 0%, rgba(124, 123, 255, 0) 55%),
+    radial-gradient(55rem 35rem at 92% -10%, rgba(76, 201, 240, 0.18) 0%, rgba(76, 201, 240, 0) 55%),
+    linear-gradient(180deg, #0b1020 0%, #0a1124 45%, #0e1734 100%);
+  background-attachment: fixed;
+}
+
+a {
+  color: #a5b4fc;
+}
+
+a:hover {
+  color: #c4b5fd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--coderon-heading);
+  letter-spacing: 0.01em;
+}
+
+.masthead {
+  border-bottom: 1px solid var(--coderon-surface-border);
+  background: rgba(11, 16, 32, 0.86);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a,
+.site-title,
+.masthead__menu-item a {
+  color: #dbe3f3;
+  font-weight: 500;
+}
+
+.greedy-nav a:hover,
+.site-title:hover,
+.masthead__menu-item a:hover {
+  color: #ffffff;
+}
+
+.initial-content,
+.page,
+.archive,
+.sidebar {
+  color: var(--coderon-text);
+}
+
+.page,
+.archive {
+  background: var(--coderon-surface);
+  border: 1px solid var(--coderon-surface-border);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+.archive__item,
+.list__item,
+.page__related .archive__item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+.archive__item-title a,
+.page__title,
+.author__name {
+  color: #fff;
+}
+
+.author__avatar img,
+.author__content,
+.author__urls-wrapper {
+  border-color: var(--coderon-surface-border);
+}
+
+.author__content,
+.author__urls-wrapper,
+.sidebar {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+}
+
+code,
+pre,
+tt {
+  font-family: "JetBrains Mono", Monaco, Consolas, monospace;
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--coderon-accent) 0%, var(--coderon-accent-2) 100%);
+  color: #fff;
+  border: 0;
+}
+
+.page__footer {
+  color: var(--coderon-muted);
+  background: transparent;
+}
+
+.notice,
+.page__hero--overlay,
+.search-content {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--coderon-surface-border);
+  border-radius: 14px;
 }
