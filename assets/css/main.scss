@@ -43,42 +43,105 @@
 @import "print";
 
 
-/* Front-page glass styling */
+/* About hero section */
 
-.page-glass-theme {
-  padding: 1.1rem 1rem 1.35rem;
+.about-hero-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.08fr) minmax(290px, 1fr);
+  gap: 1.75rem;
+  padding: 1.55rem;
+  margin-bottom: 1.5rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: linear-gradient(140deg, rgba(15, 27, 51, 0.92) 0%, rgba(19, 34, 65, 0.87) 100%);
+  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.34);
+}
+
+.about-hero-media {
+  margin: 0;
+}
+
+.about-hero-media img {
+  width: 100%;
+  height: 100%;
+  max-height: 710px;
+  object-fit: cover;
   border-radius: 16px;
-  border: 1px solid rgba(158, 184, 216, 0.45);
-  background:
-    radial-gradient(circle at 0% 0%, rgba(198, 223, 255, 0.34) 0%, rgba(198, 223, 255, 0) 42%),
-    radial-gradient(circle at 100% 0%, rgba(181, 214, 255, 0.28) 0%, rgba(181, 214, 255, 0) 38%),
-    linear-gradient(145deg, rgba(245, 251, 255, 0.82) 0%, rgba(231, 241, 253, 0.72) 100%);
-  box-shadow:
-    0 16px 40px rgba(15, 31, 54, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px) saturate(115%);
-  -webkit-backdrop-filter: blur(12px) saturate(115%);
+  display: block;
 }
 
-.frontpage-glass {
-  padding: 1.1rem 1.3rem;
-  margin: 0.4rem 0 1.3rem;
-  border: 1px solid rgba(136, 170, 209, 0.55);
+.about-hero-media figcaption {
+  margin-top: 0.8rem;
+  color: #c2ccdd;
+  font-size: 0.96rem;
+  text-align: center;
+}
+
+.about-hero-content {
+  padding: 0.5rem 0.4rem;
+}
+
+.about-hero-avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 1rem;
+}
+
+.about-hero-content h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.2vw, 4rem);
+  line-height: 1.06;
+  color: #f8fbff;
+}
+
+.about-hero-tagline {
+  margin: 1rem 0 1.4rem;
+  font-size: clamp(1.1rem, 2.1vw, 1.95rem);
+  font-weight: 600;
+  color: #c8d3e8;
+}
+
+.about-hero-content p {
+  color: #b9c6dc;
+  font-size: 1.16rem;
+  line-height: 1.75;
+  margin-bottom: 1.15rem;
+}
+
+.about-hero-cta {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.78rem 1.45rem;
   border-radius: 12px;
-  background: linear-gradient(165deg, rgba(253, 255, 255, 0.76) 0%, rgba(232, 243, 255, 0.58) 100%);
-  box-shadow:
-    0 14px 30px rgba(26, 43, 60, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(14px) saturate(120%);
-  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  color: #fff;
+  background: linear-gradient(90deg, #eb0a8a 0%, #7c3aed 100%);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
 }
 
-.frontpage-glass p:last-child {
-  margin-bottom: 0;
+.about-hero-cta:hover {
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(124, 58, 237, 0.45);
 }
 
-.frontpage-glass ul {
-  margin-bottom: 0.5rem;
+@media (max-width: 1100px) {
+  .about-hero-card {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .about-hero-content {
+    padding: 0.2rem;
+  }
+
+  .about-hero-media img {
+    max-height: 470px;
+  }
 }
 
 /* Custom News Panel (About page) */
