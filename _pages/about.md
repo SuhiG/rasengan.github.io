@@ -16,7 +16,7 @@ redirect_from:
 
   <div class="about-hero-content">
     <h1>ආයුබෝවන්! <span aria-hidden="true">👋</span></h1>
-    <h3>(Ā-yu-bō-van) <span aria-hidden="true"></span></h3>
+    <h2>(Ā-yu-bō-van) <span aria-hidden="true"></span></h2>
     <p class="about-hero-tagline">LLMs, Quantum, and Supercomputers.</p>
 
     <p>
