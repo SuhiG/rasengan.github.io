@@ -39,6 +39,30 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+/* Front-page glass styling */
+.frontpage-glass {
+  padding: 1.1rem 1.3rem;
+  margin: 0.4rem 0 1.3rem;
+  border: 1px solid rgba(162, 186, 216, 0.55);
+  border-radius: 12px;
+  background: linear-gradient(165deg, rgba(251, 253, 255, 0.9) 0%, rgba(241, 247, 255, 0.85) 100%);
+  box-shadow:
+    0 14px 30px rgba(26, 43, 60, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.frontpage-glass p:last-child {
+  margin-bottom: 0;
+}
+
+.frontpage-glass ul {
+  margin-bottom: 0.5rem;
+}
+
 /* Custom News Panel (About page) */
 .news-panel {
   height: 24rem;

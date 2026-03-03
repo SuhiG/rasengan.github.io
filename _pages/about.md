@@ -8,6 +8,8 @@ redirect_from:
 ---
 **Research Focus:** Artificial Intelligence, Quantum Computing, and High-Performance Computing
 
+<div class="frontpage-glass" markdown="1">
+
 I am a doctoral candidate at the Institute of Science Tokyo (formerly Tokyo Institute of Technology), affiliated with NTT Physics and Informatics Laboratories. My research integrates algorithm design, physics-inspired computation, and scalable scientific computing to address computationally hard problems.
 
 My current research areas include:
@@ -18,6 +20,8 @@ My current research areas include:
 In recent years, unconventional computing platforms have become increasingly relevant for information processing and scientific optimization. While gate-model quantum hardware is advancing rapidly, practical deployment is still constrained by device-level limitations. In parallel, photonic and quantum-inspired architectures offer attractive alternatives, especially for optimization workloads that demand speed, parallelism, and energy efficiency.
 
 My work investigates how these emerging paradigms can be evaluated and deployed through rigorous numerical simulation and benchmarking. In particular, I study quantum annealers and coherent Ising machines, with an emphasis on translating theoretical advantages into reliable performance on real-world problem instances.
+
+</div>
 
 ## News
 
