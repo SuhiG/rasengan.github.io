@@ -66,9 +66,20 @@ redirect_from:
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const ticker = document.getElementById("news-ticker-content");
+    const tickerShell = document.querySelector(".news-ticker");
     const entries = document.querySelectorAll(".news-list li");
 
+    function syncTickerHeight() {
+      if (!tickerShell) {
+        return;
+      }
+
+      const tickerHeight = Math.ceil(tickerShell.getBoundingClientRect().height);
+      document.documentElement.style.setProperty("--news-ticker-height", tickerHeight + "px");
+    }
+
     if (!ticker || entries.length === 0) {
+      syncTickerHeight();
       return;
     }
 
@@ -78,5 +89,14 @@ redirect_from:
 
     const stream = serialized.join('<span class="news-ticker-separator" aria-hidden="true">•</span>');
     ticker.innerHTML = stream + '<span class="news-ticker-separator" aria-hidden="true">•</span>' + stream;
+
+    syncTickerHeight();
+
+    if (window.ResizeObserver && tickerShell) {
+      const tickerObserver = new ResizeObserver(syncTickerHeight);
+      tickerObserver.observe(tickerShell);
+    }
+
+    window.addEventListener("resize", syncTickerHeight);
   });
 </script>
