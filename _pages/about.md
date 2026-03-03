@@ -11,14 +11,10 @@ redirect_from:
 <div class="about-hero-card" role="region" aria-label="About section introduction">
   <figure class="about-hero-media">
     <img src="{{ '/IMG_1870.jpeg' | relative_url }}" alt="Sudeera's creative workspace">
-    <figcaption>My creative cockpit where ideas take flight ✈️</figcaption>
   </figure>
 
-  <div class="about-hero-content">
-    <img class="about-hero-avatar" src="{{ '/images/profile.png' | relative_url }}" alt="Portrait photo of Sudeera">
-
-    <h1>Hi! I'm Sudeera <span aria-hidden="true">👋</span></h1>
-    <p class="about-hero-tagline">AI researcher, quantum computing enthusiast, and HPC builder.</p>
+    <h1>ආයුබෝවන්! (Ā-yu-bō-van) <span aria-hidden="true">👋</span></h1>
+    <p class="about-hero-tagline">LLMs, Quantum, and Supercomputers builder.</p>
 
     <p>
       Research scientist at AIST’s G-QuAT with a Ph.D. in AI from Institute of Science Tokyo, I develop optimization, simulation, and machine learning methods across quantum and high-performance computing systems. My work spans LLMs, CIMs, image reconstruction, and real-world applications.
