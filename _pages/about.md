@@ -67,16 +67,29 @@ redirect_from:
   <aside class="publication-rail" role="complementary" aria-label="Publication panels">
     <h2>Publications</h2>
     <div class="publication-rail-track">
-      {% assign publication_posts = site.publications | sort: "date" | reverse %}
-      {% for post in publication_posts %}
+      {% assign scholar_publications = site.data.google_scholar_publications | default: empty %}
+      {% if scholar_publications and scholar_publications.size > 0 %}
+        {% for publication in scholar_publications limit: 12 %}
+          <article class="publication-panel">
+            <p class="publication-panel-year">{{ publication.year }}</p>
+            <h3>
+              {% if publication.scholar_url and publication.scholar_url != "" %}
+                <a href="{{ publication.scholar_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+              {% else %}
+                {{ publication.title }}
+              {% endif %}
+            </h3>
+            {% if publication.venue %}
+              <p class="publication-panel-venue">{{ publication.venue }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      {% else %}
         <article class="publication-panel">
-          <p class="publication-panel-year">{{ post.date | date: "%Y" }}</p>
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title | strip }}</a></h3>
-          {% if post.venue %}
-            <p class="publication-panel-venue">{{ post.venue }}</p>
-          {% endif %}
+          <p class="publication-panel-year">--</p>
+          <h3>Syncing publications from Google Scholar...</h3>
         </article>
-      {% endfor %}
+      {% endif %}
     </div>
   </aside>
 </div>
