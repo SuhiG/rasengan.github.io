@@ -79,7 +79,7 @@
   height: var(--news-ticker-height);
 }
 
-.masthead {
+body.has-live-ticker .masthead {
   margin-top: var(--news-ticker-height);
 }
 

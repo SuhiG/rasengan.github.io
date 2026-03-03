@@ -11,9 +11,13 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body{% if page.url == "/" %} class="has-live-ticker"{% endif %}>
 
     {% include browser-upgrade.html %}
+    {% if page.url == "/" %}
+      {% include live-news-ticker.html %}
+      <div class="news-ticker-spacer" aria-hidden="true"></div>
+    {% endif %}
     {% include masthead.html %}
 
     {{ content }}
