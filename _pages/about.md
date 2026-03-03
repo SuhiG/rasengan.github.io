@@ -36,13 +36,27 @@ redirect_from:
 
     <div class="about-hero-actions" aria-label="Profile links">
       <a class="about-hero-action-btn" href="{{ scholar_link }}" target="_blank" rel="noopener">
-        <span class="about-hero-action-thumb" aria-hidden="true"><i class="ai ai-google-scholar-square"></i></span>
         <span>Google Scholar</span>
       </a>
       <a class="about-hero-action-btn about-hero-action-btn--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-        <span class="about-hero-action-thumb" aria-hidden="true"><i class="fab fa-linkedin"></i></span>
         <span>LinkedIn</span>
       </a>
+    </div>
+
+    {% assign scholar_stats = site.data.google_scholar_stats %}
+    <div class="about-hero-stats" role="group" aria-label="Google Scholar citation metrics">
+      <article class="about-hero-stat-card">
+        <p class="about-hero-stat-label">Citations</p>
+        <p class="about-hero-stat-value">{{ scholar_stats.citations | default: '--' }}</p>
+      </article>
+      <article class="about-hero-stat-card">
+        <p class="about-hero-stat-label">h-index</p>
+        <p class="about-hero-stat-value">{{ scholar_stats.h_index | default: '--' }}</p>
+      </article>
+      <article class="about-hero-stat-card">
+        <p class="about-hero-stat-label">i10-index</p>
+        <p class="about-hero-stat-value">{{ scholar_stats.i10_index | default: '--' }}</p>
+      </article>
     </div>
   </div>
 </div>

@@ -303,17 +303,37 @@ body.has-live-ticker .masthead {
   box-shadow: 0 8px 22px rgba(10, 102, 194, 0.4);
 }
 
-.about-hero-action-thumb {
-  width: 1.6rem;
-  height: 1.6rem;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  background: rgba(255, 255, 255, 0.18);
+
+.about-hero-stats {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
 }
 
+.about-hero-stat-card {
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(136, 170, 209, 0.45);
+  background: rgba(247, 252, 255, 0.12);
+}
+
+.about-hero-stat-label {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #c8d3e8;
+}
+
+.about-hero-stat-value {
+  margin: 0.25rem 0 0;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #f8fbff;
+}
 @media (max-width: 1100px) {
   .about-hero-card {
     grid-template-columns: 1fr;
@@ -325,6 +345,10 @@ body.has-live-ticker .masthead {
 
   .about-hero-content {
     padding: 0.2rem;
+  }
+
+  .about-hero-stats {
+    grid-template-columns: 1fr;
   }
 
   .about-hero-media img {
