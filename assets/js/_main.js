@@ -95,4 +95,51 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+  // Futuristic visual effects
+  var revealTargets = document.querySelectorAll(".page, .archive, .about-hero-card, .archive__item, .sidebar, .news-ticker");
+
+  if ("IntersectionObserver" in window) {
+    var revealObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: "0px 0px -6% 0px"
+    });
+
+    revealTargets.forEach(function(node) {
+      node.classList.add("fx-reveal");
+      revealObserver.observe(node);
+    });
+  } else {
+    revealTargets.forEach(function(node) {
+      node.classList.add("fx-reveal", "is-visible");
+    });
+  }
+
+  var rafScheduled = false;
+  var lastX = 0;
+  var lastY = 0;
+
+  var updateCursorGlow = function() {
+    document.documentElement.style.setProperty("--fx-cursor-x", lastX + "px");
+    document.documentElement.style.setProperty("--fx-cursor-y", lastY + "px");
+    rafScheduled = false;
+  };
+
+  document.addEventListener("pointermove", function(event) {
+    lastX = event.clientX;
+    lastY = event.clientY;
+
+    if (!rafScheduled) {
+      rafScheduled = true;
+      window.requestAnimationFrame(updateCursorGlow);
+    }
+  }, { passive: true });
+
 });
