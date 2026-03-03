@@ -6,6 +6,14 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+<div class="news-ticker" role="region" aria-label="Live news ticker">
+  <span class="news-ticker-label">Live News</span>
+  <div class="news-ticker-track" aria-live="polite">
+    <div class="news-ticker-content" id="news-ticker-content">Loading latest news…</div>
+  </div>
+</div>
+
 <div class="about-hero-card" role="region" aria-label="About section introduction">
   <figure class="about-hero-media">
     <img src="/images/CR5_9271_Sudeera_size2.jpg" alt="Creative desk with monitor, microphone, and ambient lighting">
@@ -60,3 +68,21 @@ redirect_from:
     <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
   </ul>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ticker = document.getElementById("news-ticker-content");
+    const entries = document.querySelectorAll(".news-list li");
+
+    if (!ticker || entries.length === 0) {
+      return;
+    }
+
+    const serialized = Array.from(entries).map(function (item) {
+      return '<span class="news-ticker-item">' + item.innerHTML + "</span>";
+    });
+
+    const stream = serialized.join('<span class="news-ticker-separator" aria-hidden="true">•</span>');
+    ticker.innerHTML = stream + '<span class="news-ticker-separator" aria-hidden="true">•</span>' + stream;
+  });
+</script>
