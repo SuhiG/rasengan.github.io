@@ -181,6 +181,125 @@ body.has-live-ticker .masthead {
   }
 }
 
+
+/* Homepage architecture layout */
+.home-architecture {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.home-architecture-top {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  gap: 1.4rem;
+}
+
+.home-card {
+  border-radius: 2.8rem;
+  background: #8eaec0;
+  color: #fff;
+  padding: clamp(1.5rem, 3vw, 2.6rem);
+  box-sizing: border-box;
+}
+
+.home-card h2 {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-size: clamp(2rem, 4.2vw, 2.8rem);
+  text-align: center;
+}
+
+.home-card p {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.7;
+}
+
+.home-card-cta {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.home-card-cta:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.home-card-about {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-card-publications {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-publications-track {
+  margin-top: 0.5rem;
+  overflow-y: auto;
+  max-height: 20rem;
+  padding-right: 0.3rem;
+}
+
+.home-publication-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.55rem 0;
+}
+
+.home-publication-year {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.home-publication-item h3 {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.home-publication-item h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-card-news {
+  min-height: 16rem;
+}
+
+.home-card-news .news-panel {
+  margin: 0.8rem 0;
+  height: 14rem;
+  border: 0;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: none;
+}
+
+@media (max-width: 960px) {
+  .home-architecture-top {
+    grid-template-columns: 1fr;
+  }
+
+  .home-card-about,
+  .home-card-publications {
+    min-height: auto;
+  }
+}
+
 /* About hero section */
 
 .about-hero-card {
