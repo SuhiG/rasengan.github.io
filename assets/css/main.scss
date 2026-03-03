@@ -45,6 +45,10 @@
 
 
 /* Live news ticker */
+:root {
+  --news-ticker-height: 3.6rem;
+}
+
 .news-ticker {
   display: flex;
   align-items: center;
@@ -72,7 +76,11 @@
 }
 
 .news-ticker-spacer {
-  height: 3.6rem;
+  height: var(--news-ticker-height);
+}
+
+.masthead {
+  margin-top: var(--news-ticker-height);
 }
 
 .news-ticker-label {
@@ -154,6 +162,10 @@
 
   .news-ticker-spacer {
     height: 3.35rem;
+  }
+
+  :root {
+    --news-ticker-height: 3.35rem;
   }
 }
 
