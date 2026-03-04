@@ -48,6 +48,12 @@
 }
 
 .page__content {
+  padding: 1.25rem;
+  border-radius: $border-radius;
+  background: linear-gradient(135deg, rgba(#fff, 0.96), rgba($primary-color, 0.03));
+  border: 1px solid rgba($primary-color, 0.08);
+  box-shadow: 0 12px 30px rgba(#111, 0.05);
+
 
   h2 {
     padding-bottom: 0.5em;
@@ -397,4 +403,21 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+.page__hero--overlay:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(#8fd4ff, 0.2), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba($primary-color, 0.22), transparent 45%),
+    linear-gradient(120deg, rgba(#091322, 0.45), rgba(#0e1f34, 0.28));
+  pointer-events: none;
+}
+
+.page__hero--overlay .wrapper {
+  position: relative;
+  z-index: 1;
 }
