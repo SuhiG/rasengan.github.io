@@ -576,6 +576,7 @@ body.has-live-ticker .masthead {
   --coderon-heading: #ffffff;
   --coderon-accent: #7c7bff;
   --coderon-accent-2: #4cc9f0;
+  --coderon-accent-3: #37f0c2;
 }
 
 html {
@@ -586,9 +587,10 @@ body {
   font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
   color: var(--coderon-text);
   background:
-    radial-gradient(65rem 40rem at 8% -12%, rgba(124, 123, 255, 0.26) 0%, rgba(124, 123, 255, 0) 55%),
-    radial-gradient(55rem 35rem at 92% -10%, rgba(76, 201, 240, 0.18) 0%, rgba(76, 201, 240, 0) 55%),
-    linear-gradient(180deg, #0b1020 0%, #0a1124 45%, #0e1734 100%);
+    radial-gradient(72rem 46rem at -8% -14%, rgba(109, 93, 255, 0.32) 0%, rgba(109, 93, 255, 0) 56%),
+    radial-gradient(54rem 38rem at 108% -8%, rgba(76, 201, 240, 0.26) 0%, rgba(76, 201, 240, 0) 58%),
+    radial-gradient(48rem 36rem at 52% 118%, rgba(55, 240, 194, 0.18) 0%, rgba(55, 240, 194, 0) 62%),
+    linear-gradient(165deg, #070b18 0%, #0a1227 45%, #0a152f 72%, #080f22 100%);
   background-attachment: fixed;
 }
 
@@ -1005,6 +1007,7 @@ body.has-live-ticker::after {
 :root {
   --fx-cursor-x: 50%;
   --fx-cursor-y: 50%;
+  --fx-orbit-shift: 0px;
 }
 
 body {
@@ -1023,22 +1026,35 @@ body::after {
 
 body::before {
   background:
-    radial-gradient(760px circle at 15% 10%, rgba(56, 189, 248, 0.14), transparent 58%),
-    radial-gradient(840px circle at 86% 20%, rgba(99, 102, 241, 0.18), transparent 62%),
-    radial-gradient(680px circle at 56% 86%, rgba(168, 85, 247, 0.16), transparent 66%),
-    radial-gradient(560px circle at var(--fx-cursor-x) var(--fx-cursor-y), rgba(16, 185, 129, 0.1), transparent 64%);
-  filter: saturate(115%);
-  animation: fx-nebula-shift 18s ease-in-out infinite alternate;
+    radial-gradient(860px circle at 12% 12%, rgba(76, 201, 240, 0.16), transparent 58%),
+    radial-gradient(780px circle at 82% 18%, rgba(124, 123, 255, 0.22), transparent 62%),
+    radial-gradient(700px circle at 52% 89%, rgba(55, 240, 194, 0.15), transparent 64%),
+    radial-gradient(530px circle at var(--fx-cursor-x) var(--fx-cursor-y), rgba(86, 220, 255, 0.16), transparent 62%),
+    conic-gradient(from 220deg at calc(50% + var(--fx-orbit-shift)) 52%, rgba(124, 123, 255, 0.08), rgba(55, 240, 194, 0.04), rgba(76, 201, 240, 0.07), rgba(124, 123, 255, 0.08));
+  filter: saturate(122%);
+  animation: fx-nebula-shift 20s ease-in-out infinite alternate;
 }
 
 body::after {
   background-image:
-    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
-  background-size: 38px 38px;
+    linear-gradient(rgba(56, 71, 117, 0.26) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 71, 117, 0.2) 1px, transparent 1px),
+    repeating-linear-gradient(112deg, rgba(120, 92, 255, 0.12) 0 1px, transparent 1px 18px);
+  background-size: 40px 40px, 40px 40px, 130px 130px;
+  background-position: 0 0, 0 0, calc(var(--fx-orbit-shift) * -0.6) 0;
   mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.72) 0%, transparent 76%);
   -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.72) 0%, transparent 76%);
-  opacity: 0.3;
+  opacity: 0.32;
+  animation: quantum-grid-drift 24s linear infinite;
+}
+
+body.has-live-ticker .masthead::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -1px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(124, 123, 255, 0) 0%, rgba(124, 123, 255, 0.8) 34%, rgba(76, 201, 240, 0.85) 64%, rgba(124, 123, 255, 0) 100%);
+  opacity: 0.75;
 }
 
 .masthead,
@@ -1116,6 +1132,16 @@ button:hover,
   100% {
     filter: hue-rotate(22deg) saturate(126%);
     transform: scale(1.03) translate3d(0, -0.8%, 0);
+  }
+}
+
+@keyframes quantum-grid-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -40px, 0);
   }
 }
 
