@@ -125,6 +125,17 @@ $(document).ready(function(){
   var rafScheduled = false;
   var lastX = 0;
   var lastY = 0;
+  var scrollScheduled = false;
+
+  var updateScrollFx = function() {
+    var doc = document.documentElement;
+    var maxScroll = Math.max(doc.scrollHeight - window.innerHeight, 1);
+    var scrollRatio = Math.min(window.scrollY / maxScroll, 1);
+
+    doc.style.setProperty("--fx-scroll-ratio", scrollRatio.toFixed(4));
+    doc.style.setProperty("--fx-wave-shift", ((scrollRatio - 0.5) * 32).toFixed(2) + "px");
+    scrollScheduled = false;
+  };
 
   var updateCursorGlow = function() {
     document.documentElement.style.setProperty("--fx-cursor-x", lastX + "px");
@@ -142,5 +153,14 @@ $(document).ready(function(){
       window.requestAnimationFrame(updateCursorGlow);
     }
   }, { passive: true });
+
+  window.addEventListener("scroll", function() {
+    if (!scrollScheduled) {
+      scrollScheduled = true;
+      window.requestAnimationFrame(updateScrollFx);
+    }
+  }, { passive: true });
+
+  updateScrollFx();
 
 });
