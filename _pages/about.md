@@ -210,7 +210,7 @@ redirect_from:
 
 <section class="independent-insight-section" aria-label="Social highlights section">
   <article class="insight-card insight-card--highlights">
-    <h2>LinkedIn &amp; Twitter Highlights</h2>
+    <h2>LinkedIn &amp; Twitter Posts</h2>
     <div class="social-deck" aria-label="Recent social post highlights">
       {% assign social_posts = site.data.social_posts | sort: 'posted_at' | reverse %}
 
@@ -226,7 +226,14 @@ redirect_from:
                 {% assign post_time = post.posted_at | date: "%Y-%m-%dT%H:%M:%S%z" %}
                 <time datetime="{{ post_time }}">{{ post.posted_at | date: "%d %b %Y · %H:%M" }}</time>
               </div>
-              <p>{{ post.text }}</p>
+              <p class="social-post-text">{{ post.text | newline_to_br }}</p>
+              {% if post.images %}
+                <div class="social-post-media">
+                  {% for image in post.images %}
+                    <img src="{{ image.src }}" alt="{{ image.alt | default: 'Social post image' }}" loading="lazy">
+                  {% endfor %}
+                </div>
+              {% endif %}
             </a>
           {% endfor %}
         </div>
@@ -244,7 +251,14 @@ redirect_from:
                 {% assign post_time = post.posted_at | date: "%Y-%m-%dT%H:%M:%S%z" %}
                 <time datetime="{{ post_time }}">{{ post.posted_at | date: "%d %b %Y · %H:%M" }}</time>
               </div>
-              <p>{{ post.text }}</p>
+              <p class="social-post-text">{{ post.text | newline_to_br }}</p>
+              {% if post.images %}
+                <div class="social-post-media">
+                  {% for image in post.images %}
+                    <img src="{{ image.src }}" alt="{{ image.alt | default: 'Social post image' }}" loading="lazy">
+                  {% endfor %}
+                </div>
+              {% endif %}
             </a>
           {% endfor %}
         </div>
