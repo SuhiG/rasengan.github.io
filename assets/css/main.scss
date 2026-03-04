@@ -560,7 +560,20 @@ body.has-live-ticker .masthead {
   padding: 1rem;
   display: grid;
   gap: 0.9rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+}
+
+
+.independent-insight-section {
+  margin-top: 1.2rem;
+}
+
+.independent-insight-section .insight-card {
+  border-radius: 16px;
+  border: 1px solid rgba(130, 147, 186, 0.42);
+  background: linear-gradient(170deg, rgba(14, 24, 46, 0.98) 0%, rgba(10, 17, 36, 0.99) 100%);
+  box-shadow: 0 20px 42px rgba(2, 8, 22, 0.55);
+  padding: 1rem;
 }
 
 .insight-card {
@@ -573,14 +586,6 @@ body.has-live-ticker .masthead {
 .insight-card--keywords,
 .insight-card--github {
   min-height: 11rem;
-}
-
-.insight-card--travel,
-.insight-card--highlights {
-  grid-column: 1 / -1;
-  background: linear-gradient(170deg, rgba(20, 34, 64, 0.92) 0%, rgba(9, 16, 32, 0.97) 100%);
-  border-color: rgba(120, 151, 219, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 14px 32px rgba(2, 8, 22, 0.35);
 }
 
 .insight-card h2 {
@@ -627,7 +632,7 @@ body.has-live-ticker .masthead {
   margin-top: 0.55rem;
   display: grid;
   gap: 0.55rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   max-height: 20rem;
   overflow-y: auto;
   padding-right: 0.25rem;

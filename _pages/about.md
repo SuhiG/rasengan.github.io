@@ -185,52 +185,57 @@ redirect_from:
       </a>
     </article>
 
-    <article class="insight-card insight-card--travel">
-      <h2>Travel Map</h2>
-      <div class="travel-map" aria-label="Countries and cities visited">
-        <iframe src="{{ '/talkmap/map.html' | relative_url }}" title="Travel map" loading="lazy"></iframe>
-      </div>
-    </article>
-
-    <article class="insight-card insight-card--highlights">
-      <h2>LinkedIn &amp; Twitter Highlights</h2>
-      <div class="social-posts" aria-label="Recent social post highlights">
-        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-          <strong>LinkedIn</strong>
-          <p>Shared conference updates and award announcements from AFC 2024 in Bangkok.</p>
-        </a>
-        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-          <strong>Twitter/X</strong>
-          <p>Posted live insights on adiabatic quantum computing and workshop outcomes.</p>
-        </a>
-        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-          <strong>LinkedIn</strong>
-          <p>Research snapshots: photonics, neural networks, and special hardware for optimization.</p>
-        </a>
-        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-          <strong>Twitter/X</strong>
-          <p>Highlights from talks in Tokyo, Glasgow, and Taipei with publication milestones.</p>
-        </a>
-        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-          <strong>LinkedIn</strong>
-          <p>G-QuAT and AIST updates, including project outcomes on optimization and HPC-enabled AI.</p>
-        </a>
-        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-          <strong>Twitter/X</strong>
-          <p>Shared publication and speaking highlights spanning San Francisco, London, and Bangkok.</p>
-        </a>
-        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-          <strong>LinkedIn</strong>
-          <p>Covered cross-disciplinary progress in LLMs, quantum applications, and combinatorial optimization.</p>
-        </a>
-        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-          <strong>Twitter/X</strong>
-          <p>Event recap threads featuring workshops, poster sessions, and collaborative research milestones.</p>
-        </a>
-      </div>
-    </article>
   </aside>
 </div>
+
+<section class="independent-insight-section" aria-label="Travel map section">
+  <article class="insight-card insight-card--travel">
+    <h2>Travel Map</h2>
+    <div class="travel-map" aria-label="Countries and cities visited">
+      <iframe src="{{ '/talkmap/map.html' | relative_url }}" title="Travel map" loading="lazy"></iframe>
+    </div>
+  </article>
+</section>
+
+<section class="independent-insight-section" aria-label="Social highlights section">
+  <article class="insight-card insight-card--highlights">
+    <h2>LinkedIn &amp; Twitter Highlights</h2>
+    <div class="social-posts" aria-label="Recent social post highlights">
+      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <p>Shared conference updates and award announcements from AFC 2024 in Bangkok.</p>
+      </a>
+      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+        <strong>Twitter/X</strong>
+        <p>Posted live insights on adiabatic quantum computing and workshop outcomes.</p>
+      </a>
+      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <p>Research snapshots: photonics, neural networks, and special hardware for optimization.</p>
+      </a>
+      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+        <strong>Twitter/X</strong>
+        <p>Highlights from talks in Tokyo, Glasgow, and Taipei with publication milestones.</p>
+      </a>
+      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <p>G-QuAT and AIST updates, including project outcomes on optimization and HPC-enabled AI.</p>
+      </a>
+      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+        <strong>Twitter/X</strong>
+        <p>Shared publication and speaking highlights spanning San Francisco, London, and Bangkok.</p>
+      </a>
+      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <p>Covered cross-disciplinary progress in LLMs, quantum applications, and combinatorial optimization.</p>
+      </a>
+      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+        <strong>Twitter/X</strong>
+        <p>Event recap threads featuring workshops, poster sessions, and collaborative research milestones.</p>
+      </a>
+    </div>
+  </article>
+</section>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
