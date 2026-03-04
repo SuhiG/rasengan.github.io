@@ -77,19 +77,39 @@ redirect_from:
     </div>
 
     {% assign scholar_stats = site.data.google_scholar_stats %}
-    {% assign papers_published_count = site.data.google_scholar_publications | size %}
+    {% assign scholar_publications_all = site.data.google_scholar_publications | default: empty %}
+    {% assign papers_published_count = scholar_publications_all | size %}
+    {% assign total_citations = 0 %}
+    {% assign i10_count = 0 %}
+    {% assign citation_series = '' | split: '' %}
+    {% for publication in scholar_publications_all %}
+      {% assign publication_citations = publication.citations | default: 0 | plus: 0 %}
+      {% assign total_citations = total_citations | plus: publication_citations %}
+      {% if publication_citations >= 10 %}
+        {% assign i10_count = i10_count | plus: 1 %}
+      {% endif %}
+      {% assign citation_series = citation_series | push: publication_citations %}
+    {% endfor %}
+    {% assign citation_series = citation_series | sort | reverse %}
+    {% assign h_index_computed = 0 %}
+    {% for citation_count in citation_series %}
+      {% if citation_count >= forloop.index %}
+        {% assign h_index_computed = forloop.index %}
+      {% endif %}
+    {% endfor %}
+
     <div class="about-hero-stats" role="group" aria-label="Google Scholar metrics">
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">Citations</p>
-        <p class="about-hero-stat-value">{{ scholar_stats.citations | default: '--' }}</p>
+        <p class="about-hero-stat-value">{{ total_citations | default: scholar_stats.citations | default: '--' }}</p>
       </article>
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">h-index</p>
-        <p class="about-hero-stat-value">{{ scholar_stats.h_index | default: '--' }}</p>
+        <p class="about-hero-stat-value">{{ h_index_computed | default: scholar_stats.h_index | default: '--' }}</p>
       </article>
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">i10-index</p>
-        <p class="about-hero-stat-value">{{ scholar_stats.i10_index | default: '--' }}</p>
+        <p class="about-hero-stat-value">{{ i10_count | default: scholar_stats.i10_index | default: '--' }}</p>
       </article>
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">Papers Published</p>
@@ -208,64 +228,7 @@ redirect_from:
   </article>
 </section>
 
-<section class="independent-insight-section" aria-label="Social highlights section">
-  <article class="insight-card insight-card--highlights">
-    <h2>LinkedIn &amp; Twitter Posts</h2>
-    <div class="social-deck" aria-label="Recent social post highlights">
-      {% assign social_posts = site.data.social_posts | sort: 'posted_at' | reverse %}
 
-      <section class="social-deck-column" aria-label="LinkedIn highlights">
-        <h3>LinkedIn</h3>
-        <div class="social-posts social-posts--deck">
-          {% assign linkedin_posts = social_posts | where: 'platform', 'linkedin' %}
-          {% for post in linkedin_posts %}
-            {% assign post_href = post.url | default: linkedin_link %}
-            <a class="social-post social-post--linkedin" href="{{ post_href }}" target="_blank" rel="noopener">
-              <div class="social-post-meta">
-                <strong>LinkedIn</strong>
-                {% assign post_time = post.posted_at | date: "%Y-%m-%dT%H:%M:%S%z" %}
-                <time datetime="{{ post_time }}">{{ post.posted_at | date: "%d %b %Y · %H:%M" }}</time>
-              </div>
-              <p class="social-post-text">{{ post.text | newline_to_br }}</p>
-              {% if post.images %}
-                <div class="social-post-media">
-                  {% for image in post.images %}
-                    <img src="{{ image.src }}" alt="{{ image.alt | default: 'Social post image' }}" loading="lazy">
-                  {% endfor %}
-                </div>
-              {% endif %}
-            </a>
-          {% endfor %}
-        </div>
-      </section>
-
-      <section class="social-deck-column" aria-label="Twitter highlights">
-        <h3>Twitter/X</h3>
-        <div class="social-posts social-posts--deck">
-          {% assign twitter_posts = social_posts | where: 'platform', 'twitter' %}
-          {% for post in twitter_posts %}
-            {% assign post_href = post.url | default: twitter_link %}
-            <a class="social-post social-post--twitter" href="{{ post_href }}" target="_blank" rel="noopener">
-              <div class="social-post-meta">
-                <strong>Twitter/X</strong>
-                {% assign post_time = post.posted_at | date: "%Y-%m-%dT%H:%M:%S%z" %}
-                <time datetime="{{ post_time }}">{{ post.posted_at | date: "%d %b %Y · %H:%M" }}</time>
-              </div>
-              <p class="social-post-text">{{ post.text | newline_to_br }}</p>
-              {% if post.images %}
-                <div class="social-post-media">
-                  {% for image in post.images %}
-                    <img src="{{ image.src }}" alt="{{ image.alt | default: 'Social post image' }}" loading="lazy">
-                  {% endfor %}
-                </div>
-              {% endif %}
-            </a>
-          {% endfor %}
-        </div>
-      </section>
-    </div>
-  </article>
-</section>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -363,7 +326,7 @@ redirect_from:
     }
 
     const revealTargets = document.querySelectorAll(
-      ".about-hero-card, .about-hero-stat-card, .about-hero-action-btn, .news-list li, .publication-panel, .insight-card, .social-post"
+      ".about-hero-card, .about-hero-stat-card, .about-hero-action-btn, .news-list li, .publication-panel, .insight-card"
     );
     const spotlightHost = document.querySelector(".about-hero-card");
     const publicationPanels = document.querySelectorAll(".publication-panel");
