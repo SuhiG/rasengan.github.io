@@ -85,10 +85,10 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
         scholar_url = urljoin("https://scholar.google.com", scholar_path) if scholar_path else ""
         title = _strip_tags(title_match.group(1))
         authors = _strip_tags(meta_matches[0]) if len(meta_matches) > 0 else ""
-        venue = _strip_tags(meta_matches[1]) if len(meta_matches) > 1 else ""
+        venue = _clean_venue(_strip_tags(meta_matches[1])) if len(meta_matches) > 1 else ""
         year = int(year_match.group(1)) if year_match else None
-        citation_text = _strip_tags(citation_match.group(1)) if citation_match else ""
-        citations = int(citation_text.replace(",", "")) if citation_text.replace(",", "").isdigit() else 0
+        citation_html = citation_match.group(1) if citation_match else ""
+        citations = _parse_citation_count(citation_html)
 
         if title:
             publications.append(
@@ -103,6 +103,25 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
             )
 
     return publications
+
+
+def _clean_venue(venue: str) -> str:
+    """Keep only core venue/site text and drop annotation-like suffixes."""
+    cleaned = re.sub(r"\s*\([^)]*\)", "", venue).strip()
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return cleaned
+
+
+def _parse_citation_count(citation_html: str) -> int:
+    """Parse citation count from a Google Scholar citation cell HTML fragment."""
+    text = _strip_tags(citation_html)
+
+    for candidate in (text, citation_html):
+        match = re.search(r"(\d[\d,]*)", candidate)
+        if match:
+            return int(match.group(1).replace(",", ""))
+
+    return 0
 
 
 def _extract_stats(page_html: str) -> ScholarStats:

@@ -1,32 +1,32 @@
 - title: "Highly Versatile FPGA-Implemented Cyber Coherent Ising Machine"
   authors: ""
-  venue: "arXiv (under review)"
+  venue: "arXiv"
   year: 2024
-  citations: 0
+  citations: 1
   scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
 - title: "L0-regularized compressed sensing with Mean-field Coherent Ising Machines"
   authors: ""
-  venue: "arXiv (under review)"
+  venue: "arXiv"
   year: 2024
-  citations: 0
+  citations: 1
   scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
 - title: "Effective implementation of L0-regularised compressed sensing with chaotic-amplitude-controlled coherent Ising machines"
   authors: ""
-  venue: "Nature Scientific Reports (IF = 3.8)"
+  venue: "Scientific Reports"
   year: 2023
-  citations: 0
+  citations: 6
   scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
 - title: "Mean-field coherent Ising machines with artificial Zeeman terms"
   authors: ""
-  venue: "Journal of Applied Physics (IF = 2.7)"
+  venue: "Journal of Applied Physics"
   year: 2023
-  citations: 0
+  citations: 7
   scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
 - title: "Control of amplitude homogeneity in coherent Ising machines with artificial Zeeman terms"
   authors: ""
-  venue: "Nature Communications Physics (IF = 5.4)"
+  venue: "Communications Physics"
   year: 2022
-  citations: 0
+  citations: 15
   scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
 - title: "Acceleration Technique of Two-Phase Quasi-Newton Method with Momentum for Optimization Problems"
   authors: ""
