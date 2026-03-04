@@ -211,39 +211,44 @@ redirect_from:
 <section class="independent-insight-section" aria-label="Social highlights section">
   <article class="insight-card insight-card--highlights">
     <h2>LinkedIn &amp; Twitter Highlights</h2>
-    <div class="social-posts" aria-label="Recent social post highlights">
-      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-        <strong>LinkedIn</strong>
-        <p>Shared conference updates and award announcements from AFC 2024 in Bangkok.</p>
-      </a>
-      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-        <strong>Twitter/X</strong>
-        <p>Posted live insights on adiabatic quantum computing and workshop outcomes.</p>
-      </a>
-      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-        <strong>LinkedIn</strong>
-        <p>Research snapshots: photonics, neural networks, and special hardware for optimization.</p>
-      </a>
-      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-        <strong>Twitter/X</strong>
-        <p>Highlights from talks in Tokyo, Glasgow, and Taipei with publication milestones.</p>
-      </a>
-      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-        <strong>LinkedIn</strong>
-        <p>G-QuAT and AIST updates, including project outcomes on optimization and HPC-enabled AI.</p>
-      </a>
-      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-        <strong>Twitter/X</strong>
-        <p>Shared publication and speaking highlights spanning San Francisco, London, and Bangkok.</p>
-      </a>
-      <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
-        <strong>LinkedIn</strong>
-        <p>Covered cross-disciplinary progress in LLMs, quantum applications, and combinatorial optimization.</p>
-      </a>
-      <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
-        <strong>Twitter/X</strong>
-        <p>Event recap threads featuring workshops, poster sessions, and collaborative research milestones.</p>
-      </a>
+    <div class="social-deck" aria-label="Recent social post highlights">
+      {% assign social_posts = site.data.social_posts | sort: 'posted_at' | reverse %}
+
+      <section class="social-deck-column" aria-label="LinkedIn highlights">
+        <h3>LinkedIn</h3>
+        <div class="social-posts social-posts--deck">
+          {% assign linkedin_posts = social_posts | where: 'platform', 'linkedin' %}
+          {% for post in linkedin_posts %}
+            {% assign post_href = post.url | default: linkedin_link %}
+            <a class="social-post social-post--linkedin" href="{{ post_href }}" target="_blank" rel="noopener">
+              <div class="social-post-meta">
+                <strong>LinkedIn</strong>
+                {% assign post_time = post.posted_at | date: "%Y-%m-%dT%H:%M:%S%z" %}
+                <time datetime="{{ post_time }}">{{ post.posted_at | date: "%d %b %Y · %H:%M" }}</time>
+              </div>
+              <p>{{ post.text }}</p>
+            </a>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="social-deck-column" aria-label="Twitter highlights">
+        <h3>Twitter/X</h3>
+        <div class="social-posts social-posts--deck">
+          {% assign twitter_posts = social_posts | where: 'platform', 'twitter' %}
+          {% for post in twitter_posts %}
+            {% assign post_href = post.url | default: twitter_link %}
+            <a class="social-post social-post--twitter" href="{{ post_href }}" target="_blank" rel="noopener">
+              <div class="social-post-meta">
+                <strong>Twitter/X</strong>
+                {% assign post_time = post.posted_at | date: "%Y-%m-%dT%H:%M:%S%z" %}
+                <time datetime="{{ post_time }}">{{ post.posted_at | date: "%d %b %Y · %H:%M" }}</time>
+              </div>
+              <p>{{ post.text }}</p>
+            </a>
+          {% endfor %}
+        </div>
+      </section>
     </div>
   </article>
 </section>

@@ -1,0 +1,39 @@
+- platform: linkedin
+  posted_at: 2025-01-23 09:12:00 +0900
+  text: "Shared conference updates and award announcements from AFC 2024 in Bangkok."
+  url: "https://www.linkedin.com/in/sudeerag/"
+
+- platform: twitter
+  posted_at: 2025-01-22 19:40:00 +0900
+  text: "Posted live insights on adiabatic quantum computing and workshop outcomes."
+  url: "https://x.com/sudeera_etal"
+
+- platform: linkedin
+  posted_at: 2025-01-18 11:08:00 +0900
+  text: "Research snapshots: photonics, neural networks, and special hardware for optimization."
+  url: "https://www.linkedin.com/in/sudeerag/"
+
+- platform: twitter
+  posted_at: 2025-01-16 22:35:00 +0900
+  text: "Highlights from talks in Tokyo, Glasgow, and Taipei with publication milestones."
+  url: "https://x.com/sudeera_etal"
+
+- platform: linkedin
+  posted_at: 2025-01-12 08:22:00 +0900
+  text: "G-QuAT and AIST updates, including project outcomes on optimization and HPC-enabled AI."
+  url: "https://www.linkedin.com/in/sudeerag/"
+
+- platform: twitter
+  posted_at: 2025-01-09 20:11:00 +0900
+  text: "Shared publication and speaking highlights spanning San Francisco, London, and Bangkok."
+  url: "https://x.com/sudeera_etal"
+
+- platform: linkedin
+  posted_at: 2025-01-04 10:03:00 +0900
+  text: "Covered cross-disciplinary progress in LLMs, quantum applications, and combinatorial optimization."
+  url: "https://www.linkedin.com/in/sudeerag/"
+
+- platform: twitter
+  posted_at: 2025-01-01 17:54:00 +0900
+  text: "Event recap threads featuring workshops, poster sessions, and collaborative research milestones."
+  url: "https://x.com/sudeera_etal"
