@@ -39,13 +39,32 @@
       maxClusterRadius: 60
     });
     var bounds = [];
+    var markerShadow = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/images/marker-shadow.png";
+    var transitIcon = L.icon({
+      iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+      shadowUrl: markerShadow,
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
 
     for (var i = 0; i < addressPoints.length; i++) {
-      var a = addressPoints[i];
-      var marker = L.marker(new L.LatLng(a[1], a[2]), { title: a[0] });
-      marker.bindPopup(a[0]);
+      var point = addressPoints[i];
+      var isLegacyArray = Array.isArray(point);
+      var label = isLegacyArray ? point[0] : point.label;
+      var lat = isLegacyArray ? point[1] : point.lat;
+      var lng = isLegacyArray ? point[2] : point.lng;
+      var markerOptions = { title: label };
+
+      if (!isLegacyArray && point.type === "transit") {
+        markerOptions.icon = transitIcon;
+      }
+
+      var marker = L.marker(new L.LatLng(lat, lng), markerOptions);
+      marker.bindPopup(label);
       markers.addLayer(marker);
-      bounds.push([a[1], a[2]]);
+      bounds.push([lat, lng]);
     }
 
     map.addLayer(markers);
