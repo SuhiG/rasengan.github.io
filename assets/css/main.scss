@@ -675,7 +675,7 @@ body.has-live-ticker .masthead {
   }
 
   .home-feed-layout {
-    grid-template-columns: minmax(0, 1.65fr) minmax(320px, 1fr);
+    grid-template-columns: minmax(320px, 1fr) minmax(0, 1.65fr);
   }
 
   .news-panel,
@@ -1438,6 +1438,14 @@ body.fx-ready::before {
 .news-panel,
 .publication-rail {
   position: relative;
+}
+
+.news-panel {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.publication-rail {
   overflow: hidden;
 }
 

@@ -99,37 +99,10 @@ redirect_from:
   </div>
 </div>
 
-## News
+## Research Updates
 
 <div class="home-content-layout">
   <div class="home-feed-layout">
-    <div class="news-panel" role="region" aria-label="Recent academic news">
-    <ul class="news-list">
-      <li><strong>2024-10-18:</strong> Presented at <a href="https://www.ucl.ac.uk/quantum/innovation/inqa/inqa-conference/inqa-conference-2024" target="_blank">International Network on Quantum Annealing 2024 (INQA 2024)</a> (Tokyo, Japan).</li>
-      <li><strong>2024-10-01:</strong> Tokyo Institute of Technology became the <a href="https://www.isct.ac.jp/ja" target="_blank">Institute of Science Tokyo</a>.</li>
-      <li><strong>2024-08-11:</strong> Presented at <a href="https://www.aisf.or.jp/AFC/2024/category/news-ja/" target="_blank">Asia Future Conference (AFC) 2024</a>; received Best Presentation Award (Bangkok, Thailand).</li>
-      <li><strong>2024-07-08:</strong> Preliminary doctoral defense (Day 2).</li>
-      <li><strong>2024-07-03:</strong> Preliminary doctoral defense (Day 1).</li>
-      <li><strong>2024-04-21:</strong> One talk and one poster accepted at <a href="https://iop.eventsair.com/aqc2024/" target="_blank">Adiabatic Quantum Computing (AQC) 2024</a> (Glasgow, UK).</li>
-      <li><strong>2024-04-12:</strong> Presented at the 2024 NTT Retreat meeting (San Francisco, USA).</li>
-      <li><strong>2024-03-18:</strong> Presented at the 2024 Spring Meeting of the <a href="https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html" target="_blank">Physical Society of Japan</a>.</li>
-      <li><strong>2024-02-09:</strong> Invited talk at the NTT-RIKEN workshop on photonics, neural networks, and specialized hardware for combinatorial optimization.</li>
-      <li><strong>2024-01-16:</strong> Two contributed talks (2nd author) accepted at the 2024 Spring Meeting of the <a href="https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html" target="_blank">Physical Society of Japan</a>.</li>
-      <li><strong>2023-12-27:</strong> Talk accepted for <a href="https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html" target="_blank">第2回量子アニーリング及び関連技術に関する研究会</a>.</li>
-      <li><strong>2023-12-08:</strong> Awarded scholarship from the <a href="https://www.aisf.or.jp/jp/" target="_blank">Atsumi International Foundation</a>.</li>
-      <li><strong>2023-11-17:</strong> Poster accepted for <a href="https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en" target="_blank">Quantum Information Processing (QIP) 2024</a> (Taipei, Taiwan).</li>
-      <li><strong>2023-11-17:</strong> Paper published in <a href="https://doi.org/10.1063/5.0176248" target="_blank">Journal of Applied Physics</a>.</li>
-      <li><strong>2023-09-26:</strong> Paper published in <a href="https://doi.org/10.1038/s41598-023-43364-8" target="_blank">Scientific Reports</a>.</li>
-      <li><strong>2023-08-30:</strong> Mid-term doctoral evaluation (Day 2).</li>
-      <li><strong>2023-08-24:</strong> Mid-term doctoral evaluation (Day 1).</li>
-      <li><strong>2023-08-08:</strong> Poster presentation at <a href="https://statphys28.org/index.html" target="_blank">StatPhys28</a>, University of Tokyo.</li>
-      <li><strong>2023-06-22:</strong> Talk and field visit at NTT Basic Research Laboratories, Atsugi, Kanagawa.</li>
-      <li><strong>2023-06-07:</strong> Tokyo Tech Student Ambassador kick-off meeting.</li>
-      <li><strong>2022-10-24:</strong> Poster presentation at Stanford University for CNC22.</li>
-      <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
-    </ul>
-    </div>
-
     <aside class="publication-rail" role="complementary" aria-label="Publication panels">
       <h2>Publications</h2>
       <div class="publication-rail-track">
@@ -159,17 +132,36 @@ redirect_from:
       {% endif %}
       </div>
     </aside>
+
+    <div class="news-panel" role="region" aria-label="Recent academic news">
+    <ul class="news-list">
+      <li><strong>2024-10-18:</strong> Presented at <a href="https://www.ucl.ac.uk/quantum/innovation/inqa/inqa-conference/inqa-conference-2024" target="_blank">International Network on Quantum Annealing 2024 (INQA 2024)</a> (Tokyo, Japan).</li>
+      <li><strong>2024-10-01:</strong> Tokyo Institute of Technology became the <a href="https://www.isct.ac.jp/ja" target="_blank">Institute of Science Tokyo</a>.</li>
+      <li><strong>2024-08-11:</strong> Presented at <a href="https://www.aisf.or.jp/AFC/2024/category/news-ja/" target="_blank">Asia Future Conference (AFC) 2024</a>; received Best Presentation Award (Bangkok, Thailand).</li>
+      <li><strong>2024-07-08:</strong> Preliminary doctoral defense (Day 2).</li>
+      <li><strong>2024-07-03:</strong> Preliminary doctoral defense (Day 1).</li>
+      <li><strong>2024-04-21:</strong> One talk and one poster accepted at <a href="https://iop.eventsair.com/aqc2024/" target="_blank">Adiabatic Quantum Computing (AQC) 2024</a> (Glasgow, UK).</li>
+      <li><strong>2024-04-12:</strong> Presented at the 2024 NTT Retreat meeting (San Francisco, USA).</li>
+      <li><strong>2024-03-18:</strong> Presented at the 2024 Spring Meeting of the <a href="https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html" target="_blank">Physical Society of Japan</a>.</li>
+      <li><strong>2024-02-09:</strong> Invited talk at the NTT-RIKEN workshop on photonics, neural networks, and specialized hardware for combinatorial optimization.</li>
+      <li><strong>2024-01-16:</strong> Two contributed talks (2nd author) accepted at the 2024 Spring Meeting of the <a href="https://onsite.gakkai-web.net/jps/jps_search/2024sp/index.html" target="_blank">Physical Society of Japan</a>.</li>
+      <li><strong>2023-12-27:</strong> Talk accepted for <a href="https://www.qcomp.irfi.titech.ac.jp/quantum_annealing_workshop2024.html" target="_blank">第2回量子アニーリング及び関連技術に関する研究会</a>.</li>
+      <li><strong>2023-12-08:</strong> Awarded scholarship from the <a href="https://www.aisf.or.jp/jp/" target="_blank">Atsumi International Foundation</a>.</li>
+      <li><strong>2023-11-17:</strong> Poster accepted for <a href="https://qip2024.tw/site/page.aspx?pid=901&sid=1522&lang=en" target="_blank">Quantum Information Processing (QIP) 2024</a> (Taipei, Taiwan).</li>
+      <li><strong>2023-11-17:</strong> Paper published in <a href="https://doi.org/10.1063/5.0176248" target="_blank">Journal of Applied Physics</a>.</li>
+      <li><strong>2023-09-26:</strong> Paper published in <a href="https://doi.org/10.1038/s41598-023-43364-8" target="_blank">Scientific Reports</a>.</li>
+      <li><strong>2023-08-30:</strong> Mid-term doctoral evaluation (Day 2).</li>
+      <li><strong>2023-08-24:</strong> Mid-term doctoral evaluation (Day 1).</li>
+      <li><strong>2023-08-08:</strong> Poster presentation at <a href="https://statphys28.org/index.html" target="_blank">StatPhys28</a>, University of Tokyo.</li>
+      <li><strong>2023-06-22:</strong> Talk and field visit at NTT Basic Research Laboratories, Atsugi, Kanagawa.</li>
+      <li><strong>2023-06-07:</strong> Tokyo Tech Student Ambassador kick-off meeting.</li>
+      <li><strong>2022-10-24:</strong> Poster presentation at Stanford University for CNC22.</li>
+      <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
+    </ul>
+    </div>
   </div>
 
   <aside class="insights-rail" role="complementary" aria-label="Professional insights">
-    <article class="insight-card">
-      <h2>GitHub Contributions</h2>
-      <p>Live contribution activity snapshot.</p>
-      <a class="github-contrib-graph" href="{{ github_link }}" target="_blank" rel="noopener" aria-label="Open GitHub profile contribution graph">
-        <img src="https://ghchart.rshah.org/58a6ff/{{ github_handle | default: 'octocat' }}" alt="GitHub contribution graph for {{ github_handle | default: 'GitHub profile' }}">
-      </a>
-    </article>
-
     <article class="insight-card">
       <h2>Keywords from CV</h2>
       <div class="keyword-cloud" aria-label="CV keyword highlights">
@@ -182,6 +174,23 @@ redirect_from:
         <span>Image Reconstruction</span>
         <span>Large Language Models</span>
         <span>HPC</span>
+      </div>
+    </article>
+
+    <article class="insight-card">
+      <h2>Travel Map (CV + News)</h2>
+      <div class="travel-map" aria-label="Countries and cities visited">
+        <svg viewBox="0 0 780 360" role="img" aria-label="Stylized world map with travel markers">
+          <rect x="0" y="0" width="780" height="360" rx="16" ry="16" fill="rgba(9, 17, 34, 0.88)"></rect>
+          <path d="M42 163 L140 128 L197 142 L234 114 L305 126 L360 98 L446 127 L506 118 L578 152 L664 148 L722 170 L690 220 L596 212 L525 246 L438 228 L360 257 L272 238 L194 249 L132 224 L72 192 Z" fill="rgba(108, 143, 219, 0.26)" stroke="rgba(127, 178, 255, 0.5)" stroke-width="2"></path>
+          <g class="travel-point"><circle cx="552" cy="154" r="6"></circle><text x="565" y="152">Tokyo</text></g>
+          <g class="travel-point"><circle cx="553" cy="159" r="6"></circle><text x="565" y="176">Atsugi</text></g>
+          <g class="travel-point"><circle cx="618" cy="180" r="6"></circle><text x="630" y="178">Taipei</text></g>
+          <g class="travel-point"><circle cx="502" cy="194" r="6"></circle><text x="514" y="192">Bangkok</text></g>
+          <g class="travel-point"><circle cx="335" cy="144" r="6"></circle><text x="346" y="142">Glasgow</text></g>
+          <g class="travel-point"><circle cx="298" cy="154" r="6"></circle><text x="308" y="170">London</text></g>
+          <g class="travel-point"><circle cx="140" cy="164" r="6"></circle><text x="151" y="162">San Francisco</text></g>
+        </svg>
       </div>
     </article>
 
@@ -208,20 +217,11 @@ redirect_from:
     </article>
 
     <article class="insight-card">
-      <h2>Travel Map (CV + News)</h2>
-      <div class="travel-map" aria-label="Countries and cities visited">
-        <svg viewBox="0 0 780 360" role="img" aria-label="Stylized world map with travel markers">
-          <rect x="0" y="0" width="780" height="360" rx="16" ry="16" fill="rgba(9, 17, 34, 0.88)"></rect>
-          <path d="M42 163 L140 128 L197 142 L234 114 L305 126 L360 98 L446 127 L506 118 L578 152 L664 148 L722 170 L690 220 L596 212 L525 246 L438 228 L360 257 L272 238 L194 249 L132 224 L72 192 Z" fill="rgba(108, 143, 219, 0.26)" stroke="rgba(127, 178, 255, 0.5)" stroke-width="2"></path>
-          <g class="travel-point"><circle cx="552" cy="154" r="6"></circle><text x="565" y="152">Tokyo</text></g>
-          <g class="travel-point"><circle cx="553" cy="159" r="6"></circle><text x="565" y="176">Atsugi</text></g>
-          <g class="travel-point"><circle cx="618" cy="180" r="6"></circle><text x="630" y="178">Taipei</text></g>
-          <g class="travel-point"><circle cx="502" cy="194" r="6"></circle><text x="514" y="192">Bangkok</text></g>
-          <g class="travel-point"><circle cx="335" cy="144" r="6"></circle><text x="346" y="142">Glasgow</text></g>
-          <g class="travel-point"><circle cx="298" cy="154" r="6"></circle><text x="308" y="170">London</text></g>
-          <g class="travel-point"><circle cx="140" cy="164" r="6"></circle><text x="151" y="162">San Francisco</text></g>
-        </svg>
-      </div>
+      <h2>GitHub Contributions</h2>
+      <p>Live contribution activity snapshot.</p>
+      <a class="github-contrib-graph" href="{{ github_link }}" target="_blank" rel="noopener" aria-label="Open GitHub profile contribution graph">
+        <img src="https://ghchart.rshah.org/58a6ff/{{ github_handle | default: 'octocat' }}" alt="GitHub contribution graph for {{ github_handle | default: 'GitHub profile' }}">
+      </a>
     </article>
   </aside>
 </div>
