@@ -133,8 +133,9 @@ redirect_from:
     <h2>Publications</h2>
     <div class="publication-rail-track">
       {% assign scholar_publications = site.data.google_scholar_publications | default: empty %}
+      {% assign scholar_publications = scholar_publications | sort: "year" | reverse %}
       {% if scholar_publications and scholar_publications.size > 0 %}
-        {% for publication in scholar_publications limit: 12 %}
+        {% for publication in scholar_publications %}
           <article class="publication-panel">
             <h3>
               {% if publication.scholar_url and publication.scholar_url != "" %}
