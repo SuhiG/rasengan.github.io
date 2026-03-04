@@ -192,7 +192,18 @@ redirect_from:
   <article class="insight-card insight-card--travel">
     <h2>Travel Map</h2>
     <div class="travel-map" aria-label="Countries and cities visited">
-      <iframe src="{{ '/talkmap/map.html' | relative_url }}" title="Travel map" loading="lazy"></iframe>
+      <iframe
+        id="travel-map-frame"
+        src="{{ '/talkmap/map.html' | relative_url }}"
+        title="Travel map"
+        loading="lazy"
+        data-map-sources='[
+          "{{ '/talkmap/map.html' | relative_url }}",
+          "{{ '/talkmap/map.html' | absolute_url }}",
+          "{{ '/talkmap.html' | relative_url }}",
+          "https://www.openstreetmap.org/export/embed.html?bbox=-179.9%2C-60.0%2C179.9%2C80.0&amp;layer=mapnik"
+        ]'
+      ></iframe>
     </div>
   </article>
 </section>
@@ -242,6 +253,67 @@ redirect_from:
     const ticker = document.getElementById("news-ticker-content");
     const tickerShell = document.querySelector(".news-ticker");
     const entries = document.querySelectorAll(".news-list li");
+    const travelMapFrame = document.getElementById("travel-map-frame");
+
+    function setupTravelMapFallbacks() {
+      if (!travelMapFrame) {
+        return;
+      }
+
+      let sources = [];
+
+      try {
+        sources = JSON.parse(travelMapFrame.dataset.mapSources || "[]").filter(Boolean);
+      } catch (error) {
+        sources = [];
+      }
+
+      if (sources.length === 0) {
+        return;
+      }
+
+      let sourceIndex = 0;
+
+      function loadSource(index) {
+        sourceIndex = index;
+        travelMapFrame.src = sources[index];
+      }
+
+      function loadNextSource() {
+        if (sourceIndex >= sources.length - 1) {
+          return;
+        }
+
+        loadSource(sourceIndex + 1);
+      }
+
+      travelMapFrame.addEventListener("error", loadNextSource);
+
+      travelMapFrame.addEventListener("load", function () {
+        let currentDoc;
+
+        try {
+          currentDoc = travelMapFrame.contentDocument;
+        } catch (error) {
+          return;
+        }
+
+        if (!currentDoc || !currentDoc.body) {
+          return;
+        }
+
+        const bodyText = (currentDoc.body.textContent || "").toLowerCase();
+        const hasNotFoundMessage = bodyText.includes("404") && bodyText.includes("file not found");
+
+        if (hasNotFoundMessage) {
+          loadNextSource();
+        }
+      });
+
+      loadSource(0);
+    }
+
+    setupTravelMapFallbacks();
 
     function syncTickerHeight() {
       if (!tickerShell) {
