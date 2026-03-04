@@ -628,6 +628,27 @@ body.has-live-ticker .masthead {
   font-size: 0.77rem;
 }
 
+.social-deck {
+  margin-top: 0.55rem;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.social-deck-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.social-deck-column h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.86rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #d7e6ff;
+}
+
 .social-posts {
   margin-top: 0.55rem;
   display: grid;
@@ -638,6 +659,11 @@ body.has-live-ticker .masthead {
   padding-right: 0.25rem;
   scrollbar-width: thin;
   scrollbar-color: #5f7bd8 rgba(17, 30, 58, 0.9);
+}
+
+.social-posts--deck {
+  margin-top: 0;
+  min-height: 20rem;
 }
 
 .social-post {
@@ -651,6 +677,20 @@ body.has-live-ticker .masthead {
 .social-post strong {
   display: block;
   font-size: 0.82rem;
+}
+
+.social-post-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.social-post-meta time {
+  font-size: 0.73rem;
+  color: #c8d9ff;
+  opacity: 0.88;
+  white-space: nowrap;
 }
 
 .social-post p {
@@ -866,6 +906,10 @@ body.has-live-ticker .masthead {
 
   .insights-rail {
     margin-top: 0.4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .social-deck {
     grid-template-columns: 1fr;
   }
 
