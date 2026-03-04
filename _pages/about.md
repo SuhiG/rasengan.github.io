@@ -98,18 +98,22 @@ redirect_from:
       {% endif %}
     {% endfor %}
 
+    {% assign total_citations_display = scholar_stats.citations | default: total_citations %}
+    {% assign h_index_display = scholar_stats.h_index | default: h_index_computed %}
+    {% assign i10_index_display = scholar_stats.i10_index | default: i10_count %}
+
     <div class="about-hero-stats" role="group" aria-label="Google Scholar metrics">
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">Citations</p>
-        <p class="about-hero-stat-value">{{ total_citations | default: scholar_stats.citations | default: '--' }}</p>
+        <p class="about-hero-stat-value">{{ total_citations_display | default: '--' }}</p>
       </article>
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">h-index</p>
-        <p class="about-hero-stat-value">{{ h_index_computed | default: scholar_stats.h_index | default: '--' }}</p>
+        <p class="about-hero-stat-value">{{ h_index_display | default: '--' }}</p>
       </article>
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">i10-index</p>
-        <p class="about-hero-stat-value">{{ i10_count | default: scholar_stats.i10_index | default: '--' }}</p>
+        <p class="about-hero-stat-value">{{ i10_index_display | default: '--' }}</p>
       </article>
       <article class="about-hero-stat-card">
         <p class="about-hero-stat-label">Papers Published</p>
