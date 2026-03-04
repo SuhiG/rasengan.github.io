@@ -129,6 +129,7 @@ $(document).ready(function(){
   var updateCursorGlow = function() {
     document.documentElement.style.setProperty("--fx-cursor-x", lastX + "px");
     document.documentElement.style.setProperty("--fx-cursor-y", lastY + "px");
+    document.documentElement.style.setProperty("--fx-orbit-shift", ((lastX - window.innerWidth / 2) * 0.05).toFixed(2) + "px");
     rafScheduled = false;
   };
 
