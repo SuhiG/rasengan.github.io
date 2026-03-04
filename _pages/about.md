@@ -101,8 +101,9 @@ redirect_from:
 
 ## News
 
-<div class="home-feed-layout">
-  <div class="news-panel" role="region" aria-label="Recent academic news">
+<div class="home-content-layout">
+  <div class="home-feed-layout">
+    <div class="news-panel" role="region" aria-label="Recent academic news">
     <ul class="news-list">
       <li><strong>2024-10-18:</strong> Presented at <a href="https://www.ucl.ac.uk/quantum/innovation/inqa/inqa-conference/inqa-conference-2024" target="_blank">International Network on Quantum Annealing 2024 (INQA 2024)</a> (Tokyo, Japan).</li>
       <li><strong>2024-10-01:</strong> Tokyo Institute of Technology became the <a href="https://www.isct.ac.jp/ja" target="_blank">Institute of Science Tokyo</a>.</li>
@@ -127,11 +128,11 @@ redirect_from:
       <li><strong>2022-10-24:</strong> Poster presentation at Stanford University for CNC22.</li>
       <li><strong>2022-06-15:</strong> Paper published in Nature Communications Physics.</li>
     </ul>
-  </div>
+    </div>
 
-  <aside class="publication-rail" role="complementary" aria-label="Publication panels">
-    <h2>Publications</h2>
-    <div class="publication-rail-track">
+    <aside class="publication-rail" role="complementary" aria-label="Publication panels">
+      <h2>Publications</h2>
+      <div class="publication-rail-track">
       {% assign scholar_publications = site.data.google_scholar_publications | default: empty %}
       {% assign scholar_publications = scholar_publications | sort: "year" | reverse %}
       {% if scholar_publications and scholar_publications.size > 0 %}
@@ -156,7 +157,72 @@ redirect_from:
           <h3>Syncing publications from Google Scholar...</h3>
         </article>
       {% endif %}
-    </div>
+      </div>
+    </aside>
+  </div>
+
+  <aside class="insights-rail" role="complementary" aria-label="Professional insights">
+    <article class="insight-card">
+      <h2>GitHub Contributions</h2>
+      <p>Live contribution activity snapshot.</p>
+      <a class="github-contrib-graph" href="{{ github_link }}" target="_blank" rel="noopener" aria-label="Open GitHub profile contribution graph">
+        <img src="https://ghchart.rshah.org/58a6ff/{{ github_handle | default: 'octocat' }}" alt="GitHub contribution graph for {{ github_handle | default: 'GitHub profile' }}">
+      </a>
+    </article>
+
+    <article class="insight-card">
+      <h2>Keywords from CV</h2>
+      <div class="keyword-cloud" aria-label="CV keyword highlights">
+        <span>Quantum Computing</span>
+        <span>AI</span>
+        <span>Optimization</span>
+        <span>Machine Learning</span>
+        <span>Combinatorial Problems</span>
+        <span>CIM</span>
+        <span>Image Reconstruction</span>
+        <span>Large Language Models</span>
+        <span>HPC</span>
+      </div>
+    </article>
+
+    <article class="insight-card">
+      <h2>LinkedIn &amp; Twitter Highlights</h2>
+      <div class="social-posts" aria-label="Recent social post highlights">
+        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+          <strong>LinkedIn</strong>
+          <p>Shared conference updates and award announcements from AFC 2024 in Bangkok.</p>
+        </a>
+        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+          <strong>Twitter/X</strong>
+          <p>Posted live insights on adiabatic quantum computing and workshop outcomes.</p>
+        </a>
+        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+          <strong>LinkedIn</strong>
+          <p>Research snapshots: photonics, neural networks, and special hardware for optimization.</p>
+        </a>
+        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+          <strong>Twitter/X</strong>
+          <p>Highlights from talks in Tokyo, Glasgow, and Taipei with publication milestones.</p>
+        </a>
+      </div>
+    </article>
+
+    <article class="insight-card">
+      <h2>Travel Map (CV + News)</h2>
+      <div class="travel-map" aria-label="Countries and cities visited">
+        <svg viewBox="0 0 780 360" role="img" aria-label="Stylized world map with travel markers">
+          <rect x="0" y="0" width="780" height="360" rx="16" ry="16" fill="rgba(9, 17, 34, 0.88)"></rect>
+          <path d="M42 163 L140 128 L197 142 L234 114 L305 126 L360 98 L446 127 L506 118 L578 152 L664 148 L722 170 L690 220 L596 212 L525 246 L438 228 L360 257 L272 238 L194 249 L132 224 L72 192 Z" fill="rgba(108, 143, 219, 0.26)" stroke="rgba(127, 178, 255, 0.5)" stroke-width="2"></path>
+          <g class="travel-point"><circle cx="552" cy="154" r="6"></circle><text x="565" y="152">Tokyo</text></g>
+          <g class="travel-point"><circle cx="553" cy="159" r="6"></circle><text x="565" y="176">Atsugi</text></g>
+          <g class="travel-point"><circle cx="618" cy="180" r="6"></circle><text x="630" y="178">Taipei</text></g>
+          <g class="travel-point"><circle cx="502" cy="194" r="6"></circle><text x="514" y="192">Bangkok</text></g>
+          <g class="travel-point"><circle cx="335" cy="144" r="6"></circle><text x="346" y="142">Glasgow</text></g>
+          <g class="travel-point"><circle cx="298" cy="154" r="6"></circle><text x="308" y="170">London</text></g>
+          <g class="travel-point"><circle cx="140" cy="164" r="6"></circle><text x="151" y="162">San Francisco</text></g>
+        </svg>
+      </div>
+    </article>
   </aside>
 </div>
 
@@ -195,7 +261,7 @@ redirect_from:
     }
 
     const revealTargets = document.querySelectorAll(
-      ".about-hero-card, .about-hero-stat-card, .about-hero-action-btn, .news-list li, .publication-panel"
+      ".about-hero-card, .about-hero-stat-card, .about-hero-action-btn, .news-list li, .publication-panel, .insight-card, .social-post"
     );
     const spotlightHost = document.querySelector(".about-hero-card");
     const publicationPanels = document.querySelectorAll(".publication-panel");
