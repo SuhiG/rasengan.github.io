@@ -265,6 +265,11 @@ def main() -> int:
     parser.add_argument("--output", default="_data/google_scholar_publications.yml")
     parser.add_argument("--stats-output", default="_data/google_scholar_stats.yml")
     parser.add_argument("--hl", default="en")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit with a non-zero status when publications or stats cannot be fetched.",
+    )
     args = parser.parse_args()
 
     try:
@@ -278,6 +283,9 @@ def main() -> int:
     wrote_publications = False
     wrote_stats = False
 
+    publication_fetch_error = False
+    stats_fetch_error = False
+
     try:
         publications = fetch_publications(user_id=user_id, hl=args.hl)
         if publications:
@@ -286,8 +294,10 @@ def main() -> int:
             print(f"Wrote {len(publications)} publications to {args.output}")
         else:
             print("Warning: no publications were parsed; keeping existing publications file.")
+            publication_fetch_error = True
     except Exception as exc:  # noqa: BLE001
         print(f"Warning: failed to fetch publications ({exc}); keeping existing publications file.")
+        publication_fetch_error = True
 
     try:
         stats = fetch_stats(user_id=user_id, hl=args.hl)
@@ -296,6 +306,7 @@ def main() -> int:
         print(f"Wrote Google Scholar stats to {args.stats_output}")
     except Exception as exc:  # noqa: BLE001
         print(f"Warning: failed to fetch scholar stats ({exc}); keeping existing stats file.")
+        stats_fetch_error = True
 
     if not wrote_publications and not output_path.exists():
         print("Error: publication fetch failed and no existing publication file is available.", file=sys.stderr)
@@ -303,6 +314,10 @@ def main() -> int:
 
     if not wrote_stats and not stats_output_path.exists():
         print("Error: stats fetch failed and no existing stats file is available.", file=sys.stderr)
+        return 1
+
+    if args.strict and (publication_fetch_error or stats_fetch_error):
+        print("Error: strict mode enabled and at least one Google Scholar fetch failed.", file=sys.stderr)
         return 1
 
     return 0

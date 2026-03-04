@@ -26,7 +26,8 @@ jobs:
           python scripts/fetch_scholar_publications.py \
             --profile-url "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en" \
             --output "_data/google_scholar_publications.yml" \
-            --stats-output "_data/google_scholar_stats.yml"
+            --stats-output "_data/google_scholar_stats.yml" \
+            --strict
 
       - name: Commit and push updates
         run: |
