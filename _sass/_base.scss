@@ -14,6 +14,13 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  background:
+    radial-gradient(circle at 15% 20%, rgba($primary-color, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(#6f8dff, 0.12), transparent 50%),
+    linear-gradient(180deg, #fff, mix(#fff, $primary-color, 3%) 55%, #fff);
+  background-attachment: fixed;
+  background-size: 150% 150%;
+  animation: neuralShift 18s ease-in-out infinite alternate;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -112,6 +119,8 @@ blockquote {
 /* links */
 
 a {
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+
   &:focus {
     @extend %tab-focus;
   }
@@ -119,6 +128,13 @@ a {
   &:hover,
   &:active {
     outline: 0;
+    text-shadow: 0 0 0.6rem rgba($primary-color, 0.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
   }
 }
 
