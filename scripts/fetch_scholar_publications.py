@@ -50,12 +50,27 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
     rows = _extract_rows(page_html)
 
     for row_html in rows:
-        title_match = re.search(
-            r"<a(?=[^>]*\bclass=['\"][^'\"]*\bgsc_a_at\b[^'\"]*['\"])(?=[^>]*\bhref=['\"]([^'\"]+)['\"])[^>]*>(.*?)</a>",
+        title_cell_match = re.search(
+            r"<td[^>]*class=['\"][^'\"]*\bgsc_a_t\b[^'\"]*['\"][^>]*>(.*?)</td>",
             row_html,
             flags=re.DOTALL,
         )
-        meta_matches = re.findall(r"<div[^>]*class=['\"][^'\"]*\bgs_gray\b[^'\"]*['\"][^>]*>(.*?)</div>", row_html, flags=re.DOTALL)
+        title_cell_html = title_cell_match.group(1) if title_cell_match else row_html
+        title_match = re.search(
+            r"<a[^>]*class=['\"][^'\"]*\bgsc_a_at\b[^'\"]*['\"][^>]*>(.*?)</a>",
+            title_cell_html,
+            flags=re.DOTALL,
+        )
+        href_match = re.search(
+            r"<a[^>]*class=['\"][^'\"]*\bgsc_a_at\b[^'\"]*['\"][^>]*\bhref=['\"]([^'\"]+)['\"]",
+            title_cell_html,
+            flags=re.DOTALL,
+        )
+        meta_matches = re.findall(
+            r"<div[^>]*class=['\"][^'\"]*\bgs_gray\b[^'\"]*['\"][^>]*>(.*?)</div>",
+            title_cell_html,
+            flags=re.DOTALL,
+        )
         year_match = re.search(r"<td[^>]*class=['\"][^'\"]*\bgsc_a_y\b[^'\"]*['\"][^>]*>.*?(\d{4})", row_html, flags=re.DOTALL)
         citation_match = re.search(
             r"<td[^>]*class=['\"][^'\"]*\bgsc_a_c\b[^'\"]*['\"][^>]*>(.*?)</td>",
@@ -66,8 +81,9 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
         if not title_match:
             continue
 
-        scholar_url = urljoin("https://scholar.google.com", html.unescape(title_match.group(1)))
-        title = _strip_tags(title_match.group(2))
+        scholar_path = html.unescape(href_match.group(1)) if href_match else ""
+        scholar_url = urljoin("https://scholar.google.com", scholar_path) if scholar_path else ""
+        title = _strip_tags(title_match.group(1))
         authors = _strip_tags(meta_matches[0]) if len(meta_matches) > 0 else ""
         venue = _strip_tags(meta_matches[1]) if len(meta_matches) > 1 else ""
         year = int(year_match.group(1)) if year_match else None

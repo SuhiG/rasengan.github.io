@@ -136,7 +136,6 @@ redirect_from:
       {% if scholar_publications and scholar_publications.size > 0 %}
         {% for publication in scholar_publications limit: 12 %}
           <article class="publication-panel">
-            <p class="publication-panel-year">{{ publication.year }}</p>
             <h3>
               {% if publication.scholar_url and publication.scholar_url != "" %}
                 <a href="{{ publication.scholar_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
@@ -144,12 +143,10 @@ redirect_from:
                 {{ publication.title }}
               {% endif %}
             </h3>
-            {% if publication.venue %}
-              <p class="publication-panel-venue">{{ publication.venue }}</p>
-            {% elsif publication.scholar_url and publication.scholar_url != "" %}
-              <p class="publication-panel-venue">{{ publication.scholar_url }}</p>
-            {% endif %}
-            <p class="publication-panel-citations">Citations: {{ publication.citations | default: 0 }}</p>
+            <p class="publication-panel-venue">
+              {{ publication.venue | default: 'Publication venue unavailable' }}
+            </p>
+            <p class="publication-panel-citations">Year: {{ publication.year | default: '--' }} • Citations: {{ publication.citations | default: 0 }}</p>
           </article>
         {% endfor %}
       {% else %}
