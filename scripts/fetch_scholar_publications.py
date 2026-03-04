@@ -24,6 +24,7 @@ class Publication:
     authors: str
     venue: str
     year: int | None
+    citations: int
     scholar_url: str
 
 
@@ -56,6 +57,11 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
         )
         meta_matches = re.findall(r"<div[^>]*class=['\"][^'\"]*\bgs_gray\b[^'\"]*['\"][^>]*>(.*?)</div>", row_html, flags=re.DOTALL)
         year_match = re.search(r"<td[^>]*class=['\"][^'\"]*\bgsc_a_y\b[^'\"]*['\"][^>]*>.*?(\d{4})", row_html, flags=re.DOTALL)
+        citation_match = re.search(
+            r"<td[^>]*class=['\"][^'\"]*\bgsc_a_c\b[^'\"]*['\"][^>]*>(.*?)</td>",
+            row_html,
+            flags=re.DOTALL,
+        )
 
         if not title_match:
             continue
@@ -65,6 +71,8 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
         authors = _strip_tags(meta_matches[0]) if len(meta_matches) > 0 else ""
         venue = _strip_tags(meta_matches[1]) if len(meta_matches) > 1 else ""
         year = int(year_match.group(1)) if year_match else None
+        citation_text = _strip_tags(citation_match.group(1)) if citation_match else ""
+        citations = int(citation_text.replace(",", "")) if citation_text.replace(",", "").isdigit() else 0
 
         if title:
             publications.append(
@@ -73,6 +81,7 @@ def _extract_publications_from_page(page_html: str) -> List[Publication]:
                     authors=authors,
                     venue=venue,
                     year=year,
+                    citations=citations,
                     scholar_url=scholar_url,
                 )
             )
@@ -199,6 +208,7 @@ def write_yaml(publications: List[Publication], output_file: Path) -> None:
         lines.append(f"  authors: {_yaml_quote(publication.authors)}")
         lines.append(f"  venue: {_yaml_quote(publication.venue)}")
         lines.append(f"  year: {publication.year if publication.year is not None else 'null'}")
+        lines.append(f"  citations: {publication.citations}")
         lines.append(f"  scholar_url: {_yaml_quote(publication.scholar_url)}")
 
     output_file.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")

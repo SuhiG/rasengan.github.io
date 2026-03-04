@@ -146,7 +146,10 @@ redirect_from:
             </h3>
             {% if publication.venue %}
               <p class="publication-panel-venue">{{ publication.venue }}</p>
+            {% elsif publication.scholar_url and publication.scholar_url != "" %}
+              <p class="publication-panel-venue">{{ publication.scholar_url }}</p>
             {% endif %}
+            <p class="publication-panel-citations">Citations: {{ publication.citations | default: 0 }}</p>
           </article>
         {% endfor %}
       {% else %}

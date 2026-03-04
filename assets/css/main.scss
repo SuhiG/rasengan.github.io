@@ -536,6 +536,13 @@ body.has-live-ticker .masthead {
   line-height: 1.45;
 }
 
+.publication-panel-citations {
+  margin: 0.35rem 0 0;
+  color: #d2dcf3;
+  font-size: 0.81rem;
+  line-height: 1.35;
+}
+
 @media (min-width: 1100px) {
   .home-feed-layout {
     grid-template-columns: minmax(0, 1.65fr) minmax(320px, 1fr);
