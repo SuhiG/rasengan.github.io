@@ -162,8 +162,8 @@ redirect_from:
   </div>
 
   <aside class="insights-rail" role="complementary" aria-label="Professional insights">
-    <article class="insight-card">
-      <h2>Keywords from CV</h2>
+    <article class="insight-card insight-card--keywords">
+      <h2>Keywords</h2>
       <div class="keyword-cloud" aria-label="CV keyword highlights">
         <span>Quantum Computing</span>
         <span>AI</span>
@@ -177,24 +177,22 @@ redirect_from:
       </div>
     </article>
 
-    <article class="insight-card">
-      <h2>Travel Map (CV + News)</h2>
+    <article class="insight-card insight-card--github">
+      <h2>GitHub Contributions</h2>
+      <p>Live contribution activity snapshot.</p>
+      <a class="github-contrib-graph" href="{{ github_link }}" target="_blank" rel="noopener" aria-label="Open GitHub profile contribution graph">
+        <img src="https://ghchart.rshah.org/58a6ff/{{ github_handle | default: 'octocat' }}" alt="GitHub contribution graph for {{ github_handle | default: 'GitHub profile' }}">
+      </a>
+    </article>
+
+    <article class="insight-card insight-card--travel">
+      <h2>Travel Map</h2>
       <div class="travel-map" aria-label="Countries and cities visited">
-        <svg viewBox="0 0 780 360" role="img" aria-label="Stylized world map with travel markers">
-          <rect x="0" y="0" width="780" height="360" rx="16" ry="16" fill="rgba(9, 17, 34, 0.88)"></rect>
-          <path d="M42 163 L140 128 L197 142 L234 114 L305 126 L360 98 L446 127 L506 118 L578 152 L664 148 L722 170 L690 220 L596 212 L525 246 L438 228 L360 257 L272 238 L194 249 L132 224 L72 192 Z" fill="rgba(108, 143, 219, 0.26)" stroke="rgba(127, 178, 255, 0.5)" stroke-width="2"></path>
-          <g class="travel-point"><circle cx="552" cy="154" r="6"></circle><text x="565" y="152">Tokyo</text></g>
-          <g class="travel-point"><circle cx="553" cy="159" r="6"></circle><text x="565" y="176">Atsugi</text></g>
-          <g class="travel-point"><circle cx="618" cy="180" r="6"></circle><text x="630" y="178">Taipei</text></g>
-          <g class="travel-point"><circle cx="502" cy="194" r="6"></circle><text x="514" y="192">Bangkok</text></g>
-          <g class="travel-point"><circle cx="335" cy="144" r="6"></circle><text x="346" y="142">Glasgow</text></g>
-          <g class="travel-point"><circle cx="298" cy="154" r="6"></circle><text x="308" y="170">London</text></g>
-          <g class="travel-point"><circle cx="140" cy="164" r="6"></circle><text x="151" y="162">San Francisco</text></g>
-        </svg>
+        <iframe src="{{ '/talkmap/map.html' | relative_url }}" title="Travel map" loading="lazy"></iframe>
       </div>
     </article>
 
-    <article class="insight-card">
+    <article class="insight-card insight-card--highlights">
       <h2>LinkedIn &amp; Twitter Highlights</h2>
       <div class="social-posts" aria-label="Recent social post highlights">
         <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
@@ -213,15 +211,23 @@ redirect_from:
           <strong>Twitter/X</strong>
           <p>Highlights from talks in Tokyo, Glasgow, and Taipei with publication milestones.</p>
         </a>
+        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+          <strong>LinkedIn</strong>
+          <p>G-QuAT and AIST updates, including project outcomes on optimization and HPC-enabled AI.</p>
+        </a>
+        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+          <strong>Twitter/X</strong>
+          <p>Shared publication and speaking highlights spanning San Francisco, London, and Bangkok.</p>
+        </a>
+        <a class="social-post social-post--linkedin" href="{{ linkedin_link }}" target="_blank" rel="noopener">
+          <strong>LinkedIn</strong>
+          <p>Covered cross-disciplinary progress in LLMs, quantum applications, and combinatorial optimization.</p>
+        </a>
+        <a class="social-post social-post--twitter" href="{{ twitter_link }}" target="_blank" rel="noopener">
+          <strong>Twitter/X</strong>
+          <p>Event recap threads featuring workshops, poster sessions, and collaborative research milestones.</p>
+        </a>
       </div>
-    </article>
-
-    <article class="insight-card">
-      <h2>GitHub Contributions</h2>
-      <p>Live contribution activity snapshot.</p>
-      <a class="github-contrib-graph" href="{{ github_link }}" target="_blank" rel="noopener" aria-label="Open GitHub profile contribution graph">
-        <img src="https://ghchart.rshah.org/58a6ff/{{ github_handle | default: 'octocat' }}" alt="GitHub contribution graph for {{ github_handle | default: 'GitHub profile' }}">
-      </a>
     </article>
   </aside>
 </div>
