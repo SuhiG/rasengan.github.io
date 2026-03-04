@@ -224,14 +224,40 @@ def main() -> int:
 
     try:
         user_id = user_id_from_url(args.profile_url)
-        publications = fetch_publications(user_id=user_id, hl=args.hl)
-        stats = fetch_stats(user_id=user_id, hl=args.hl)
-        write_yaml(publications, Path(args.output))
-        write_stats_yaml(stats, Path(args.stats_output))
-        print(f"Wrote {len(publications)} publications to {args.output}")
-        print(f"Wrote Google Scholar stats to {args.stats_output}")
     except Exception as exc:  # noqa: BLE001
         print(f"Error: {exc}", file=sys.stderr)
+        return 1
+
+    output_path = Path(args.output)
+    stats_output_path = Path(args.stats_output)
+    wrote_publications = False
+    wrote_stats = False
+
+    try:
+        publications = fetch_publications(user_id=user_id, hl=args.hl)
+        if publications:
+            write_yaml(publications, output_path)
+            wrote_publications = True
+            print(f"Wrote {len(publications)} publications to {args.output}")
+        else:
+            print("Warning: no publications were parsed; keeping existing publications file.")
+    except Exception as exc:  # noqa: BLE001
+        print(f"Warning: failed to fetch publications ({exc}); keeping existing publications file.")
+
+    try:
+        stats = fetch_stats(user_id=user_id, hl=args.hl)
+        write_stats_yaml(stats, stats_output_path)
+        wrote_stats = True
+        print(f"Wrote Google Scholar stats to {args.stats_output}")
+    except Exception as exc:  # noqa: BLE001
+        print(f"Warning: failed to fetch scholar stats ({exc}); keeping existing stats file.")
+
+    if not wrote_publications and not output_path.exists():
+        print("Error: publication fetch failed and no existing publication file is available.", file=sys.stderr)
+        return 1
+
+    if not wrote_stats and not stats_output_path.exists():
+        print("Error: stats fetch failed and no existing stats file is available.", file=sys.stderr)
         return 1
 
     return 0
