@@ -1,36 +1,42 @@
-- title: "Highly Versatile FPGA-Implemented Cyber Coherent Ising Machine"
-  authors: ""
-  venue: "arXiv"
+- title: "Contrastive Concept-Tree Search for LLM-Assisted Algorithm Discovery"
+  authors: "T Leleu, S Gunathilaka, F Ghimenti, S Ganguli"
+  venue: "arXiv preprint arXiv:2602.03132, 2026"
+  year: 2026
+  citations: 0
+  scholar_url: ""
+- title: "Highly versatile fpga-implemented cyber coherent ising machine"
+  authors: "T Aonishi, T Nagasawa, T Koizumi, MDSH Gunathilaka, K Mimura, ..."
+  venue: "IEEE Access 12, 175843-175865, 2024"
   year: 2024
-  citations: 1
-  scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
-- title: "L0-regularized compressed sensing with Mean-field Coherent Ising Machines"
-  authors: ""
-  venue: "arXiv"
+  citations: 9
+  scholar_url: ""
+- title: "L0-regularized compressed sensing with mean-field coherent Ising machines"
+  authors: "MDSH Gunathilaka, Y Inui, S Kako, K Mimura, M Okada, Y Yamamoto, ..."
+  venue: "arXiv preprint arXiv:2405.00366, 2024"
   year: 2024
-  citations: 1
-  scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
-- title: "Effective implementation of L0-regularised compressed sensing with chaotic-amplitude-controlled coherent Ising machines"
-  authors: ""
-  venue: "Scientific Reports"
-  year: 2023
-  citations: 6
-  scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
+  citations: 2
+  scholar_url: ""
 - title: "Mean-field coherent Ising machines with artificial Zeeman terms"
-  authors: ""
-  venue: "Journal of Applied Physics"
+  authors: "SHG Mastiyage Don, Y Inui, S Kako, Y Yamamoto, T Aonishi"
+  venue: "Journal of Applied Physics 134, 2023"
   year: 2023
-  citations: 7
-  scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
+  citations: 13
+  scholar_url: ""
+- title: "Effective implementation of -regularised compressed sensing with chaotic-amplitude-controlled coherent Ising machines"
+  authors: "MDSH Gunathilaka, S Kako, Y Inui, K Mimura, M Okada, Y Yamamoto, ..."
+  venue: "Scientific Reports 13, 16140, 2023"
+  year: 2023
+  citations: 12
+  scholar_url: ""
 - title: "Control of amplitude homogeneity in coherent Ising machines with artificial Zeeman terms"
-  authors: ""
-  venue: "Communications Physics"
+  authors: "Y Inui, MDSH Gunathilaka, S Kako, T Aonishi, Y Yamamoto"
+  venue: "Communications Physics 5, 154, 2022"
   year: 2022
-  citations: 15
-  scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
+  citations: 31
+  scholar_url: ""
 - title: "Acceleration Technique of Two-Phase Quasi-Newton Method with Momentum for Optimization Problems"
-  authors: ""
-  venue: "eKNOW 2020, The Twelfth International Conference on Information, Process, and Knowledge Management"
+  authors: "MDSHG ,Shahrzad Mahboubi, Hiroshi Ninomiya"
+  venue: "eKNOW 2020, The Twelfth International Conference on Information, Process …, 2020"
   year: 2020
   citations: 0
-  scholar_url: "https://scholar.google.com/citations?user=AoeGGVQAAAAJ&hl=en"
+  scholar_url: ""
