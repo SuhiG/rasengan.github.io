@@ -4,6 +4,12 @@
   year: 2026
   citations: 0
   scholar_url: ""
+- title: "Chaotic-Amplitude-Controlled Coherent Ising Machines: Extensions to Quadratic Unconstrained Binary Optimisation and Simplified Models"
+  authors: "SHGM Don, MSH GUNATHILAKA"
+  venue: ""
+  year: 2025
+  citations: 0
+  scholar_url: ""
 - title: "Highly versatile FPGA-implemented cyber coherent Ising machine"
   authors: "T Aonishi, T Nagasawa, T Koizumi, MDSH Gunathilaka, K Mimura, ..."
   venue: "IEEE Access 12, 175843-175865, 2024"
@@ -32,7 +38,7 @@
   authors: "Y Inui, MDSH Gunathilaka, S Kako, T Aonishi, Y Yamamoto"
   venue: "Communications Physics 5, 154, 2022"
   year: 2022
-  citations: 35
+  citations: 36
   scholar_url: ""
 - title: "Acceleration Technique of Two-Phase Quasi-Newton Method with Momentum for Optimization Problems"
   authors: "MDSHG ,Shahrzad Mahboubi, Hiroshi Ninomiya"
